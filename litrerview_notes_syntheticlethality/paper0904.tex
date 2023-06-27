@@ -1,0 +1,386 @@
+\documentclass[10pt]{article}
+%\documentclass[twocolumn]{article}
+%\documentclass[onecolumn]{article}
+% \usepackage{scrtime} % for \thistime (this package MUST be listed first!)
+\DeclareUnicodeCharacter{0301}{\'{e}}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{notoccite}
+\usepackage{pgfplotstable}
+\usepackage{soul} %For highlights using \hl
+%\usepackage[round]{natbib}
+%\setcitestyle{aysep={}} %removes the comma between the author and year in citations
+%\usepackage{underscore}
+\usepackage{pdfpages}
+\usepackage{xcolor,colortbl}%for changing cell colour
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{xspace}
+\usepackage{booktabs}
+\usepackage{capt-of}
+\pagestyle{fancy}
+\setlength{\headheight}{15.2pt}
+\setlength{\headsep}{13 pt}
+\setlength{\parindent}{28 pt}
+\setlength{\parskip}{12 pt}
+\pagestyle{fancyplain}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+% \usepackage{color,amsmath,amssymb,amsthm,mathrsfs,amsfonts,dsfont}
+\usepackage{xspace}
+\usepackage{tikz-cd}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{calc, arrows}
+\usetikzlibrary{external}
+\usepackage{pgfplots}
+\pgfplotsset{layers/my layer set/.define layer set={background,main,foreground}{},
+        set layers=my layer set,}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%for code
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+% \usetikzlibrary{pgfplots.clickable}
+% \usepgfplotslibrary{clickable}
+% tables
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{multirow}
+% figs
+\captionsetup[figure]{labelfont={color=blue}, font={color=black}}
+%\usepackage{subfig}% http://ctan.org/pkg/subfig
+\usepackage{subcaption}
+%\newsubfloat{figure}% Allow sub-figures
+\usepackage{caption}%lable fig caption as fig
+%\captionsetup[subfigure]{labelfont=bf, justification=raggedright, labelformat=empty} %no caption label
+\usepackage{stackengine} %places caption inside figure?
+\captionsetup{subrefformat=empty} %when you reference the subcaption it will be (a) for example %{labelfont={color=blue}}
+%\captionsetup[subfigure]{labelsep=colon}
+
+
+% \usepackage{acronym}
+% \usepackage{lineno}%for line numbers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[backend=biber, giveninits=true, doi=false, isbn=false, natbib=true, url=true, eprint=false, style=authoryear-comp, sorting=nyt, sortcites=ynt, maxcitenames=2, maxbibnames=10, minbibnames = 10, uniquename=false, uniquelist=false, dashed=false]{biblatex} % can change the maxbibnames to cut long author lists to specified length followed by et al., currently set to 99.
+
+%% bibliography for each chapter...
+\DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]{title}{#1\isdot} % removes quotes around title
+\renewbibmacro*{volume+number+eid}{%
+	\printfield{volume}%
+	%  \setunit*{\adddot}% DELETED
+	\printfield{number}%
+	\setunit{\space}%
+	\printfield{eid}}
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+%\renewcommand*{\newunitpunct}{\space} % remove period after date, but I like it. 
+\renewbibmacro{in:}{\ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}} % this remove the "In: Journal Name" from articles in the bibliography, which happens with the ynt 
+\renewbibmacro*{note+pages}{%
+	\printfield{note}%
+	\setunit{,\space}% could add punctuation here for after volume
+	\printfield{pages}%
+	\newunit}    
+\DefineBibliographyStrings{english}{% clears the pp from pages
+	page = {\ifbibliography{}{\adddot}},
+	pages = {\ifbibliography{}{\adddot}},
+} 
+\DeclareFieldFormat{journaltitle}{#1\isdot}
+\renewcommand*{\revsdnamepunct}{}%remove comma between last name and first name
+\DeclareNameAlias{sortname}{family-given}
+% \DeclareNameAlias{sortname}{last-first}
+\renewcommand*{\nameyeardelim}{\addspace} % remove comma in text between name and date
+\addbibresource{ABC1.bib} % The filename of the bibliography
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\renewrobustcmd*{\bibinitperiod}{}
+% you'll have to play with the citation styles to resemble the standard in your field, or just leave them as is here. 
+% or, if there is a bst file you like, just get rid of all this biblatex stuff and go back to bibtex. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% generally hyperref needs to be loaded last
+\usepackage[hidelinks,colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+%\usepackage[hidelinks,colorlinks=false,citecolor=blue,urlcolor=darkbrown]{hyperref}
+\tikzexternalize
+
+\lhead{Synthetic Lethality Overview} %This needs to change
+\rhead{Alexander Turco}
+\title{\sc Building sex-specific synthetic lethality network in cancer - Temp Name}
+\author{\sc Alexander Turco}
+
+\providecommand{\figref}[1]{Figure \ref{#1}}  %what?
+\providecommand{\tabref}[1]{(Table \ref{#1})}  %what?
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\newcommand{\seg}{\texttt{Seg}\xspace}
+\newcommand{\ecoli}{\mbox{\textit{E.\,coli}}\xspace}
+\newcommand{\sclong}{\textit{Saccharomyces cerevisiae}\xspace}
+\newcommand{\scshrt}{\mbox{\textit{S.\,cerevisiae}}\xspace}
+\newcommand{\sce}{\mbox{\textit{S.\,cerevisiae}}\xspace}
+\newcommand{\hslong}{\textit{Homo sapiens}\xspace}
+\newcommand{\hsshrt}{\mbox{\textit{H.\,sapiens}}\xspace}
+\newcommand{\hse}{\mbox{\textit{H.\,sapiens}}\xspace}
+\newcommand{\celong}{\textit{Caenorhabditis elegans}\xspace}
+\newcommand{\ceshrt}{\mbox{\textit{C.\,elegans}}\xspace}
+\newcommand{\dmlong}{\textit{Drosophila melanogaster}\xspace}
+\newcommand{\dmshrt}{\mbox{\textit{D.\,melanogaster}}\xspace}
+\newcommand{\atlong}{\textit{Arabidopsis thaliana}\xspace}
+\newcommand{\atshrt}{\mbox{\textit{A.\,thaliana}}\xspace}
+\newcommand{\pflong}{\textit{Plasmodium falciparum}\xspace}
+\newcommand{\pfshrt}{\mbox{\textit{P.\,falciparum}}\xspace}
+%%%%BIBLIOGRAPHY
+
+%Supplementary File Table Numbers:
+\newcommand{\expdata}{S1\xspace}
+\newcommand{\seqdata}{S2\xspace}
+\newcommand{\protdata}{S3\xspace}
+\newcommand{\blast}{S4\xspace}
+\newcommand{\tabvar}{S5\xspace}
+%Supplementary File Fig Numbers:
+
+\newcommand{\expcor}{S1\xspace}
+\newcommand{\expdistATCC}{S3\xspace}
+\newcommand{\specialcell}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\newcommand{\beginsupplement}{%
+	\setcounter{table}{0}
+	\renewcommand{\thetable}{S\arabic{table}}%    %thetable references table counter 
+	\setcounter{figure}{0}
+	\renewcommand{\thefigure}{S\arabic{figure}}%
+	\setcounter{equation}{0}
+	\renewcommand{\theequation}{S\arabic{equation}}%
+
+}
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+\renewcommand{\thesubsubsection}{}
+\usepackage{setspace}
+%adjust spacing
+\doublespacing
+\usepackage{titlesec}
+
+\titlespacing\section{0pt}{12pt plus 2pt minus 2pt}{0pt plus 1pt minus 1pt}
+\titlespacing\subsection{0pt}{12pt plus 2pt minus 2pt}{0pt plus 1pt minus 1pt}
+\titlespacing\subsubsection{0pt}{12pt plus 2pt minus 2pt}{0pt plus 1pt minus 1pt}
+
+% below 3 lines will put ALL table captions at the top...not sure if
+% this is what we want but it is good enough for now
+
+% \usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+        \definecolor{atomictangerine}{rgb}{1.0, 0.6, 0.4}
+        \definecolor{darkbrown}{rgb}{1.0, 0.56, 0.24}
+        \colorlet{darkcol}{black!30!white}
+        \colorlet{lightcol}{black!10!white}
+        \definecolor{txtcol}{HTML}{F40000}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\widowpenalty10000
+\clubpenalty10000
+
+%\linenumbers %for line numbers
+\onecolumn
+%\twocolumn[  
+%       \begin{@twocolumnfalse}
+%               \begin{center}
+                        \maketitle
+%               \end{center}
+%                       \bigskip
+
+\thispagestyle{empty}
+\noindent \textsuperscript{1} Department of, University, , ON, Canada
+
+\newpage
+%\tableofcontents %Will add a nice Table of Contents
+\newpage
+       
+%\section{Abstract} 
+
+%\section{Literature Review/Introduction}
+
+%	\subsection{What are Low Complexity Regions?}
+
+%	\subsection{Characteristics and Types of LCRs}
+
+%	\subsection{Why care about LCRs?}
+
+%	\subsection{How do LCRs Evolve?}
+
+%	\subsection{What is an Approximate Bayesian Computation Markov chain Monte Carlo algorithm?}
+
+%	\subsection{How will we use an ABC-MCMC - (Oct 28 Proposal, To See New Process Refer to} 
+
+%\section{Introduction}
+
+%\section{Materials and Methods (mid-year stuff Jan 20)} 
+%\label{methods}
+%Custom scripts and commands utilized in this analysis can be found on \texttt{GitHub} at
+%\url{https://github.com/opticrom/abcmcmc-thesis4c12}.
+
+%\sloppy For a detailed protocol, see Supplementary files on \texttt{GitHub} at
+ %\url{https://github.com/JohannaEnright/LCREntropyProject/}.
+
+%	\subsection{ABC-MCMC: The Algorithm}
+
+%	\subsection{Parameters and Summary Statistics}
+
+%	\subsection{Simulation Step: Creation and Mutation of Protein Sequences}
+
+%	\subsection{Normalization and Euclidean Distance Calculation}
+
+%	\subsection{One Sample T-Test for Probability of Acceptance}
+
+%\section{Results}
+
+%	\subsection{Assessing the Evolution Simulator}
+
+%	\subsection{Applying the Simulator to an ABC-MCMC}
+
+%\section{Discussion}
+
+%	\subsection{Mutations Have the Ability to Destroy LCR Formation}
+
+%	\subsection{Does the Length of a Repeat Play a Role in Insertions/Deletions}
+
+%	\subsection{Why Parameters Could not be Estimated}
+
+%	\subsection{Conclusion}
+
+\newpage
+\section{Notes}
+
+\subsection{Basic Basic Explanation of Synthetic Lethality}
+Definition of synthetic lethality: Describes a situation in which mutations in two genes together result in cell death, but a mutation in either gene alone does not. Cancer cells that only have one mutated gene in a specific pair of genes can depend on the normal partner gene for survival. Interfering with the function of the normal partner gene may cause cancer cells to die. Studying synthetic lethality may help researchers learn more about the function of genes and develop new drugs to treat cancer (taken from \url{https://www.cancer.gov/publications/dictionaries/cancer-terms/def/synthetic-lethality})
+
+\subsection{What will my Project Explore}
+\begin{itemize}
+	\item There are sex differences in cancer (some more prevalent in males, some in females)
+	\item From my understanding (May 9), what we are trying to do is build synthetic lethality networks in sex specific manner (basically can we build these synthetic lethal pairs in a sex-specific manner)
+	\item Synthetic lethality is influenced by sex (maybe its a negative interaction, this can rescue cells)
+	\item Been told to pay attention to the datasets utilized in the following papers so I know which data I can use for my project (gene expression data, CRISPR knockout datasets, siRNA, etc)
+\end{itemize}
+
+\subsection{Types of Data Utilized for Identifying Synthetic Lethal Relationships - How to discover therapeutically relevant SL interactions}
+\begin{itemize}
+	\item GTEx data: The Genotype-Tissue Expression project provides gene expression data across multiple human tissues - can be utilized to identify tissue specific or context-specific synthetic lethal interactions by comparing gene expression profiles across different tissues or conditions
+	\item used in \citep{cheng2021synthetic}
+	\item CRISPR/Cas9 Screens - allow researchers to systematically perturb genes and assess their effects on cellular phenotypes - can provide genetic interaction data for identifying synthetic lethal relationships
+	\item Current efforts to map SL interactions can be separated into 4 approaches - Statistical approaches which leverage large populations of tumor genomes, evolutionary conservation, Direct experimentation in human cancer cell lines, combinatorial rather than single gene disruptions \citep{shen2018synthetic}
+	\item TCGA is a comprehensive database that provides molecular characterization of various cancer types - it provides whole genome sequencing data, transcriptomics data (RNA-seq), epigenomic data, clinical data, etc
+	\item DepMap
+\end{itemize}
+
+\subsection{questions/confused}
+\begin{itemize}
+	\item when talking about SL, the literature often says inactivation of either gene (does this inactivation mean its completely removed or does it also entail mutations that could cause a lower expression of the gene?)
+	\item I have not heard the literature mention the mechanisms of synthetic lethality - so if both genes are affected, how does the cell actually die or have its viability reduced. Is it just due to the reduced expression of the genes involved?
+	\item debMap
+	\item X chromosome inactivation - we usually have to infer for females which one is inactivated - infer based on gene expression data etc
+	\item cell line I use, know if it comes from male or female -
+	\item Do I want to focus on differences in autosomal or sex chromosomes - these are two different questions - 
+	\item Why do cancer cells have a tendency to lose or gain sex chromasomes
+	\item Sex chromosome dosage??
+	\item The biology behind a cell line
+\end{itemize}
+
+\subsection{Potential Research Questions}
+1. There are sex specific synthetic lethal gene pairs in certain types of cancers (are there gene combinations that result in synthetic lethality in males but not in females, or vice versa)
+- 
+
+2. Sex specific genetic modifiers affect synthetic lethality in cancer (Are there genes or genetic pathways that act as modifiers of synthetic lethality, specifically in males or females, potentially influencing treatment response or prognosis?)
+\newpage
+
+\subsection{PROPOSAL/WORKFLOW}
+MAY 18 - Today is my fourth day at UHN, this is the first workflow
+\begin{enumerate}
+	\item Determine differentially expressed genes between Healthy (non-cancer) and Affected (cancer) Males and Females. Differential gene expression analysis can be utilized to find genes of interest in each of the sexes
+	\begin{itemize}
+		\item We can obtain cancerous cell line data from CCLE (It has expression data, metadata for the samples, everything necessary for differential expression analysis)
+		\item Question: Are there any good databases for healthy cell lines
+		\item Question: In the study by \citet{shohat2022gene}, they inferred the presence of sex chromosomes in both male and female cancer cell lines (cancer cells have tendency to lose or gain sex chromosomes) - Should I be taking the same approach for healthy cell lines and infer which chromosomes are present? (Nad mentioned overtime weird things can happen to these cell lines so it could be good to check)
+		\item Possibility that there will be much more data on cancer cell lines than healthy cell lines which could affect results - an alternative approach is to directly compare healthy and affected cell lines (for example Healthy breast Tissue and Breast Cancer Tissue) individually as opposed to having many more cancerous cell lines than healthy cell lines and grouping them together.
+	\end{itemize}
+	\item Identify potential synthetic lethal partners of the genes that were found to be differentially expressed in each sex
+	\begin{itemize}
+		\item This can be done through utilizing CRISPR-Cas9 knockout data - there is CRISPR knockout data pertaining to cancerous cell lines on CCLE database - have to look in to how to find the interactions (I have seen methods like ISLE but I don't know how relevant it would be here)
+		\item Since the genes of interest were differentially expressed in cancer cell lines, does this mean they are potentially contributing to cancer and hence finding specific synthetic lethal partners to these genes could lead to finding sex-specific potential drug targets?
+	\end{itemize}
+	\item Assess the differences in synthetic lethal partners in male vs females - we may want to exclude genes that we know for sure are only in one sex such as testicular genes - excluding these means we will focus on the differences but it could also be good to keep genes known to be found in one sex as validation/confirmation that they are very highly differentially expressed in each sex (to confirm DGE analysis).
+\end{enumerate}
+
+\clearpage\newpage
+\section{References}
+
+%%%FIGURES%%%%%
+
+%%%%PRINTING BIBLIOGRAPHY%%%%
+\nocite{*}
+\printbibliography[heading=none, sorting=nyt]
+\newpage
+
+%The following files included these appendices are located at \texttt{/home/alext/scratch/abcmcmc-thesis4c12}
+
+%\section{Appendix 1: Low Complexity Region Evolution Simulator}
+%\texttt{/home/alext/scratch/abcmcmc-thesis4c12/mutations\_2\_BG\_vecs.cpp}
+%\lstinputlisting[language=c++]{../mutations_2_BG_vecs.cpp}
+%\newpage
+
+%\section{Appendix 2: ABC-MCMC in C++}
+%\texttt{/home/alext/scratch/abcmcmc-thesis4c12/abcmcmc.cpp}
+%\lstinputlisting[language=c++]{../abcmcmc.cpp}
+%\newpage
+
+%\section{Appendix 3: Simulated Protein Summary Statistics}
+%\texttt{/home/alext/scratch/abcmcmc-thesis4c12/abcmcmc.cpp/simulated\_protein.cpp}
+%\lstinputlisting[language=c++]{../simulated_protein.cpp}
+%\newpage
+
+%\section{Appendix 4: Euclidean Distance and Normlization of Vectors}
+%\texttt{/home/alext/scratch/abcmcmc-thesis4c12/abcmcmc.cpp/distance2.cpp}
+%\lstinputlisting[language=c++]{../distance2.cpp}
+%\newpage
+
+%\section{Appendix 5: One Sample t-test}
+%\texttt{/home/alext/scratch/abcmcmc-thesis4c12/abcmcmc.cpp/ttest.cpp}
+%\lstinputlisting[language=c++]{../ttest.cpp}
+%\newpage
+
+\end{document}
+
+
+
