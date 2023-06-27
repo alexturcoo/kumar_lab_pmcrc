@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {}Abstract}{3}{section.1}%
+\contentsline {section}{\numberline {}Introduction/Background Information}{4}{section.2}%
+\contentsline {subsection}{\numberline {}What are Synthetic Lethal Interactions?}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {}Synthetic Lethal Interactions are Harnessed for Precision Oncology}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {}Building Pan-Cancer Synthetic Lethality Networks}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {}Human Sex Differences add An Additional Layer of Complexity}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {}Building Pan-Cancer Synthetic Lethality Networks in a Sex Specific Manner}{4}{subsection.2.5}%
+\contentsline {section}{\numberline {}Materials and Methods}{5}{section.3}%
+\contentsline {subsection}{\numberline {}TCGA Data}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {}Pre-filtering and Normalization of Raw RNA-seq Count Data}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {}Data Quality Assessment (PCA, NPManova)}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {}Differential Gene Expression Analysis with DESeq2}{5}{subsection.3.4}%
+\contentsline {section}{\numberline {}Results}{5}{section.4}%
+\contentsline {section}{\numberline {}Discussion}{5}{section.5}%
+\contentsline {section}{\numberline {}References}{6}{section.6}%

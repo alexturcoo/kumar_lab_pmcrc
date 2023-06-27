@@ -1,0 +1,223 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{cheng2021synthetic}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d8e6ac6b3aa285a822883df14a8c6cc6}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Kuoyuan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=787fc7288ea465a1a33d258d080ff341}{%
+           family={Nair},
+           familyi={N\bibinitperiod},
+           given={Nishanth\bibnamedelima Ulhas},
+           giveni={N\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=dd75de2cd7f952a8f31af93e42d767c5}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Joo\bibnamedelima Sang},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=1b53b5f21cdfcffa4afebd72c43a079c}{%
+           family={Ruppin},
+           familyi={R\bibinitperiod},
+           given={Eytan},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{3feda89f7c84a0256dfffdeec86b7e9b}
+      \strng{fullhash}{059c8f375a9bbee3a244f72d01c43336}
+      \strng{bibnamehash}{059c8f375a9bbee3a244f72d01c43336}
+      \strng{authorbibnamehash}{059c8f375a9bbee3a244f72d01c43336}
+      \strng{authornamehash}{3feda89f7c84a0256dfffdeec86b7e9b}
+      \strng{authorfullhash}{059c8f375a9bbee3a244f72d01c43336}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science advances}
+      \field{number}{1}
+      \field{title}{Synthetic lethality across normal tissues is strongly associated with cancer risk, onset, and tumor suppressor specificity}
+      \field{volume}{7}
+      \field{year}{2021}
+      \field{pages}{eabc2100}
+      \range{pages}{-1}
+    \endentry
+    \entry{lee2021synthetic}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=dd75de2cd7f952a8f31af93e42d767c5}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Joo\bibnamedelima Sang},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=787fc7288ea465a1a33d258d080ff341}{%
+           family={Nair},
+           familyi={N\bibinitperiod},
+           given={Nishanth\bibnamedelima Ulhas},
+           giveni={N\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=f4941a00f94ad32b48c60ca0d2b28000}{%
+           family={Dinstag},
+           familyi={D\bibinitperiod},
+           given={Gal},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4d5fe3b4577c91cde5780f684bf36227}{%
+           family={Chapman},
+           familyi={C\bibinitperiod},
+           given={Lesley},
+           giveni={L\bibinitperiod}}}%
+        {{hash=edbaeecbe2ab8baa60340afc9ca949ff}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={Youngmin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e792ce49deb975512f7f60a7a75cfa66}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Kun},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b1da0bb944b6c3ce8c5b376fac4bd415}{%
+           family={Sinha},
+           familyi={S\bibinitperiod},
+           given={Sanju},
+           giveni={S\bibinitperiod}}}%
+        {{hash=45250c628d9c9058f103dc9c9d5d09b4}{%
+           family={Cha},
+           familyi={C\bibinitperiod},
+           given={Hongui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c44c1cf12e079a67a41e06eedae4d47c}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Dasol},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3336e404b33e7d5fa2fe191a81a05e44}{%
+           family={Schperberg},
+           familyi={S\bibinitperiod},
+           given={Alexander\bibnamedelima V},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d4b40dcf53d9bca1c399d508f269fa25}
+      \strng{fullhash}{2e7527cbf01eae0559215749863afec4}
+      \strng{bibnamehash}{2e7527cbf01eae0559215749863afec4}
+      \strng{authorbibnamehash}{2e7527cbf01eae0559215749863afec4}
+      \strng{authornamehash}{d4b40dcf53d9bca1c399d508f269fa25}
+      \strng{authorfullhash}{2e7527cbf01eae0559215749863afec4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cell}
+      \field{number}{9}
+      \field{title}{Synthetic lethality-mediated precision oncology via the tumor transcriptome}
+      \field{volume}{184}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{2487\bibrangedash 2502}
+      \range{pages}{16}
+    \endentry
+    \entry{shen2018synthetic}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2a2c5409d1bc9529e849f7ea3d204fc5}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima Paul},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a254a95c2343f55d44f87bb01073e5fa}{%
+           family={Ideker},
+           familyi={I\bibinitperiod},
+           given={Trey},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{dfe2a3e0856931359275d419bf5cec7a}
+      \strng{fullhash}{dfe2a3e0856931359275d419bf5cec7a}
+      \strng{bibnamehash}{dfe2a3e0856931359275d419bf5cec7a}
+      \strng{authorbibnamehash}{dfe2a3e0856931359275d419bf5cec7a}
+      \strng{authornamehash}{dfe2a3e0856931359275d419bf5cec7a}
+      \strng{authorfullhash}{dfe2a3e0856931359275d419bf5cec7a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of molecular biology}
+      \field{number}{18}
+      \field{title}{Synthetic lethal networks for precision oncology: promises and pitfalls}
+      \field{volume}{430}
+      \field{year}{2018}
+      \field{pages}{2900\bibrangedash 2912}
+      \range{pages}{13}
+    \endentry
+    \entry{shohat2022gene}{article}{}
+      \name{author}{2}{}{%
+        {{hash=59db88642c010c70a8ee4a245f0fd834}{%
+           family={Shohat},
+           familyi={S\bibinitperiod},
+           given={Shahar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d7ec57b8f561e24e2e94a20636d0ffc2}{%
+           family={Shifman},
+           familyi={S\bibinitperiod},
+           given={Sagiv},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cold Spring Harbor Lab}%
+      }
+      \strng{namehash}{b1747bf24bc7c7159e9f08f6bb4935a1}
+      \strng{fullhash}{b1747bf24bc7c7159e9f08f6bb4935a1}
+      \strng{bibnamehash}{b1747bf24bc7c7159e9f08f6bb4935a1}
+      \strng{authorbibnamehash}{b1747bf24bc7c7159e9f08f6bb4935a1}
+      \strng{authornamehash}{b1747bf24bc7c7159e9f08f6bb4935a1}
+      \strng{authorfullhash}{b1747bf24bc7c7159e9f08f6bb4935a1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Genome Research}
+      \field{number}{11-12}
+      \field{title}{Gene essentiality in cancer cell lines is modified by the sex chromosomes}
+      \field{volume}{32}
+      \field{year}{2022}
+      \true{nocite}
+      \field{pages}{1993\bibrangedash 2002}
+      \range{pages}{10}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
