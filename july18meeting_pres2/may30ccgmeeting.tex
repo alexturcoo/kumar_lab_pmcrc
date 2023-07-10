@@ -45,9 +45,9 @@
 \definecolor{ColorThree}{rgb}{0.75,0.58,0.89} %lightpurple
 
 % Title page details: 
-\title[BEAP Dec 2022]{Double Trouble: Understanding Sex Differences in Synthetic Lethal interactions in Human Cancers} 
+\title[BEAP Dec 2022]{Double Trouble: Understanding Sex Differences in Synthetic Lethal interactions in Human Cancers \\~\\ Project Updates} 
 \author{Alexander Turco}
-\date{\today}
+\date{July 18, 2023}
 \logo{\includegraphics[height=0.5cm, width=3cm]{logo.png}}
 
 % Bibliography stuff
@@ -130,23 +130,9 @@ fill=green!30]
 	
 	% For my Background slides, I will talk about important things such as WHat LCRs are, their evolution, stuff like that
 	% SLIDE 3 - WHAT ARE LCRs%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% The graphic for this slide is an image of some output from segA with the parameters in the brackets
-	\section{Background}
-	\begin{frame}{Synthetic Lethality has Been Around for Some Time}
-		\begin{itemize}
-			\item (1922) American geneticist Calvin Bridges was crossing fruit flies (\textit{Drosophila melanogaster}) and observed certain genes were lethal only in combination \newline
-			\item (1946) Years later, a colleague of Bridges observed the same phenomena in a different species of fruit fly, \textit{Drosophila pseudoobscura}, and coined the term `synthetic lethality' \newline
-		\end{itemize}
-		
-		\centering
-		\huge \textbf{Synthetic = Combining}
-		
-		\footnotetext[1]{\tiny\cite{nijman2011synthetic}}
-		
-	\end{frame}
-	
+
 	%Also called synthetic sick because it can lead to reduced cell viability as opposed to death
-	\begin{frame}{The Combined Inactivation of Two Genes Can Lead to Synthetic Lethal Interactions}
+	\begin{frame}{Recall: The Combined Inactivation of Two Genes Can Lead to Synthetic Lethal Interactions}
 		\label{link1}
 		
 		\begin{itemize}
@@ -155,9 +141,10 @@ fill=green!30]
 			\includegraphics[width=11cm, height=2.5cm]{slbasic.png} 
 		
 			\item Inactivation: Preventing or disabling normal function of a gene (e.g mutation)
+			\end{itemize}
+			\centering
+			\large \textbf{Synthetic = Combining}
 			\footnotetext[2]{\tiny\cite{lee2018harnessing}}
-		\end{itemize}
-		
 	\end{frame}
 
 	% SLIDE 4 - I do Not Know if I am including this slide
@@ -170,146 +157,61 @@ fill=green!30]
 		
 	%\end{frame}
 
-	%SLIDE 5 - LCR's PRESENT IN UNIQUE WAYS
-	\begin{frame}{Researchers Harness Synthetic Lethal Interactions in a Variety of Biological Applications}
-		
-		\begin{block}{\textit{To gain insight into gene function}}
-			 \begin{itemize}
-			 \item In \textit{Saccharomyces cerevisiae} (baker's yeast), the mapping of synthetic lethal interactions has reached a genome-wide scale and these networks of interaction are a rich source for the functional annotation of genes
-			 %The elucidation of similar comprehensive synthetic lethal interaction networks in human cells would be very attractive, particularly as a large number of genes in the human genome have still not been defined a function
-			 \end{itemize}
-		\end{block} \pause
-	
-		\begin{block}{\textit{To uncover new opportunities for precision oncology}}
-			\begin{itemize}
-				\item An emerging strategy is to identify potential synthetic lethal interactions between tumor suppressor genes and other genes that can be simultaneously disrupted leading to cancer cell death (e.g. Olaparib was the first drug to work via a synthetic lethal mechanism)
-				%Rather than attempting to restore function of mutated tumor suppressor genes (TSGs) which proves extremely difficult to do,
-				%Talk about BRCA1 and PARP inhibitors for olaparib lol
-			\end{itemize}
-		\end{block} 
-	
-	\footnotetext[3]{\tiny\cite{nijman2011synthetic,shen2018synthetic}}
-	
-	\end{frame}
-
 	%Slide 6
 	% Poly(ADP-ribose) polymerases (PARPs) repair DNA SSBs through the BER pathway. PARP inhibitors, such as olaparib, prevent repair by trapping the inactivated PARP onto the SSB, resulting in the generation of DNA DSBs during the replication process. In tumors with a homologous recombination deficiency (HRD), such as a BRCA1/2 mutation, the low-fidelity repair mechanism of NHEJ leads to increasing genetic instability and ultimately death of the tumor cell.
-	\begin{frame}{Four FDA Approved Anti-Cancer Drugs Work via a Synthetic Lethal Mechanism}
-		\begin{itemize}
-			\item Olaparib, Niraparib, Rucaparib, Talazoparib are Poly [ADP-ribose] polymerase 1/2 (PARP1/2) inhibitors
+	\begin{frame}{Recall: Synthetic Lethal Interactions are Harnessed for Precision Oncology}
+		\begin{itemize} %(Olaparib, Niraparib, Rucaparib, Talazoparib)
+			\item \small Four FDA approved anti-cancer drugs  are Poly [ADP-ribose] polymerase 1/2 (PARP1/2) inhibitors that work via a synthetic lethal mechanism
+			
+			\centering
+			\includegraphics[width=8.5cm, height=6cm]{olaparib2.png}
+			
+			\footnotetext[4]{\tiny Figure From  \cite{o2015targeting}}
 		\end{itemize}
-		\centering
-		\includegraphics[width=8.5cm, height=6cm]{olaparib2.png}
 		
-		\footnotetext[4]{\tiny Figure From  \cite{o2015targeting}}
-	\end{frame}
-
-	%SLIDE 6 
-	\begin{frame}{Synthetic Lethality can also Help Explain Factors Related to the Tissue-Specificity of Cancer}
-		
-	\textbf{\color{blue}Tissue Specificity:} Cancers which manifest in different human tissues have different molecular, phenotypic, and epidemiological characteristics. Some aspects of this phenomena are; \newline
-	
-	\begin{enumerate}
-		\item Variation in lifetime cancer risk
-		\item Variation in cancer onset age
-		\item Variation in the genes driving the cancer across tissue types \newline
-	\end{enumerate}
-		The literature has only reported the \textbf{\color{blue}number of lifetime stem cell divisions} and the \textbf{\color{blue}abnormal levels of CpG island DNA methylation} to be factors able to explain the variance in lifetime cancer risk across tissues (aside from well known global and cancer-specific factors)
-	\end{frame}
-
-	\begin{frame}{Quantifying cSL Load in Normal Human Tissue}
-			\textbf{\color{blue}cSL Load:} Quantitatively captures the level of cancer synthetic lethal (cSL) gene pair co-inactivation based on gene expression data from normal human tissues
-			\begin{center}
-				\includegraphics[width=10cm, height=5.7cm]{csl.png}
-			\end{center}
-		\footnotetext[5]{\tiny Adapted From  \cite{cheng2021synthetic}}
-	\end{frame}
-
-	%%%%% APPRACH SECTION BEGINS HERE, 2 SLIDES
-	\section{Approaches}
-
-	\begin{frame}{Tissue cSL Load in Normal Tissues is Negatively Correlated with Lifetime Cancer Risk}
-		\textbf{\color{blue}Tissue cSL Load:} Median cSL load value across all samples of each tissue type
-		
-		\centering
-		\includegraphics[width=8cm, height=6cm]{tcl1.png}
-		\footnotetext[5]{\tiny\cite{cheng2021synthetic}}
-	\end{frame}
-
-		\begin{frame}{Synthetic Lethality Increases Predictive Power of Models Associated with Tissue Specificity}
-		\begin{columns}
-			\begin{column}{0.5\textwidth}
-					\includegraphics[width=7cm, height=3.5cm]{tcl2.png}
-					\centering
-					Stem Cell Divisions
-			\end{column}
-			\begin{column}{0.5\textwidth}
-				\includegraphics[width=6cm, height=3cm]{tcl3.png}
-				\centering
-				\vspace{-0.5cm}Methylation
-			\end{column}
-		\end{columns}	
-		\centering	
-	\footnotetext[5]{\tiny\cite{cheng2021synthetic}}
-	\end{frame}
-
-	\begin{frame}{Where did the Data come From?}
-		A recently published reference set of genome-wide cSLs common to many cancer types was utilized
-		\begin{center}
-				\includegraphics[width=6cm,height=6cm]{corenet.png}
-		\end{center}
-	\footnotetext[2]{\tiny\cite{lee2018harnessing}}
 	\end{frame}
 
 	%EXPLAIN THE PROCESS OF ISLE HERE
-	\begin{frame}{Building Pan-Cancer Synthetic Lethality Networks}
+	\begin{frame}{Recall: Building Pan-Cancer Synthetic Lethality Networks}
 		\centering
 		\includegraphics[width=13cm, height=7cm]{isle.png}
 		%\movie[width=10cm,height=7cm,showcontrols=true]{\includegraphics[width=10cm, height=7cm]{pompe_thumbnail.png}}{pompe_trimmed.mp4}
 		\footnotetext[2]{\tiny\cite{lee2018harnessing}}
 	\end{frame}
 
-	%%% EXPLAIN NSSE SURVEY A BIT
-	%%% WHEN YOU TALK MENTION THAT THEY DID THIS SURVEY AFTER PLAYING THE GAME IN CLASS
-	\begin{frame}{There is Variability in Synthetic Lethal Interactions Depending on Cancer Type}
-		
-		\textbf{\color{blue}Pan-Cancer Analysis:} Analysis of multiple types of cancer simultaneously, aims to identify commonalities shared across different types
-		
-		
-		\textbf{\color{blue}Cancer-Specific Analysis:} Analysis of individual cancer types to better understand the variation within a specific cancer type \vspace{1cm}
-		
-		\begin{itemize}
-			\item Pan-cancer analyses may overlook cancer-specific differences
-			\item Availability of datasets for all cancer types varies, this may limit statistical power of pan-cancer analyses
-		\end{itemize}
-		
-	\end{frame}
-
-	%%%%RESULTS BEGIN HERE
-	\section{Results}
-	
-	\begin{frame}{Sex Differences Add an Additional Layer of Complexity}
+	\begin{frame}{Recall: Sex Differences Add an Additional Layer of Complexity}
 		Human sex differences are mainly caused by;
 		\begin{enumerate}
 			\item Gonadal hormone secretions
 			\item Genes located on the sex chromosomes (X and Y) \newline
 		\end{enumerate}
-	This leads to differences in the frequency of certain cancer types and the efficacy of treatments in males and females
-	\end{frame}
-
-	\begin{frame}{Sex Differences Add an Additional Layer of Complexity}
-		\centering
-		\includegraphics[width=6cm,height=7cm]{sex.png}
-		\footnotetext[6]{\tiny\cite{oliva2020impact}}
+		This leads to differences in the frequency of certain cancer types and the efficacy of treatments in males and females
 	\end{frame}
 
 	\begin{frame}{The Objective}
 		\begin{center}
-		%\includegraphics[width=11cm, height=6cm]{types_of_courses_taken.jpg}
-		Can we build sex-specific synthetic lethality networks for various cancer types? \newline
-		
-		More specifically, we are trying to elucidate the differences in synthetic lethal interactions between males and females using a network based approach.
+			%\includegraphics[width=11cm, height=6cm]{types_of_courses_taken.jpg}
+			Can we build sex-specific synthetic lethality networks for various cancer types? \newline
+			
+			More specifically, we are trying to elucidate the differences in synthetic lethal interactions between males and females using a network based approach.
 		\end{center}
 	\end{frame}
+
+	%%%%% APPRACH SECTION BEGINS HERE, 2 SLIDES
+	\section{Materials \& Methods}
+	
+	\begin{frame}{Overall Project Workflow}
+		content...
+	\end{frame}
+
+	\begin{frame}{Selection of TCGA Cancer Types}
+		content...
+	\end{frame}
+
+
+	%%%%RESULTS BEGIN HERE
+	\section{Results}
+
+	
 
 \end{document}

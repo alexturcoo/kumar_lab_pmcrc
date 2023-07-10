@@ -2345,25 +2345,11 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">ABC1.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">nijman2011synthetic</bcf:citekey>
-    <bcf:citekey order="2">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="3">nijman2011synthetic</bcf:citekey>
-    <bcf:citekey order="3">shen2018synthetic</bcf:citekey>
-    <bcf:citekey order="4">nijman2011synthetic</bcf:citekey>
-    <bcf:citekey order="4">shen2018synthetic</bcf:citekey>
+    <bcf:citekey order="1">lee2018harnessing</bcf:citekey>
+    <bcf:citekey order="2">o2015targeting</bcf:citekey>
+    <bcf:citekey order="3">lee2018harnessing</bcf:citekey>
+    <bcf:citekey order="4">lee2018harnessing</bcf:citekey>
     <bcf:citekey order="5">o2015targeting</bcf:citekey>
-    <bcf:citekey order="6">cheng2021synthetic</bcf:citekey>
-    <bcf:citekey order="7">cheng2021synthetic</bcf:citekey>
-    <bcf:citekey order="8">cheng2021synthetic</bcf:citekey>
-    <bcf:citekey order="9">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="10">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="11">oliva2020impact</bcf:citekey>
-    <bcf:citekey order="12">nijman2011synthetic</bcf:citekey>
-    <bcf:citekey order="13">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="14">shen2018synthetic</bcf:citekey>
-    <bcf:citekey order="15">o2015targeting</bcf:citekey>
-    <bcf:citekey order="16">cheng2021synthetic</bcf:citekey>
-    <bcf:citekey order="17">oliva2020impact</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

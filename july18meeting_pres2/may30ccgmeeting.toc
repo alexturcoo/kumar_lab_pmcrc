@@ -1,4 +1,2 @@
 \beamer@sectionintoc {1}{Introduction}{1}{0}{1}
-\beamer@sectionintoc {2}{Background}{2}{0}{2}
-\beamer@sectionintoc {3}{Approaches}{9}{0}{3}
-\beamer@sectionintoc {4}{Results}{14}{0}{4}
+\beamer@sectionintoc {2}{Materials \& Methods}{7}{0}{2}
