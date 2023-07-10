@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'may30ccgmeeting.blg'
+[40] biber:340> INFO - === Mon May 29, 2023, 15:42:20
+[48] Biber.pm:418> INFO - Reading 'may30ccgmeeting.bcf'
+[86] Biber.pm:972> INFO - Found 6 citekeys in bib section 0
+[94] Biber.pm:4383> INFO - Processing section 0
+[100] Biber.pm:4574> INFO - Looking for bibtex file 'ABC1.bib' for section 0
+[101] bibtex.pm:1713> INFO - LaTeX decoding ...
+[106] bibtex.pm:1518> INFO - Found BibTeX data source 'ABC1.bib'
+[159] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[159] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[159] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[159] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[163] bbl.pm:654> INFO - Writing 'may30ccgmeeting.bbl' with encoding 'UTF-8'
+[168] bbl.pm:757> INFO - Output to may30ccgmeeting.bbl
