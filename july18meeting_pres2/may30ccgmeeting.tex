@@ -207,24 +207,25 @@ fill=green!30]
 	\begin{frame}{Selection of TCGA Cancer Types}
 			\begin{columns}
 				\begin{column}{0.45\textwidth}
-					\includegraphics[width=5cm, height=8cm]{img1.png}
+					\includegraphics[width=5cm, height=8cm]{img3.png}
 				\end{column}
 				\begin{column}{0.5\textwidth}
 					\begin{itemize}
 						\item There is a lack of healthy tissue RNA-seq samples in the TCGA database (12 cancers with more than 10 pairs in M and F)
+						\item Raw count pan-cancer matrices created with 12 remaining TCGA cancer types (BLCA, COAD, ESCA, HNSC, KICH, KIRC, KIRP, LIHC, LUAD, LUSC, STAD, THCA)
 					\end{itemize}
 				\end{column}
 			\end{columns}			
-		
-		\includegraphics[width=5cm, height=8cm]{img1.png}
 	\end{frame}
 
-	\begin{frame}{Creating Pan-Cancer Expression Matrices}
-		content...
+	\begin{frame}{Creating and Pre-Filtering Pan-Cancer Expression Matrices}
+		\begin{itemize}
+			\item For each gene, if expression is $>$ 90th quantile of overall expression in AT LEAST 1 sample, we keep it, otherwise we filter it out
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}{Normalizing Pan-Cancer Expression Matrices}
-		content...
+		\includegraphics{all_cancers-M_before_and_after_normalization_v.tiff}
 	\end{frame}
 
 	%%%%RESULTS BEGIN HERE
