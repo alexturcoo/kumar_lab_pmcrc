@@ -1,0 +1,145 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{lee2018harnessing}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=dd75de2cd7f952a8f31af93e42d767c5}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Joo\bibnamedelima Sang},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dbf6ef826b64db3b5bb579fc2ecc2825}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Avinash},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=191bc988b19b68792642a1545d28084e}{%
+           family={Jerby-Arnon},
+           familyi={J\bibinithyphendelim A\bibinitperiod},
+           given={Livnat},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5db7d78ae57fa970a0dbb26485642f2c}{%
+           family={Arafeh},
+           familyi={A\bibinitperiod},
+           given={Rand},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e4db9d72808b9c280e0ce7bd071c2ec7}{%
+           family={Auslander},
+           familyi={A\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe2e79acfc3c57acf8a6d64247971f50}{%
+           family={Davidson},
+           familyi={D\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9ac238337ff117fd859740b7cccc9ca}{%
+           family={McGarry},
+           familyi={M\bibinitperiod},
+           given={Lynn},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8b3351fad72b45066b81a396f9823c4}{%
+           family={James},
+           familyi={J\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=002b5042e054b90951b7011885234c29}{%
+           family={Amzallag},
+           familyi={A\bibinitperiod},
+           given={Arnaud},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59ab1aa13ec70c52f75ca1df1d580f92}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Seung\bibnamedelima Gu},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{d4b40dcf53d9bca1c399d508f269fa25}
+      \strng{fullhash}{228d78cc13f1c7117c635a1262a540c5}
+      \strng{bibnamehash}{d4b40dcf53d9bca1c399d508f269fa25}
+      \strng{authorbibnamehash}{d4b40dcf53d9bca1c399d508f269fa25}
+      \strng{authornamehash}{d4b40dcf53d9bca1c399d508f269fa25}
+      \strng{authorfullhash}{228d78cc13f1c7117c635a1262a540c5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature communications}
+      \field{number}{1}
+      \field{title}{Harnessing synthetic lethality to predict the response to cancer treatment}
+      \field{volume}{9}
+      \field{year}{2018}
+      \field{pages}{2546}
+      \range{pages}{1}
+    \endentry
+    \entry{o2015targeting}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e34d9e7b5feeb39f17185b8503d010c1}{%
+           family={O’Connor},
+           familyi={O\bibinitperiod},
+           given={Mark\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e34d9e7b5feeb39f17185b8503d010c1}
+      \strng{fullhash}{e34d9e7b5feeb39f17185b8503d010c1}
+      \strng{bibnamehash}{e34d9e7b5feeb39f17185b8503d010c1}
+      \strng{authorbibnamehash}{e34d9e7b5feeb39f17185b8503d010c1}
+      \strng{authornamehash}{e34d9e7b5feeb39f17185b8503d010c1}
+      \strng{authorfullhash}{e34d9e7b5feeb39f17185b8503d010c1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Molecular cell}
+      \field{number}{4}
+      \field{title}{Targeting the DNA damage response in cancer}
+      \field{volume}{60}
+      \field{year}{2015}
+      \field{pages}{547\bibrangedash 560}
+      \range{pages}{14}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -223,11 +223,21 @@ fill=green!30]
 	\begin{frame}{Creating and Pre-Filtering Pan-Cancer Expression Matrices}
 		\begin{itemize}
 			\item For each gene, if expression is $>$ 90th quantile of overall expression in AT LEAST 1 sample, we keep it, otherwise we filter it out
+			\item We reduce the amount of genes with extremely low expression, thereby reducing noise and improving sensitivity to detect differentially expressed genes (genes with weak expression are more susceptible to technical noise arising from library size, library composition, etc)
 		\end{itemize}
 	\end{frame}
 
+	%Both samples are sequenced at the same depth - sample A has 5 genes expressed at same level, Sample B has the same genes as sample A plus two highly expressed genes that take up 50% of the reads
+	\begin{frame}{Normalization for RNA-seq Data Analysis}
+		\centering Required to identify genes that are differentially expressed due to some biological phenomena and not due to technical variation
+	\end{frame}
+
 	\begin{frame}{Normalizing Pan-Cancer Expression Matrices}
-		\includegraphics[width=20cm, height=10cm]{all_cancers-F_before_and_after_normalization_v.jpg}
+		\includegraphics[width=12cm, height=8cm]{all_cancers-F_before_and_after_normalization_v.png}
+	\end{frame}
+
+	\begin{frame}
+		content...
 	\end{frame}
 
 	%%%%RESULTS BEGIN HERE
