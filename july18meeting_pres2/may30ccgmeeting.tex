@@ -253,11 +253,32 @@ fill=green!30]
 		Within each cancer type, the observed variation between healthy and tumor tissue samples is unlikely to have occurred by chance alone (Acceptions: Males: ESCA (LOW SAMPLE SIZE), Females: BLCA, ESCA (LOW SAMPLE SIZE), STAD (LOW SAMPLE SIZE))
 	\end{frame}
 
+
 	\section{Differential Expression}
-	\begin{frame}{Finding Differentially Expressed Genes}
+	%Our data do not fit the Poisson distribution
+	%(i.e. Poisson will underestimate variability leading to an increase in false positive DE genes).
+	\begin{frame}{Why does DESeq2 Use the Negative Binomial Distribution}
 		\begin{itemize}
 			\item Reads are count based hence they cannot be normally distributed
+			\item Variance tends to be greater than the mean, especially for genes with large mean expression values
+			\item  We need to account for this increase in variance using the Negative Binomial model 
 		\end{itemize}
+	\centering \includegraphics[width=5.5cm, height=5.5cm]{all_cancersmean_vs_variance_male.png}
+	\end{frame}
+
+	\begin{frame}{DESeq2 Accounts for Increased Variance}
+		\begin{enumerate}
+			\item Estimate gene-wise dispersions: captures biological variability in gene expression across samples
+			\item Fit negative binomial GLM to count data: This model incorporates the estimated gene-wise dispersions as a parameter to account for variability in the data
+			\item Use fitted GLM to identify differentially expressed genes \newline
+		\end{enumerate}
+		The use of linear models allows for more complex designs \newline \newline
+		$design = ~cancertype + condition$ \newline \newline
+		This tells DESeq2 to test the effect of condition while controlling for the effect of cancer type
+	\end{frame}
+
+	\begin{frame}{Finding Differentially Expressed Genes (DESeq2)}
+		
 	\end{frame}
 
 	
