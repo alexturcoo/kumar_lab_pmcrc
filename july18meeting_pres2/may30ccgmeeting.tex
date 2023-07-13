@@ -206,7 +206,7 @@ fill=green!30]
 		\includegraphics[width=12cm, height=5.2cm]{img2.png}
 	\end{frame}
 
-	\section{Building Expression Matrices and Normalization}
+	\section{Data Collection}
 	\begin{frame}{Selection of TCGA Cancer Types}
 			\begin{columns}
 				\begin{column}{0.45\textwidth}
@@ -229,6 +229,7 @@ fill=green!30]
 	\end{frame}
 
 	%Both samples are sequenced at the same depth - sample A has 5 genes expressed at same level, Sample B has the same genes as sample A plus two highly expressed genes that take up 50% of the reads
+	\section{Data Processing}
 	\begin{frame}{Normalization for RNA-seq Data Analysis}
 		\centering Required to identify genes that are differentially expressed due to some biological phenomena and not due to technical variation
 		
@@ -240,8 +241,23 @@ fill=green!30]
 	\end{frame}
 
 	\section{Data Processing}
-	\begin{frame}{}
-		content...
+	\begin{frame}{Normal and Tumor Tissue Differ ACROSS 12 Cancer Types}
+		\includegraphics[width=12cm, height=6cm]{all_cancerspca_analysis_condition_0.9.png}
+		
+		Across all 12 cancer types, the observed variation between healthy and tumor tissue samples is unlikely to have occurred by chance alone (NPManova p-val = 0.0001)
+	\end{frame}
+
+	\begin{frame}{Normal and Tumor Tissue Differ WITHIN each Cancer}
+		\includegraphics[width=12cm, height=6cm]{all_cancerspca_analysis_condition_cancertype_0.9.png}
+		
+		Within each cancer type, the observed variation between healthy and tumor tissue samples is unlikely to have occurred by chance alone (Acceptions: Males: ESCA (LOW SAMPLE SIZE), Females: BLCA, ESCA (LOW SAMPLE SIZE), STAD (LOW SAMPLE SIZE))
+	\end{frame}
+
+	\section{Differential Expression}
+	\begin{frame}{Finding Differentially Expressed Genes}
+		\begin{itemize}
+			\item Reads are count based hence they cannot be normally distributed
+		\end{itemize}
 	\end{frame}
 
 	
