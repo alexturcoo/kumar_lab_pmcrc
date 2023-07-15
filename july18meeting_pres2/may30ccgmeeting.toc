@@ -4,3 +4,5 @@
 \beamer@sectionintoc {4}{Data Processing}{10}{0}{4}
 \beamer@sectionintoc {5}{Data Processing}{12}{0}{5}
 \beamer@sectionintoc {6}{Differential Expression}{14}{0}{6}
+\beamer@sectionintoc {7}{Synthetic Lethality}{20}{0}{7}
+\beamer@sectionintoc {8}{Supplementary Slides}{21}{0}{8}

@@ -54,10 +54,20 @@
 \headcommand {\beamer@framepages {18}{18}}
 \headcommand {\slideentry {6}{0}{6}{19/19}{}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {6}{0}{7}{20/20}{}{0}}
+\headcommand {\beamer@sectionpages {14}{19}}
+\headcommand {\beamer@subsectionpages {14}{19}}
+\headcommand {\sectionentry {7}{Synthetic Lethality}{20}{Synthetic Lethality}{0}}
+\headcommand {\slideentry {7}{0}{1}{20/20}{}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@partpages {1}{20}}
-\headcommand {\beamer@subsectionpages {14}{20}}
-\headcommand {\beamer@sectionpages {14}{20}}
-\headcommand {\beamer@documentpages {20}}
-\headcommand {\gdef \inserttotalframenumber {20}}
+\headcommand {\beamer@sectionpages {20}{20}}
+\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\sectionentry {8}{Supplementary Slides}{21}{Supplementary Slides}{0}}
+\headcommand {\slideentry {8}{0}{1}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {8}{0}{2}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@partpages {1}{22}}
+\headcommand {\beamer@subsectionpages {21}{22}}
+\headcommand {\beamer@sectionpages {21}{22}}
+\headcommand {\beamer@documentpages {22}}
+\headcommand {\gdef \inserttotalframenumber {22}}
