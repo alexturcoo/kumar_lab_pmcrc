@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  15 JUL 2023 00:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  15 JUL 2023 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1498,7 +1498,37 @@ Package pdftex.def Info: all_cancers-F_before_and_after_normalization_hist.png
 (pdftex.def)             Requested size: 341.43787pt x 199.17207pt.
  [21
 
- <./all_cancers-F_before_and_after_normalization_hist.png>] [22
+ <./all_cancers-F_before_and_after_normalization_hist.png>]
+<all_cancerspairedboxplot_cancertype_0.9_lcal1male.png, id=275, 1951.29pt x 195
+1.29pt>
+File: all_cancerspairedboxplot_cancertype_0.9_lcal1male.png Graphic file (type 
+png)
+<use all_cancerspairedboxplot_cancertype_0.9_lcal1male.png>
+Package pdftex.def Info: all_cancerspairedboxplot_cancertype_0.9_lcal1male.png 
+ used on input line 313.
+(pdftex.def)             Requested size: 256.05855pt x 227.59436pt.
+
+Overfull \vbox (8.92375pt too high) detected at line 313
+ []
+
+[22
+
+ <./all_cancerspairedboxplot_cancertype_0.9_lcal1male.png>]
+<all_cancerspairedboxplot_cancertype_0.9_lcal1female.png, id=283, 1951.29pt x 1
+951.29pt>
+File: all_cancerspairedboxplot_cancertype_0.9_lcal1female.png Graphic file (typ
+e png)
+<use all_cancerspairedboxplot_cancertype_0.9_lcal1female.png>
+Package pdftex.def Info: all_cancerspairedboxplot_cancertype_0.9_lcal1female.pn
+g  used on input line 317.
+(pdftex.def)             Requested size: 256.05855pt x 227.59436pt.
+
+Overfull \vbox (8.92375pt too high) detected at line 317
+ []
+
+[23
+
+ <./all_cancerspairedboxplot_cancertype_0.9_lcal1female.png>] [24
 
 ]
 \tf@nav=\write7
@@ -1519,10 +1549,10 @@ Package logreq Info: Writing requests to 'may30ccgmeeting.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36394 strings out of 478287
- 760643 string characters out of 5849290
- 1414769 words of memory out of 5000000
- 53857 multiletter control sequences out of 15000+600000
+ 36416 strings out of 478287
+ 761531 string characters out of 5849290
+ 1414770 words of memory out of 5000000
+ 53873 multiletter control sequences out of 15000+600000
  478821 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,748b,1354s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1539,10 +1569,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive
 -dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msam10.pfb>
-Output written on may30ccgmeeting.pdf (22 pages, 6552851 bytes).
+Output written on may30ccgmeeting.pdf (24 pages, 9226419 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 233 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 329 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 245 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 
