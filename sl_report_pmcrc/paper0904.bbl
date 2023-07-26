@@ -62,6 +62,7 @@
       \field{title}{Synthetic lethality across normal tissues is strongly associated with cancer risk, onset, and tumor suppressor specificity}
       \field{volume}{7}
       \field{year}{2021}
+      \true{nocite}
       \field{pages}{eabc2100}
       \range{pages}{-1}
     \endentry
@@ -144,6 +145,48 @@
       \field{pages}{2487\bibrangedash 2502}
       \range{pages}{16}
     \endentry
+    \entry{love2014moderated}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8d480d3f68226ebba9e9a763795e86f7}{%
+           family={Love},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima I},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=06840ce5f3ec7137c6c49ee1605b903c}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=62831e4feef4a1127074be90f88b62f4}{%
+           family={Anders},
+           familyi={A\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {BioMed Central}%
+      }
+      \strng{namehash}{f6975c6e9a06642dae06aed5192db777}
+      \strng{fullhash}{37c7adcb34d131b76586cfac3ab6d8f8}
+      \strng{bibnamehash}{37c7adcb34d131b76586cfac3ab6d8f8}
+      \strng{authorbibnamehash}{37c7adcb34d131b76586cfac3ab6d8f8}
+      \strng{authornamehash}{f6975c6e9a06642dae06aed5192db777}
+      \strng{authorfullhash}{37c7adcb34d131b76586cfac3ab6d8f8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Genome biology}
+      \field{number}{12}
+      \field{title}{Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2}
+      \field{volume}{15}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 21}
+      \range{pages}{21}
+    \endentry
     \entry{shen2018synthetic}{article}{}
       \name{author}{2}{}{%
         {{hash=2a2c5409d1bc9529e849f7ea3d204fc5}{%
@@ -177,6 +220,7 @@
       \field{title}{Synthetic lethal networks for precision oncology: promises and pitfalls}
       \field{volume}{430}
       \field{year}{2018}
+      \true{nocite}
       \field{pages}{2900\bibrangedash 2912}
       \range{pages}{13}
     \endentry

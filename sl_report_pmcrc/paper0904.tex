@@ -290,6 +290,8 @@
 	\subsection{Pre-filtering and Normalization of Raw RNA-seq Count Data}
 	
 	Raw count gene expression matrices for males and females were pre-filtered to remove genes unlikely to exhibit differential expression. For each matrix, we calculated the 90th quantile of overall gene expression as a threshold. For each gene in the matrix, we checked to see whether its expression was greater than the threshold in at least 1 sample. We removed genes where no samples showed an expression value greater than the quantile threshold. 
+	
+	The pre-filtered matrices were then normalized using the DESeq2 package in R \citep{love2014moderated}. RNA-seq data must be normalized in order to account for factors that prevent the direct comparison of expression measures. The DESeq2 R package employs a median of ratios normalization method to account for the inherent biases associated with RNA-seq data. 
 
 	\subsection{Data Quality Assessment (PCA, NPManova)}
 	
