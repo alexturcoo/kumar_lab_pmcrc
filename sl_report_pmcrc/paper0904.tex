@@ -291,7 +291,15 @@
 	
 	Raw count gene expression matrices for males and females were pre-filtered to remove genes unlikely to exhibit differential expression. For each matrix, we calculated the 90th quantile of overall gene expression as a threshold. For each gene in the matrix, we checked to see whether its expression was greater than the threshold in at least 1 sample. We removed genes where no samples showed an expression value greater than the quantile threshold. 
 	
-	The pre-filtered matrices were then normalized using the DESeq2 package in R \citep{love2014moderated}. RNA-seq data must be normalized in order to account for factors that prevent the direct comparison of expression measures. The DESeq2 R package employs a median of ratios normalization method to account for the inherent biases associated with RNA-seq data. 
+	The pre-filtered matrices were then normalized using the DESeq2 package in R \citep{love2014moderated}. RNA-seq data must be normalized in order to account for factors that prevent the direct comparison of expression measures. The DESeq2 R package employs a median of ratios normalization method to account for the inherent biases associated with RNA-seq data. Both sequencing depth (\# of reads generated per sample) and RNA composition (differences in composition of RNA molecules in a sample) are factors accounted for by the DESeq2 package. Raw counts are divided by size factors determined for each sample by computing the median ratio of gene counts relative to the geometric gene calculated per gene \citep{love2014moderated}. \figref{fig:1} shows the effects of normalization. 
+	
+	\begin{figure}[!h]
+		\centering	
+		\includegraphics[width=8.5cm, height=6cm]{normalied_male.png}\hfill
+		\includegraphics[width=8.5cm, height=6cm]{normalied_female.png}
+		\caption{Boxplots highlighting the distribution of raw RNA-seq data (top row) vs normalized RNA-seq data (bottom row) in males (left) and females (right) across normal tissue and tumor tissue samples from 12 TCGA cancer types.}
+		\label{fig:1}
+	\end{figure}
 
 	\subsection{Data Quality Assessment (PCA, NPManova)}
 	
