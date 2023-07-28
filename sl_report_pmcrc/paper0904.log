@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  26 JUL 2023 14:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  28 JUL 2023 13:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1489,13 +1489,13 @@ File: normalied_female.png Graphic file (type png)
 <use normalied_female.png>
 Package pdftex.def Info: normalied_female.png  used on input line 299.
 (pdftex.def)             Requested size: 241.83307pt x 170.71672pt.
- [6 <./normalied_male.png> <./normalied_female.png>]
+ [6 <./normalied_male.png> <./normalied_female.png>] [7]
 
 Package biblatex Warning: 'sorting' option to '\printbibliography' is no longer
  supported.
 (biblatex)                Please use 'sorting' option to '\newrefcontext'.
 
-[7
+[8
 
 ] (./paper0904.aux)
 Package rerunfilecheck Info: File `paper0904.out' has not changed.
@@ -1505,9 +1505,9 @@ Package logreq Info: Writing requests to 'paper0904.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45814 strings out of 478287
- 1039170 string characters out of 5849290
- 1835572 words of memory out of 5000000
+ 45815 strings out of 478287
+ 1039176 string characters out of 5849290
+ 1835619 words of memory out of 5000000
  63269 multiletter control sequences out of 15000+600000
  504915 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1515,10 +1515,10 @@ Here is how much of TeX's memory you used:
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb>
-Output written on paper0904.pdf (7 pages, 2430863 bytes).
+Output written on paper0904.pdf (8 pages, 2431312 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
