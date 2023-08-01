@@ -303,12 +303,32 @@
 
 	\subsection{Data Quality Assessment (PCA, NPManova)}
 	
-	Once expression matrices were normalized
+	Once expression matrices were normalized, we performed principle component analysis (PCA) on the normalized counts to gain insights into potential factors contributing to the overall variance. Gene expression data is complex due to large number of variables (genes) present. PCA is a technique used to reduce dimensionality by transforming the data to a new set of variables (principle components) that summarize features of the data \citep{yeung2001principal}. In the context of this study, PCA is useful because it can take expression information from many genes, and reduce it down to fewer dimensions, making the data easier to explore. Using PCA, we explored the effects of tissue condition (normal vs tumor), and cancer type on gene expression. 
+
+	\begin{figure}[!h]
+		\centering	
+		\includegraphics[width=\textwidth,height=9cm]{all_cancerspca_analysis_condition_0.9.png}
+		\caption{PCA plot highlighting the effect of tissue condition (normal vs tumor) on gene expression in males (left) and females (right) across 12 cancer types. Normal tissue samples are shown in red, tumor tissue samples are shown in blue.}
+		\label{fig:2}
+	\end{figure}
+
+	\figref{fig:2} shows the effects of tissue condition (normal vs tumor) on gene expression across the 12 cancer types that were considered in this study. In both males and females, clusters based on tissue condition were present, however there was more variability in clusters of tumor tissue samples compared to clusters of normal tissue samples. \figref{fig:3} shows the effects of both tissue condition and cancer type on gene expression.
+	
+	\begin{figure}[!h]
+		\centering	
+		\includegraphics[width=\textwidth,height=9cm]{all_cancerspca_analysis_condition_cancertype_0.9.png}
+		\caption{PCA plot highlighting the effect of tissue condition (normal vs tumor) and cancer type on gene expression in males (left) and females (right) across 12 cancer types.}
+		\label{fig:3}
+	\end{figure}
+	
+	When we added cancer type as a factor, we obtained much clearer clusters in the PCA plot, suggesting that cancer type contributes to the variation in gene expression. 
+	
+	
 	
 
 	\subsection{Differential Gene Expression Analysis with DESeq2}
 
-%	\subsection{One Sample T-Test for Probability of Acceptance}
+	\subsection{Fishers Exact Test For Synthetic Lethality}
 
 \section{Results}
 
@@ -327,6 +347,102 @@
 %	\subsection{Conclusion}
 
 \clearpage\newpage
+\section{Code \& Supplementary Materials}
+
+The following files listed are located on the Graham Cluster at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc}
+
+Files used to obtain and format data can be found at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/raw\_data/scripts}
+\begin{itemize}
+\item\texttt{tcgabiolinks\_rawcount\_rnaseq\_download\_female.R}
+
+This script utilizes the tcgabiolinks package in R to retrieve gene expression data (RNA-seq) for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from females of a specific cancer type. For each cancer type, a raw gene expression matrix is produced with genes as rows, and samples as columns. DO ON LOGIN NODE, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
+
+\item\texttt{tcgabiolinks\_rawcount\_rnaseq\_download\_female.R}
+
+This script utilizes the tcgabiolinks package in R to retrieve gene expression data (RNA-seq) for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from males of a specific cancer type. For each cancer type, a raw gene expression matrix is produced with genes as rows, and samples as columns.
+
+\item\texttt{tcgabiolinks\_rawcount\_clinical\_download\_female.R}
+
+This script utilizes the tcgabiolinks package in R to retrieve clinical metadata for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from females of a specific cancer type. For each cancer type, a SummarizedExperiment (R object) is produced and clinical information such as age at diagnosis and tissue of origin can be extracted.
+
+\item\texttt{tcgabiolinks\_rawcount\_clinical\_download\_male.R}
+
+This script utilizes the tcgabiolinks package in R to retrieve clinical metadata for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from males of a specific cancer type. For each cancer type, a SummarizedExperiment (R object) is produced and clinical information such as age at diagnosis and tissue of origin can be extracted.
+
+\item\texttt{extract\_clinical\_data\_females.R}
+
+This script extracts the clinical information of interest from the SummarizedExperiment (R object). We obtain barcode, tissue, and age information for females.
+
+\item\texttt{extract\_clinical\_data\_males.R}
+
+This script extracts the clinical information of interest from the SummarizedExperiment (R object). We obtain barcode, tissue, and age information for males. \newline
+
+\item\texttt{extract\_both\_tp\_nt\_samples\_females.R}
+
+This script 
+
+\item\texttt{extract\_both\_tp\_nt\_samples\_females.R}
+
+This script 
+
+\item\texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_females.R}
+
+This script takes the gene expression matrices (with matched NT-TP samples) for females of each cancer type and merges them to create a raw pan-cancer matrix. Rows are genes and columns are samples. Samples from every cancer type utilized in the study are present in this matrix.
+
+\item\texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_males.R}
+
+This script takes the gene expression matrices (with matched NT-TP samples) for males of each cancer type and merges them to create a raw pan-cancer matrix. Rows are genes and columns are samples. Samples from every cancer type utilized in the study are present in this matrix.
+
+
+
+\end{itemize}
+
+Files used to process and visualize data can be found at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/processed\_data/scripts}
+
+\begin{itemize}
+	\item\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_female.R}
+	
+	This script 
+	
+	\item\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_male.R}
+	
+	This script 
+	
+	\item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_female.R}
+	
+	This script 
+	
+	\item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_male.R}
+	
+	This script 
+	
+	\item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_female.R}
+	
+	This script 
+	
+	\item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_male.R}
+	
+	This script 
+	
+	\item\texttt{dge\_analysis\_deseq2.R}
+	
+	This script 
+	
+	\item\texttt{gsea\_analysis\_postdeseq.R}
+	
+	This script
+	
+	\item\texttt{npmanova.R}
+	
+	This script
+	
+	\item\texttt{npmanova.R}
+	
+	This script
+	
+\end{itemize}
+
+\clearpage\newpage
 \section{References}
 
 %%%FIGURES%%%%%
@@ -335,8 +451,6 @@
 \nocite{*}
 \printbibliography[heading=none, sorting=nyt]
 \newpage
-
-%The following files included these appendices are located at \texttt{/home/alext/scratch/abcmcmc-thesis4c12}
 
 %\section{Appendix 1: Low Complexity Region Evolution Simulator}
 %\texttt{/home/alext/scratch/abcmcmc-thesis4c12/mutations\_2\_BG\_vecs.cpp}

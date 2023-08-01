@@ -183,7 +183,6 @@
       \field{title}{Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2}
       \field{volume}{15}
       \field{year}{2014}
-      \true{nocite}
       \field{pages}{1\bibrangedash 21}
       \range{pages}{21}
     \endentry
@@ -260,6 +259,43 @@
       \true{nocite}
       \field{pages}{1993\bibrangedash 2002}
       \range{pages}{10}
+    \endentry
+    \entry{yeung2001principal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=24930ae928d08cb600c535ec08805322}{%
+           family={Yeung},
+           familyi={Y\bibinitperiod},
+           given={Ka\bibnamedelima Yee},
+           giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=0399466e2f0ef75a67fe2fcacc604103}{%
+           family={Ruzzo},
+           familyi={R\bibinitperiod},
+           given={Walter\bibnamedelima L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{f368a97833de93a706e261d802ece821}
+      \strng{fullhash}{f368a97833de93a706e261d802ece821}
+      \strng{bibnamehash}{f368a97833de93a706e261d802ece821}
+      \strng{authorbibnamehash}{f368a97833de93a706e261d802ece821}
+      \strng{authornamehash}{f368a97833de93a706e261d802ece821}
+      \strng{authorfullhash}{f368a97833de93a706e261d802ece821}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics}
+      \field{number}{9}
+      \field{title}{Principal component analysis for clustering gene expression data}
+      \field{volume}{17}
+      \field{year}{2001}
+      \true{nocite}
+      \field{pages}{763\bibrangedash 774}
+      \range{pages}{12}
     \endentry
   \enddatalist
 \endrefsection
