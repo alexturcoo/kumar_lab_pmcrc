@@ -347,45 +347,62 @@
 %	\subsection{Conclusion}
 
 \clearpage\newpage
-\section{Code \& Supplementary Materials}
+\section{Code \& Supplementary Materials (Transition Document)}
 
-The following files listed are located on the Graham Cluster at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc}
+All of the following files listed are located on the Graham Cluster at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc}
 
-Files used to obtain and format data can be found at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/raw\_data/scripts}
-\begin{itemize}
-\item\texttt{tcgabiolinks\_rawcount\_rnaseq\_download\_female.R}
+Scripts used to obtain and format data can be found at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/raw\_data/scripts}
 
-This script utilizes the tcgabiolinks package in R to retrieve gene expression data (RNA-seq) for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from females of a specific cancer type. For each cancer type, a raw gene expression matrix is produced with genes as rows, and samples as columns. DO ON LOGIN NODE, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
+Matching executables for these scripts can be found at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/raw\_data/executions}
 
-\item\texttt{tcgabiolinks\_rawcount\_rnaseq\_download\_female.R}
+NOTE: THE NUMBERED ORDER THESE SCRIPTS APPEAR IN MATCHES THE ORDER IN WHICH THEY WERE RUN
 
-This script utilizes the tcgabiolinks package in R to retrieve gene expression data (RNA-seq) for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from males of a specific cancer type. For each cancer type, a raw gene expression matrix is produced with genes as rows, and samples as columns.
+\begin{enumerate}
+\item\texttt{tcgabiolinks\_rawcount\_rnaseq\_download\_female.R} - SCRIPT
+
+This script utilizes the tcgabiolinks package in R to retrieve gene expression data (RNA-seq) for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from females of a specific cancer type. For each cancer type, a raw gene expression matrix is produced with genes as rows, and samples as columns. This is the first script run in the workflow in order to download the TCGA rna-seq data for the cancer types we were interested in.
+
+DO ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
+
+\item\texttt{tcgabiolinks\_rawcount\_rnaseq\_download\_male.R} - SCRIPT
+
+This script utilizes the tcgabiolinks package in R to retrieve gene expression data (RNA-seq) for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from males of a specific cancer type. For each cancer type, a raw gene expression matrix is produced with genes as rows, and samples as columns. This is the first script run in the workflow in order to download the TCGA rna-seq data for the cancer types we were interested in.
+
+DO ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 
 \item\texttt{tcgabiolinks\_rawcount\_clinical\_download\_female.R}
 
 This script utilizes the tcgabiolinks package in R to retrieve clinical metadata for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from females of a specific cancer type. For each cancer type, a SummarizedExperiment (R object) is produced and clinical information such as age at diagnosis and tissue of origin can be extracted.
 
+DO ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
+
 \item\texttt{tcgabiolinks\_rawcount\_clinical\_download\_male.R}
 
 This script utilizes the tcgabiolinks package in R to retrieve clinical metadata for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from males of a specific cancer type. For each cancer type, a SummarizedExperiment (R object) is produced and clinical information such as age at diagnosis and tissue of origin can be extracted.
 
-\item\texttt{extract\_clinical\_data\_females.R}
+DO ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
+\item\texttt{extract\_clinical\_data\_females.R} - SCRIPT\newline
+\texttt{extract\_clinical\_data\_females.sh} - EXECUTABLE
 
 This script extracts the clinical information of interest from the SummarizedExperiment (R object). We obtain barcode, tissue, and age information for females.
 
-\item\texttt{extract\_clinical\_data\_males.R}
+\item\texttt{extract\_clinical\_data\_males.R}- SCRIPT\newline
+\texttt{extract\_clinical\_data\_males.sh} - EXECUTABLE
 
-This script extracts the clinical information of interest from the SummarizedExperiment (R object). We obtain barcode, tissue, and age information for males. \newline
+This script extracts the clinical information of interest from the SummarizedExperiment (R object). We obtain barcode, tissue, and age information for males.
 
-\item\texttt{extract\_both\_tp\_nt\_samples\_females.R}
-
-This script 
-
-\item\texttt{extract\_both\_tp\_nt\_samples\_females.R}
+\item\texttt{extract\_both\_tp\_nt\_samples\_females.R} - SCRIPT \newline
+\texttt{extract\_both\_tp\_nt\_samples\_females.sh} - EXECUTABLE
 
 This script 
 
-\item\texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_females.R}
+\item\texttt{extract\_both\_tp\_nt\_samples\_males.R} - SCRIPT \newline
+\texttt{extract\_both\_tp\_nt\_samples\_males.sh} - EXECUTABLE
+
+This script 
+
+\item\texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_females.R} - SCRIPT \newline
+\texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_females.sh} - EXECUTABLE
 
 This script takes the gene expression matrices (with matched NT-TP samples) for females of each cancer type and merges them to create a raw pan-cancer matrix. Rows are genes and columns are samples. Samples from every cancer type utilized in the study are present in this matrix.
 
@@ -393,11 +410,12 @@ This script takes the gene expression matrices (with matched NT-TP samples) for 
 
 This script takes the gene expression matrices (with matched NT-TP samples) for males of each cancer type and merges them to create a raw pan-cancer matrix. Rows are genes and columns are samples. Samples from every cancer type utilized in the study are present in this matrix.
 
+\end{enumerate}
 
+Scripts used to process and visualize data can be found at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/processed\_data/scripts}
 
-\end{itemize}
-
-Files used to process and visualize data can be found at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/processed\_data/scripts}
+Matching executables for these scripts can be found at
+\texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/processed\_data/executions}
 
 \begin{itemize}
 	\item\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_female.R}
@@ -429,10 +447,6 @@ Files used to process and visualize data can be found at \texttt{$\sim$/projects
 	This script 
 	
 	\item\texttt{gsea\_analysis\_postdeseq.R}
-	
-	This script
-	
-	\item\texttt{npmanova.R}
 	
 	This script
 	
