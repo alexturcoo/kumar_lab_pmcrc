@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  7 AUG 2023 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  7 AUG 2023 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1364,9 +1364,19 @@ Package pdftex.def Info: interactions.png  used on input line 179.
 (pdftex.def)             Requested size: 341.43787pt x 142.2676pt.
  [7
 
- <./interactions.png>] [8
+ <./interactions.png>]
+<network_interactions.png, id=191, 722.7pt x 505.89pt>
+File: network_interactions.png Graphic file (type png)
+<use network_interactions.png>
+Package pdftex.def Info: network_interactions.png  used on input line 188.
+(pdftex.def)             Requested size: 341.43344pt x 227.62523pt.
 
-] [9
+Overfull \vbox (38.03107pt too high) detected at line 188
+ []
+
+[8
+
+ <./network_interactions.png>] [9
 
 ]
 \tf@nav=\write7
@@ -1386,10 +1396,10 @@ Package logreq Info: Writing requests to 'may30ccgmeeting.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36022 strings out of 478287
- 753227 string characters out of 5849290
+ 36029 strings out of 478287
+ 753426 string characters out of 5849290
  1418648 words of memory out of 5000000
- 53537 multiletter control sequences out of 15000+600000
+ 53543 multiletter control sequences out of 15000+600000
  475419 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,748b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1401,10 +1411,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
 fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb>
-Output written on may30ccgmeeting.pdf (9 pages, 2589275 bytes).
+Output written on may30ccgmeeting.pdf (9 pages, 7975588 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
+ 250 PDF objects out of 1000 (max. 8388607)
  152 compressed objects within 2 object streams
  23 named destinations out of 1000 (max. 500000)
- 410 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 415 words of extra memory for PDF output out of 10000 (max. 10000000)
 
