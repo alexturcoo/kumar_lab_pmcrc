@@ -1,0 +1,269 @@
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+
+%Defining some colours
+\definecolor{darkred}{rgb}{0.8,0,0}
+
+% Theme choice: there a number of preset themes to choose from
+% Play around with them, Cambridge is nice for first pres
+%\usetheme{Szeged}
+\usetheme{CambridgeUS} %setting the main theme
+\usecolortheme{whale} % setting colour theme
+\usefonttheme{professionalfonts} %font theme
+\useinnertheme[shadow=true]{rounded}
+%\useoutertheme{} %outer theme
+
+%\setbeamertemplate{footline} %Remove footer line in all slides
+\setbeamertemplate{navigation symbols}{} %removes navigation symbols
+\setbeamertemplate{footline}[page number] %removes footer line, keeps pg#
+\setbeamertemplate{caption}{\insertcaption} 
+
+
+%Setting colours for boxes and captions
+\setbeamercolor{block title}{bg=blue!30, fg=black}
+\setbeamercolor{block body}{bg=blue!10}
+\setbeamercolor{frametitle}{fg=black}
+
+%%%FOR VIDEOS
+\usepackage{media9}
+\usepackage{multimedia}
+\usepackage{graphicx}
+% For the Flowchart
+%\usepackage{tikz}
+%\usetikzlibrary{shapes.geometric, arrows}
+%\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=blue!30]
+%\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+%\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+%\tikzstyle{arrow} = [thick,->,>=stealth]
+
+%%% For the Timeline
+\usepackage{xcolor}
+\usepackage{tikz} \usetikzlibrary{calc, arrows.meta, intersections, patterns, positioning, shapes.misc, fadings, through,decorations.pathreplacing}
+
+\definecolor{ColorOne}{rgb}{0.0,0.5,1.0} %Lightblue
+\definecolor{ColorTwo}{rgb}{1.0,0.6,0.4} %lightorange
+\definecolor{ColorThree}{rgb}{0.75,0.58,0.89} %lightpurple
+
+% Title page details: 
+\title[BEAP Dec 2022]{Double Trouble: Understanding Sex Differences in Synthetic Lethal interactions in Human Cancers \\~\\ Summer Wrap Up} 
+\author{Alexander Turco}
+\date{August 8, 2023}
+\logo{\includegraphics[height=0.5cm, width=3cm]{logo.png}}
+
+% Bibliography stuff
+\usepackage[natbib=true, sorting=nyt, style=authoryear-comp]{biblatex}
+\addbibresource{ABC1.bib}
+
+%Extra packages
+\usepackage{makecell}
+
+
+%For itemize
+\setbeamertemplate{itemize item}[triangle]
+
+%For Flow Chart
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{startstop} = [rectangle, 
+minimum width=6cm, 
+minimum height=1cm,
+text centered, 
+draw=black, 
+fill=blue!30]
+
+\tikzstyle{io} = [trapezium, 
+trapezium stretches=true, % A later addition
+trapezium left angle=70, 
+trapezium right angle=110, 
+minimum width=3cm, 
+minimum height=1cm, text centered, 
+draw=black, fill=blue!30]
+
+\tikzstyle{process} = [rectangle, 
+minimum width=3cm, 
+minimum height=1cm, 
+text align, 
+text width=1cm, 
+draw=black, 
+fill=orange!30]
+
+\tikzstyle{decision} = [diamond, 
+minimum width=3cm, 
+minimum height=1cm, 
+text centered, 
+draw=black, 
+fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{document}
+	
+	% For my introduction slides, there will be the slide with my title and name as well as an outline slide with the brief overview of what I will discuss.
+	% Title page frame - SLIDE 1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Introduction}
+	\begin{frame}
+		\titlepage 
+		\begin{center}
+			%\includegraphics[width=7cm, height=4cm]{cellsatwar.png}
+		\end{center}
+	\end{frame}
+	
+	% Remove logo from the next slides
+	\logo{}
+	
+	% Outline frame - SLIDE 2
+	\begin{frame}{Overview}
+		
+		\begin{center}
+		\begin{minipage}{6cm}
+				
+		  		\begin{block}{} Overall Objective and Approach \end{block}
+		  		\begin{block}{} Synthetic Lethality Analysis Update \end{block}
+		  		\begin{block}{} Limitations of the Study \end{block}
+		  		\begin{block}{} Next Steps/Future Work \end{block}
+		  		\begin{block}{} Takeaways \& Tips for Future Undergrads \end{block}
+
+		\end{minipage}
+		\end{center}
+	
+	\end{frame}
+	
+	% For my Background slides, I will talk about important things such as WHat LCRs are, their evolution, stuff like that
+	% SLIDE 3 - WHAT ARE LCRs%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{frame}{Overall Objective}
+		\begin{itemize}
+			%\includegraphics[width=11cm, height=6cm]{types_of_courses_taken.jpg}
+			\item Can we build sex-specific synthetic lethality networks for various cancer types? \newline
+			
+			\item More specifically, we are trying to elucidate the differences in synthetic lethal interactions between males and females using a network based approach.
+		\end{itemize}
+	\end{frame}
+
+	%%%%% APPRACH SECTION BEGINS HERE, 2 SLIDES
+	
+	\section{Approach}
+	\begin{frame}{Overall Project Workflow}
+		\includegraphics[width=12cm, height=5.2cm]{img2.png}
+	\end{frame}
+
+	\section{Data Collection}
+	\begin{frame}{Selection of TCGA Cancer Types}
+			\begin{columns}
+				\begin{column}{0.45\textwidth}
+					\includegraphics[width=5cm, height=8cm]{img3.png}
+				\end{column}
+				\begin{column}{0.5\textwidth}
+					\begin{itemize}
+						\item There is a lack of healthy tissue RNA-seq samples in the TCGA database (12 cancers with more than 10 pairs in M and F)
+						\item Raw count pan-cancer matrices created with 12 remaining TCGA cancer types (BLCA, COAD, ESCA, HNSC, KICH, KIRC, KIRP, LIHC, LUAD, LUSC, STAD, THCA)
+					\end{itemize}
+				\end{column}
+			\end{columns}			
+	\end{frame}
+
+	\begin{frame}{Creating and Pre-Filtering Pan-Cancer Expression Matrices}
+		\begin{itemize}
+			\item For each gene, if expression is $>$ 90th quantile of overall expression in AT LEAST 1 sample, we keep it, otherwise we filter it out
+			\item We reduce the amount of genes with extremely low expression, thereby reducing noise and improving sensitivity to detect differentially expressed genes (genes with weak expression are more susceptible to technical noise arising from library size, library composition, etc)
+		\end{itemize}
+	\end{frame}
+
+	%Both samples are sequenced at the same depth - sample A has 5 genes expressed at same level, Sample B has the same genes as sample A plus two highly expressed genes that take up 50% of the reads
+	\section{Data Processing}
+	\begin{frame}{Normalization for RNA-seq Data Analysis}
+		\centering Required to identify genes that are differentially expressed due to some biological phenomena and not due to technical variation
+		
+		\includegraphics[width=9cm,height=7cm]{img4.png}
+	\end{frame}
+
+	\begin{frame}{Normalizing Pan-Cancer Expression Matrices}
+		\includegraphics[width=12cm, height=8cm]{all_cancers-F_before_and_after_normalization_v.png}
+	\end{frame}
+
+	\section{Data Processing}
+	\begin{frame}{Normal and Tumor Tissue Differ ACROSS 12 Cancer Types}
+		\includegraphics[width=12cm, height=6cm]{all_cancerspca_analysis_condition_0.9.png}
+		
+		Across all 12 cancer types, the observed variation between healthy and tumor tissue samples is unlikely to have occurred by chance alone (NPManova p-val = 0.0001)
+	\end{frame}
+
+	\begin{frame}{Normal and Tumor Tissue Differ WITHIN each Cancer}
+		\includegraphics[width=12cm, height=6cm]{all_cancerspca_analysis_condition_cancertype_0.9.png}
+		
+		Within each cancer type, the observed variation between healthy and tumor tissue samples is unlikely to have occurred by chance alone (Acceptions: Males: ESCA (LOW SAMPLE SIZE), Females: BLCA, ESCA (LOW SAMPLE SIZE), STAD (LOW SAMPLE SIZE))
+	\end{frame}
+
+
+	\section{Differential Expression}
+	%Our data do not fit the Poisson distribution
+	%(i.e. Poisson will underestimate variability leading to an increase in false positive DE genes).
+	\begin{frame}{Why does DESeq2 Use the Negative Binomial Distribution}
+		\begin{itemize}
+			\item Reads are count based hence they cannot be normally distributed
+			\item Variance tends to be greater than the mean, especially for genes with large mean expression values
+			\item  We need to account for this increase in variance using the Negative Binomial model 
+		\end{itemize}
+	\centering \includegraphics[width=5.5cm, height=5.5cm]{all_cancersmean_vs_variance_male.png}
+	\end{frame}
+
+	\begin{frame}{DESeq2 Accounts for Increased Variance}
+		\begin{enumerate}
+			\item Estimate gene-wise dispersions: captures biological variability in gene expression across samples
+			\item Fit negative binomial GLM to count data: This model incorporates the estimated gene-wise dispersions as a parameter to account for variability in the data
+			\item Use fitted GLM to identify differentially expressed genes \newline
+		\end{enumerate}
+		The use of linear models allows for more complex designs \newline \newline
+		$design = ~cancertype + condition$ \newline \newline
+		This tells DESeq2 to test the effect of condition while controlling for the effect of cancer type
+	\end{frame}
+
+	\begin{frame}{Finding Differentially Expressed Genes (DESeq2)}
+		\includegraphics[width=12cm, height=8cm]{all_cancersvolcano_analysis_0.9.png
+		}
+	\end{frame}
+
+	\begin{frame}{Differences in Number of DE Genes Males vs Females}
+		\centering \includegraphics[width=9cm, height=5cm]{all_cancersvenndiagram_malede_vs_femalede_0.9.png}
+		\begin{itemize}
+			\item \textcolor{blue}{MALES: 358 up-regulated in tumor, 280 Down-regulated in tumor}
+			\item \textcolor{yellow}{FEMALES: 171 up-regulated in tumor, 70 down-regulated in tumor}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{DE Genes Found in Males and Females are Enriched in Cancer-Related Processes}
+		\includegraphics[width=11cm, height=7cm]{all_cancersgsea_inbothdegenes_male_female_bp0.9.png}
+	\end{frame}
+
+	\begin{frame}{Enriched Biological Processes Differ in Males and Females}
+		\includegraphics[width=12cm, height=8cm]{all_cancersgsea_exclusivedegenes_male_female_bp0.9.png}
+	\end{frame}
+
+	\section{Synthetic Lethality}
+	\begin{frame}{Next Steps: Using DE Genes to Find Sex-Specific Synthetic Lethal Pairs}
+		\begin{enumerate}
+			\item Find all potential gene pair combinations using down regulated genes specific to males and specific to females \newline
+			
+			\textcolor{blue}{${280 \choose 2 } = 39060$ Downregulated Male Pairs \newline}
+			\textcolor{yellow}{${70 \choose 2 } = 2415$ Downregulated Female Pairs}
+			
+			\item Check whether the co-inactivation of a candidate SL pair is underrepresented in tumor samples
+		\end{enumerate}
+	\end{frame}
+
+	\section{Supplementary Slides}
+	\begin{frame}{Supplementary 1 - Histogram Showing Normalization}
+		\includegraphics[width=12cm, height=7cm]{all_cancers-F_before_and_after_normalization_hist.png}
+	\end{frame}
+
+	\begin{frame}{Supplementary 2 - Gene Expression Across Tissues}
+		\centering \includegraphics[width=9cm, height=8cm]{all_cancerspairedboxplot_cancertype_0.9_lcal1male.png}
+	\end{frame}
+
+	\begin{frame}{Supplementary 2 - Gene Expression Across Tissues}
+		\centering \includegraphics[width=9cm, height=8cm]{all_cancerspairedboxplot_cancertype_0.9_lcal1female.png}
+	\end{frame}
+	
+
+\end{document}
