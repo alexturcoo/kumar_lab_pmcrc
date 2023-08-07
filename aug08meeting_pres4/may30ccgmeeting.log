@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  7 AUG 2023 12:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  7 AUG 2023 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,7 +1287,7 @@ Package biblatex Info: ... file 'may30ccgmeeting.bbl' found.
 Package biblatex Info: Reference section=0 on input line 100.
 Package biblatex Info: Reference segment=0 on input line 100.
  (./may30ccgmeeting.nav)
-<logo.png, id=82, 529.98pt x 95.35625pt>
+<logo.png, id=62, 529.98pt x 95.35625pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 110.
@@ -1311,193 +1311,42 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [3
 
 ]
-<img2.png, id=164, 636.3775pt x 263.98625pt>
-File: img2.png Graphic file (type png)
-<use img2.png>
-Package pdftex.def Info: img2.png  used on input line 149.
-(pdftex.def)             Requested size: 341.42477pt x 147.95212pt.
- [4
+<project_workflow_slpmcrc_2.png, id=144, 722.7pt x 505.89pt>
+File: project_workflow_slpmcrc_2.png Graphic file (type png)
+<use project_workflow_slpmcrc_2.png>
+Package pdftex.def Info: project_workflow_slpmcrc_2.png  used on input line 149
+.
+(pdftex.def)             Requested size: 341.43344pt x 227.62523pt.
 
- <./img2.png>]
-<img3.png, id=174, 457.71pt x 750.805pt>
-File: img3.png Graphic file (type png)
-<use img3.png>
-Package pdftex.def Info: img3.png  used on input line 164.
-(pdftex.def)             Requested size: 142.25879pt x 227.6147pt.
-
-Overfull \vbox (8.94409pt too high) detected at line 164
+Overfull \vbox (8.95462pt too high) detected at line 149
  []
 
-[5
+[4
 
- <./img3.png>] [6
-
-]
-<img4.png, id=191, 701.62125pt x 471.7625pt>
-File: img4.png Graphic file (type png)
-<use img4.png>
-Package pdftex.def Info: img4.png  used on input line 179.
-(pdftex.def)             Requested size: 256.07356pt x 199.16827pt.
-
-Overfull \vbox (9.82684pt too high) detected at line 179
- []
-
-[7
-
- <./img4.png>]
-<all_cancers-F_before_and_after_normalization_v.png, id=202, 1084.05pt x 722.7p
-t>
-File: all_cancers-F_before_and_after_normalization_v.png Graphic file (type png
-)
-<use all_cancers-F_before_and_after_normalization_v.png>
-Package pdftex.def Info: all_cancers-F_before_and_after_normalization_v.png  us
-ed on input line 183.
-(pdftex.def)             Requested size: 341.42793pt x 227.61862pt.
-
-Overfull \vbox (8.94801pt too high) detected at line 183
- []
-
-[8
-
- <./all_cancers-F_before_and_after_normalization_v.png>]
-<all_cancerspca_analysis_condition_0.9.png, id=210, 2168.1pt x 1084.05pt>
-File: all_cancerspca_analysis_condition_0.9.png Graphic file (type png)
-<use all_cancerspca_analysis_condition_0.9.png>
-Package pdftex.def Info: all_cancerspca_analysis_condition_0.9.png  used on inp
-ut line 190.
-(pdftex.def)             Requested size: 341.41139pt x 170.70569pt.
- [9
-
- <./all_cancerspca_analysis_condition_0.9.png>]
-<all_cancerspca_analysis_condition_cancertype_0.9.png, id=218, 2168.1pt x 1084.
-05pt>
-File: all_cancerspca_analysis_condition_cancertype_0.9.png Graphic file (type p
-ng)
-<use all_cancerspca_analysis_condition_cancertype_0.9.png>
-Package pdftex.def Info: all_cancerspca_analysis_condition_cancertype_0.9.png  
-used on input line 196.
-(pdftex.def)             Requested size: 341.41139pt x 170.70569pt.
-
-Overfull \vbox (9.17259pt too high) detected at line 196
- []
-
-[10
-
- <./all_cancerspca_analysis_condition_cancertype_0.9.png>]
-<all_cancersmean_vs_variance_male.png, id=226, 578.16pt x 578.16pt>
-File: all_cancersmean_vs_variance_male.png Graphic file (type png)
-<use all_cancersmean_vs_variance_male.png>
-Package pdftex.def Info: all_cancersmean_vs_variance_male.png  used on input li
-ne 209.
-(pdftex.def)             Requested size: 156.48462pt x 156.48462pt.
-
-Overfull \vbox (6.81404pt too high) detected at line 209
- []
-
-[11
-
- <./all_cancersmean_vs_variance_male.png>] [12
-
-]
-<all_cancersvolcano_analysis_0.9.png, id=244, 1084.05pt x 722.7pt>
-File: all_cancersvolcano_analysis_0.9.png Graphic file (type png)
-<use all_cancersvolcano_analysis_0.9.png>
-Package pdftex.def Info: all_cancersvolcano_analysis_0.9.png  used on input lin
-e 225.
-(pdftex.def)             Requested size: 341.42793pt x 227.61862pt.
-
-Overfull \vbox (8.94801pt too high) detected at line 225
- []
-
-[13
-
- <./all_cancersvolcano_analysis_0.9.png>]
-<all_cancersvenndiagram_malede_vs_femalede_0.9.png, id=253, 578.16pt x 361.35pt
+ <./project_workflow_slpmcrc_2.png>]
+<all_cancersvenndiagram_malede_vs_femalede_0.9.png, id=154, 578.16pt x 361.35pt
 >
 File: all_cancersvenndiagram_malede_vs_femalede_0.9.png Graphic file (type png)
 
 <use all_cancersvenndiagram_malede_vs_femalede_0.9.png>
 Package pdftex.def Info: all_cancersvenndiagram_malede_vs_femalede_0.9.png  use
-d on input line 233.
-(pdftex.def)             Requested size: 256.06737pt x 142.26578pt.
- [14
+d on input line 163.
+(pdftex.def)             Requested size: 199.16547pt x 113.80931pt.
 
- <./all_cancersvenndiagram_malede_vs_femalede_0.9.png>]
-<all_cancersgsea_inbothdegenes_male_female_bp0.9.png, id=261, 1084.05pt x 722.7
-pt>
-File: all_cancersgsea_inbothdegenes_male_female_bp0.9.png Graphic file (type pn
-g)
-<use all_cancersgsea_inbothdegenes_male_female_bp0.9.png>
-Package pdftex.def Info: all_cancersgsea_inbothdegenes_male_female_bp0.9.png  u
-sed on input line 237.
-(pdftex.def)             Requested size: 312.97699pt x 199.16766pt.
- [15
-
- <./all_cancersgsea_inbothdegenes_male_female_bp0.9.png>]
-<all_cancersgsea_exclusivedegenes_male_female_bp0.9.png, id=270, 1084.05pt x 72
-2.7pt>
-File: all_cancersgsea_exclusivedegenes_male_female_bp0.9.png Graphic file (type
- png)
-<use all_cancersgsea_exclusivedegenes_male_female_bp0.9.png>
-Package pdftex.def Info: all_cancersgsea_exclusivedegenes_male_female_bp0.9.png
-  used on input line 241.
-(pdftex.def)             Requested size: 341.42793pt x 227.61862pt.
-
-Overfull \vbox (8.94801pt too high) detected at line 241
- []
-
-[16
-
- <./all_cancersgsea_exclusivedegenes_male_female_bp0.9.png>]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 253.
+(amsmath)                 on input line 163.
 
-[17
+
+Overfull \vbox (0.58574pt too high) detected at line 163
+ []
+
+[5
+
+ <./all_cancersvenndiagram_malede_vs_femalede_0.9.png>] [6
 
 ]
-<all_cancers-F_before_and_after_normalization_hist.png, id=288, 867.24pt x 505.
-89pt>
-File: all_cancers-F_before_and_after_normalization_hist.png Graphic file (type 
-png)
-<use all_cancers-F_before_and_after_normalization_hist.png>
-Package pdftex.def Info: all_cancers-F_before_and_after_normalization_hist.png 
- used on input line 258.
-(pdftex.def)             Requested size: 341.43787pt x 199.17207pt.
- [18
-
- <./all_cancers-F_before_and_after_normalization_hist.png>]
-<all_cancerspairedboxplot_cancertype_0.9_lcal1male.png, id=296, 1951.29pt x 195
-1.29pt>
-File: all_cancerspairedboxplot_cancertype_0.9_lcal1male.png Graphic file (type 
-png)
-<use all_cancerspairedboxplot_cancertype_0.9_lcal1male.png>
-Package pdftex.def Info: all_cancerspairedboxplot_cancertype_0.9_lcal1male.png 
- used on input line 262.
-(pdftex.def)             Requested size: 256.05855pt x 227.59436pt.
-
-Overfull \vbox (8.92375pt too high) detected at line 262
- []
-
-[19
-
- <./all_cancerspairedboxplot_cancertype_0.9_lcal1male.png>]
-<all_cancerspairedboxplot_cancertype_0.9_lcal1female.png, id=305, 1951.29pt x 1
-951.29pt>
-File: all_cancerspairedboxplot_cancertype_0.9_lcal1female.png Graphic file (typ
-e png)
-<use all_cancerspairedboxplot_cancertype_0.9_lcal1female.png>
-Package pdftex.def Info: all_cancerspairedboxplot_cancertype_0.9_lcal1female.pn
-g  used on input line 266.
-(pdftex.def)             Requested size: 256.05855pt x 227.59436pt.
-
-Overfull \vbox (8.92375pt too high) detected at line 266
- []
-
-[20
-
- <./all_cancerspairedboxplot_cancertype_0.9_lcal1female.png>]
 \tf@nav=\write7
 \openout7 = `may30ccgmeeting.nav'.
 
@@ -1510,16 +1359,16 @@ Overfull \vbox (8.92375pt too high) detected at line 266
 
 (./may30ccgmeeting.aux)
 Package rerunfilecheck Info: File `may30ccgmeeting.out' has not changed.
-(rerunfilecheck)             Checksum: ABCF305A9F9F146DCA82626EEDDC718F;997.
+(rerunfilecheck)             Checksum: FBC5A7C586AE0B9A00A31B3FCC4C3E51;327.
 Package logreq Info: Writing requests to 'may30ccgmeeting.run.xml'.
 \openout1 = `may30ccgmeeting.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36157 strings out of 478287
- 757255 string characters out of 5849290
- 1418650 words of memory out of 5000000
- 53636 multiletter control sequences out of 15000+600000
+ 35991 strings out of 478287
+ 752803 string characters out of 5849290
+ 1418648 words of memory out of 5000000
+ 53515 multiletter control sequences out of 15000+600000
  475419 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,748b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1531,10 +1380,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
 fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb>
-Output written on may30ccgmeeting.pdf (20 pages, 8407954 bytes).
+Output written on may30ccgmeeting.pdf (6 pages, 2201306 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 492 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 16 named destinations out of 1000 (max. 500000)
+ 392 words of extra memory for PDF output out of 10000 (max. 10000000)
 
