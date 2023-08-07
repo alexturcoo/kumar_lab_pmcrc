@@ -1,3 +1,4 @@
 \beamer@sectionintoc {1}{Introduction}{1}{0}{1}
-\beamer@sectionintoc {2}{Approach}{4}{0}{2}
-\beamer@sectionintoc {3}{Synthetic Lethality}{5}{0}{3}
+\beamer@sectionintoc {2}{Overall Objective and Approach}{3}{0}{2}
+\beamer@sectionintoc {3}{Synthetic Lethality Analysis Update}{5}{0}{3}
+\beamer@sectionintoc {4}{Next Steps/Future Work}{8}{0}{4}
