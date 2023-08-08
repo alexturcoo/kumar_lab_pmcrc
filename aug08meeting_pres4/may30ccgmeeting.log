@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  7 AUG 2023 20:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  7 AUG 2023 20:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1384,17 +1384,37 @@ Package pdftex.def Info: lack.png  used on input line 197.
 (pdftex.def)             Requested size: 170.71782pt x 170.71956pt.
  [9
 
- <./lack.png>] [10
+ <./lack.png>]
+<technical_skills_gained.png, id=220, 722.7pt x 505.89pt>
+File: technical_skills_gained.png Graphic file (type png)
+<use technical_skills_gained.png>
+Package pdftex.def Info: technical_skills_gained.png  used on input line 202.
+(pdftex.def)             Requested size: 342.29358pt x 227.62523pt.
 
-] [11
+Overfull \vbox (8.95462pt too high) detected at line 202
+ []
 
-] [12
+[10
+
+ <./technical_skills_gained.png>]
+<soft_skills_gained.png, id=229, 722.7pt x 505.89pt>
+File: soft_skills_gained.png Graphic file (type png)
+<use soft_skills_gained.png>
+Package pdftex.def Info: soft_skills_gained.png  used on input line 208.
+(pdftex.def)             Requested size: 342.29358pt x 227.62523pt.
+
+Overfull \vbox (16.95462pt too high) detected at line 208
+ []
+
+[11
+
+ <./soft_skills_gained.png>] [12
 
 ]
-<lab.jpg, id=241, 1927.2pt x 1445.4pt>
+<lab.jpg, id=245, 1927.2pt x 1445.4pt>
 File: lab.jpg Graphic file (type jpg)
 <use lab.jpg>
-Package pdftex.def Info: lab.jpg  used on input line 224.
+Package pdftex.def Info: lab.jpg  used on input line 228.
 (pdftex.def)             Requested size: 199.14194pt x 142.25475pt.
  [13
 
@@ -1416,10 +1436,10 @@ Package logreq Info: Writing requests to 'may30ccgmeeting.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36319 strings out of 478287
- 758815 string characters out of 5849290
+ 36333 strings out of 478287
+ 759220 string characters out of 5849290
  1418696 words of memory out of 5000000
- 53812 multiletter control sequences out of 15000+600000
+ 53824 multiletter control sequences out of 15000+600000
  477915 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,748b,1234s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1434,10 +1454,10 @@ ist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msam10.pfb>
-Output written on may30ccgmeeting.pdf (13 pages, 4712752 bytes).
+Output written on may30ccgmeeting.pdf (13 pages, 5372791 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
+ 298 PDF objects out of 1000 (max. 8388607)
  189 compressed objects within 2 object streams
  34 named destinations out of 1000 (max. 500000)
- 441 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 451 words of extra memory for PDF output out of 10000 (max. 10000000)
 
