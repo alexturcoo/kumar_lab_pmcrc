@@ -321,22 +321,24 @@
 		\label{fig:3}
 	\end{figure}
 	
-	When we added cancer type as a factor, we obtained much clearer clusters in the PCA plot, suggesting that cancer type contributes to the variation in gene expression. 
+	When we added cancer type as a factor, we obtained much clearer clusters in the PCA plot, suggesting that cancer type is a factor that contributes to the variation in gene expression. 
 	
 	
 	
 
 	\subsection{Differential Gene Expression Analysis with DESeq2}
+	
+	\subsection{Gene Set Enrichment Analysis with ClusterProfiler}
 
 	\subsection{Fishers Exact Test For Synthetic Lethality}
 
-\section{Results}
+%\section{Results}
 
 %	\subsection{Assessing the Evolution Simulator}
 
 %	\subsection{Applying the Simulator to an ABC-MCMC}
 
-\section{Discussion}
+%\section{Discussion}
 
 %	\subsection{Mutations Have the Ability to Destroy LCR Formation}
 
@@ -349,11 +351,11 @@
 \clearpage\newpage
 \section{Code \& Supplementary Materials (Transition Document)}
 
-All of the following files listed are located on the Graham Cluster at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc}
+\hl{All of the following files listed are located on the Graham Cluster at} \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc}
 
-Scripts used to obtain and format data can be found at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/raw\_data/scripts}
+\hl{Scripts used to obtain and format data can be found at} \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/raw\_data/scripts}
 
-Matching executables for these scripts can be found at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/raw\_data/executions}
+\hl{Matching executables for these scripts can be found at} \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/raw\_data/executions}
 
 NOTE: THE NUMBERED ORDER THESE SCRIPTS APPEAR IN MATCHES THE ORDER IN WHICH THEY WERE RUN
 
@@ -362,99 +364,98 @@ NOTE: THE NUMBERED ORDER THESE SCRIPTS APPEAR IN MATCHES THE ORDER IN WHICH THEY
 
 This script utilizes the tcgabiolinks package in R to retrieve gene expression data (RNA-seq) for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from females of a specific cancer type. For each cancer type, a raw gene expression matrix is produced with genes as rows, and samples as columns. This is the first script run in the workflow in order to download the TCGA rna-seq data for the cancer types we were interested in.
 
-DO ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
+RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 
 \item\texttt{tcgabiolinks\_rawcount\_rnaseq\_download\_male.R} - SCRIPT
 
 This script utilizes the tcgabiolinks package in R to retrieve gene expression data (RNA-seq) for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from males of a specific cancer type. For each cancer type, a raw gene expression matrix is produced with genes as rows, and samples as columns. This is the first script run in the workflow in order to download the TCGA rna-seq data for the cancer types we were interested in.
 
-DO ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
+RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 
-\item\texttt{tcgabiolinks\_rawcount\_clinical\_download\_female.R}
+\item\texttt{tcgabiolinks\_rawcount\_clinical\_download\_female.R} - SCRIPT
 
 This script utilizes the tcgabiolinks package in R to retrieve clinical metadata for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from females of a specific cancer type. For each cancer type, a SummarizedExperiment (R object) is produced and clinical information such as age at diagnosis and tissue of origin can be extracted.
 
-DO ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
+RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 
-\item\texttt{tcgabiolinks\_rawcount\_clinical\_download\_male.R}
+\item\texttt{tcgabiolinks\_rawcount\_clinical\_download\_male.R} - SCRIPT
 
 This script utilizes the tcgabiolinks package in R to retrieve clinical metadata for a specific set of TCGA barcodes. The TCGA barcodes used in this script came from males of a specific cancer type. For each cancer type, a SummarizedExperiment (R object) is produced and clinical information such as age at diagnosis and tissue of origin can be extracted.
 
-DO ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
+RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 \item\texttt{extract\_clinical\_data\_females.R} - SCRIPT\newline
 \texttt{extract\_clinical\_data\_females.sh} - EXECUTABLE
 
-This script extracts the clinical information of interest from the SummarizedExperiment (R object). We obtain barcode, tissue, and age information for females.
+This script extracts the clinical information of interest from the SummarizedExperiment (R object). We obtain barcode, tissue, and age information for females in the form of a dataframe.
 
 \item\texttt{extract\_clinical\_data\_males.R}- SCRIPT\newline
 \texttt{extract\_clinical\_data\_males.sh} - EXECUTABLE
 
-This script extracts the clinical information of interest from the SummarizedExperiment (R object). We obtain barcode, tissue, and age information for males.
+This script extracts the clinical information of interest from the SummarizedExperiment (R object). We obtain barcode, tissue, and age information for males in the form of a dataframe.
 
 \item\texttt{extract\_both\_tp\_nt\_samples\_females.R} - SCRIPT \newline
 \texttt{extract\_both\_tp\_nt\_samples\_females.sh} - EXECUTABLE
 
-This script 
+This script finds all females within a TCGA cancer type who have BOTH normal and tumor samples. The script does not account for individuals with more than one match, meaning that the script will take all tumor and healthy samples pertaining to an individual, not just one pair. In some cases, individuals had two normal tissue samples. The output from this script is a gene expression matrix for each cancer type with only matched normal and tumor samples.
 
 \item\texttt{extract\_both\_tp\_nt\_samples\_males.R} - SCRIPT \newline
 \texttt{extract\_both\_tp\_nt\_samples\_males.sh} - EXECUTABLE
 
-This script 
+This script finds all males within a TCGA cancer type who have BOTH normal and tumor samples. The script does not account for individuals with more than one match, meaning that the script will take all tumor and healthy samples pertaining to an individual, not just one pair. In some cases, individuals had two normal tissue samples. The output from this script is a gene expression matrix for each cancer type with only matched normal and tumor samples.
 
 \item\texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_females.R} - SCRIPT \newline
 \texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_females.sh} - EXECUTABLE
 
-This script takes the gene expression matrices (with matched NT-TP samples) for females of each cancer type and merges them to create a raw pan-cancer matrix. Rows are genes and columns are samples. Samples from every cancer type utilized in the study are present in this matrix.
+This script takes the gene expression matrices (with matched Normal-tumor tissue samples) for females of each cancer type and merges them together to create a raw pan-cancer matrix with all 12 cancer types. Rows are genes and columns are samples.
 
 \item\texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_males.R}
 
-This script takes the gene expression matrices (with matched NT-TP samples) for males of each cancer type and merges them to create a raw pan-cancer matrix. Rows are genes and columns are samples. Samples from every cancer type utilized in the study are present in this matrix.
+This script takes the gene expression matrices (with matched Normal-tumor tissue samples) for males of each cancer type and merges them together to create a raw pan-cancer matrix with all 12 cancer types. Rows are genes and columns are samples.
 
-\end{enumerate}
+\hl{Scripts used to process and visualize data can be found at} \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/processed\_data/scripts}
 
-Scripts used to process and visualize data can be found at \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/processed\_data/scripts}
-
-Matching executables for these scripts can be found at
+\hl{Matching executables for these scripts can be found at}
 \texttt{$\sim$/projects/def-sushant/alextu/\newline slproject\_pmcrc/processed\_data/executions}
 
-\begin{itemize}
-	\item\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_female.R}
+
+\item\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_female.R} - SCRIPT\newline
+\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_female.sh} - EXECUTABLE
 	
-	This script 
+This script 
 	
-	\item\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_male.R}
+\item\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_male.R} - SCRIPT\newline
+\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_male.sh} - EXECUTABLE
 	
-	This script 
+This script 
 	
-	\item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_female.R}
+\item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_female.R} - SCRIPT\newline
+\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_female.sh} - EXECUTABLE
 	
-	This script 
+This script 
 	
-	\item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_male.R}
+\item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_male.R} - SCRIPT \newline
+\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_male.sh} - EXECUTABLE
 	
-	This script 
+This script 
+
+\item\texttt{pca\_analysis\_mergedcancers\_quantiles\_prefiltering.R} - SCRIPT\newline
+\texttt{pca\_analysis\_mergedcancers\_quantiles\_prefiltering.sh} - EXECUTABLE
+
+This script
 	
-	\item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_female.R}
+\item\texttt{dge\_analysis\_deseq2.R}
 	
-	This script 
+This script 
 	
-	\item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_male.R}
+\item\texttt{gsea\_analysis\_postdeseq.R}
 	
-	This script 
+This script
 	
-	\item\texttt{dge\_analysis\_deseq2.R}
+\item\texttt{npmanova.R}
 	
-	This script 
+This script
 	
-	\item\texttt{gsea\_analysis\_postdeseq.R}
-	
-	This script
-	
-	\item\texttt{npmanova.R}
-	
-	This script
-	
-\end{itemize}
+\end{enumerate}
 
 \clearpage\newpage
 \section{References}
