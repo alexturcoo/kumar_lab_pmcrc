@@ -1,0 +1,74 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{zeng2019selecting}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6c8e50ea16498520af8bd97f6276a423}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={William\bibnamedelima ZD},
+           giveni={W\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3f7f39acd6ca9fa0e288ee83fbca301}{%
+           family={Glicksberg},
+           familyi={G\bibinitperiod},
+           given={Benjamin\bibnamedelima S},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a4c034dc1267e831042c79d83a2d8ed}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yangyan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e68812ef39031c269522ef59a77d9a06}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1d978d2d41fc6a410328e8385a67033b}
+      \strng{fullhash}{bb8d6ba78791404ddc0661ef451417b9}
+      \strng{bibnamehash}{1d978d2d41fc6a410328e8385a67033b}
+      \strng{authorbibnamehash}{1d978d2d41fc6a410328e8385a67033b}
+      \strng{authornamehash}{1d978d2d41fc6a410328e8385a67033b}
+      \strng{authorfullhash}{bb8d6ba78791404ddc0661ef451417b9}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMC Medical Genomics}
+      \field{title}{Selecting precise reference normal tissue samples for cancer research using a deep learning approach}
+      \field{volume}{12}
+      \field{year}{2019}
+      \field{pages}{179\bibrangedash 189}
+      \range{pages}{11}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

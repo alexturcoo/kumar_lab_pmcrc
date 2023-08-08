@@ -2,3 +2,5 @@
 \beamer@sectionintoc {2}{Overall Objective and Approach}{3}{0}{2}
 \beamer@sectionintoc {3}{Synthetic Lethality Analysis Update}{5}{0}{3}
 \beamer@sectionintoc {4}{Next Steps/Future Work}{8}{0}{4}
+\beamer@sectionintoc {5}{Limitations}{9}{0}{5}
+\beamer@sectionintoc {6}{Takeaways \& Tips}{10}{0}{6}
