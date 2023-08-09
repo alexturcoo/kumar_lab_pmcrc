@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  9 AUG 2023 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  9 AUG 2023 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1511,19 +1511,19 @@ used on input line 319.
  [7 <./all_cancerspca_analysis_condition_0.9.png> <./all_cancerspca_analysis_co
 ndition_cancertype_0.9.png>] [8]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 35
-6.
+4.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [9
 
 ] [10]
-Overfull \hbox (22.85979pt too wide) in paragraph at lines 434--436
+Overfull \hbox (22.85979pt too wide) in paragraph at lines 432--434
 \T1/pcr/m/n/10 deseq2_preprocessing_boxplots_quantile_prefiltering_allcancers_f
 emale.sh \T1/ptm/m/n/10 - EX-E-CUTABLE 
  []
 
 [11]
-Overfull \hbox (10.85979pt too wide) in paragraph at lines 439--441
+Overfull \hbox (10.85979pt too wide) in paragraph at lines 437--439
 \T1/pcr/m/n/10 deseq2_preprocessing_boxplots_quantile_prefiltering_allcancers_m
 ale.sh \T1/ptm/m/n/10 - EX-E-CUTABLE 
  []
@@ -1535,7 +1535,7 @@ Package biblatex Warning: 'sorting' option to '\printbibliography' is no longer
 (biblatex)                Please use 'sorting' option to '\newrefcontext'.
 
 
-Overfull \hbox (1.80498pt too wide) in paragraph at lines 474--474
+Overfull \hbox (1.80498pt too wide) in paragraph at lines 472--472
 [][]\T1/ptm/m/n/10 Yeung K Y and Ruzzo W L (2001). Prin-ci-pal com-po-nent anal
 -y-sis for clus-ter-ing gene ex-pres-sion data. Bioin-for-mat-ics 17(9), 763^^U
 
