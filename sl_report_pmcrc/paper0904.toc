@@ -12,5 +12,6 @@
 \contentsline {subsection}{\numberline {}Differential Gene Expression Analysis with DESeq2}{8}{subsection.3.4}%
 \contentsline {subsection}{\numberline {}Gene Set Enrichment Analysis with ClusterProfiler}{8}{subsection.3.5}%
 \contentsline {subsection}{\numberline {}Fishers Exact Test For Synthetic Lethality}{8}{subsection.3.6}%
-\contentsline {section}{\numberline {}Code \& Supplementary Materials (Transition Document)}{9}{section.4}%
-\contentsline {section}{\numberline {}References}{12}{section.5}%
+\contentsline {section}{\numberline {}Next Steps/Future Avenues}{8}{section.4}%
+\contentsline {section}{\numberline {}Code \& Supplementary Materials (Transition Document)}{9}{section.5}%
+\contentsline {section}{\numberline {}References}{13}{section.6}%

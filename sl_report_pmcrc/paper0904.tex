@@ -321,7 +321,9 @@
 		\label{fig:3}
 	\end{figure}
 	
-	When we added cancer type as a factor, we obtained much clearer clusters in the PCA plot, suggesting that cancer type is a factor that contributes to the variation in gene expression. 
+	When we added cancer type as a factor, we obtained much clearer clusters in the PCA plot, suggesting that cancer type is a factor that contributes to the variation in gene expression. We wanted to examine factors that contribute to this variance as these factors may influence which genes are found to be differentially expressed. 
+	
+	We also verified the statistical significance of the difference between normal and tumor tissue expression across all cancer types and within each cancer type using a non-parametric multivariate analysis of variance (NPMANOVA), also known as a permutational multivariate analysis of variance (PERMANOVA).
 	
 	
 	
@@ -332,7 +334,7 @@
 
 	\subsection{Fishers Exact Test For Synthetic Lethality}
 
-%\section{Results}
+\section{Next Steps/Future Avenues}
 
 %	\subsection{Assessing the Evolution Simulator}
 
@@ -408,7 +410,8 @@ This script finds all males within a TCGA cancer type who have BOTH normal and t
 
 This script takes the gene expression matrices (with matched Normal-tumor tissue samples) for females of each cancer type and merges them together to create a raw pan-cancer matrix with all 12 cancer types. Rows are genes and columns are samples.
 
-\item\texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_males.R}
+\item\texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_males.R} - SCRIPT \newline
+\texttt{merge\_rawcounts\_both\_tp\_nt\_samples\_males.R} - EXECUTABLE
 
 This script takes the gene expression matrices (with matched Normal-tumor tissue samples) for males of each cancer type and merges them together to create a raw pan-cancer matrix with all 12 cancer types. Rows are genes and columns are samples.
 
@@ -421,35 +424,39 @@ This script takes the gene expression matrices (with matched Normal-tumor tissue
 \item\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_female.R} - SCRIPT\newline
 \texttt{deseq2\_extract\_normalized\_counts\_allcancers\_female.sh} - EXECUTABLE
 	
-This script 
+This script runs the differential gene expression analysis for females (through DESeq2) using the pan-cancer dataframe created from the last script above. This entails normalization of the expression data as well as hypothesis testing for each gene to determine whether expression is significantly different between tumor and normal tissue. This script also gathers all the metadata for the samples included in the pan-cancer matrix (condition (NT vs TP), cancer type, tissue type, age). Lastly, the script can account for different quantile thresholds set by the user. We filtered out genes with expression values less than some quantile value of overall gene expression. We tried 90th quantile and 50th quantile. The output from this script is a DESeq object that can be used to obtain differential gene expression information (raw counts, normalized counts, hypothesis test results for gene expression including log2FoldChange and adjusted p-values).
 	
 \item\texttt{deseq2\_extract\_normalized\_counts\_allcancers\_male.R} - SCRIPT\newline
 \texttt{deseq2\_extract\_normalized\_counts\_allcancers\_male.sh} - EXECUTABLE
 	
-This script 
+This script runs the differential gene expression analysis for males (through DESeq2) using the pan-cancer dataframe created from the last script above. This entails normalization of the expression data as well as hypothesis testing for each gene to determine whether expression is significantly different between tumor and normal tissue. This script also gathers all the metadata for the samples included in the pan-cancer matrix (condition (NT vs TP), cancer type, tissue type, age). Lastly, the script can account for different quantile thresholds set by the user. We filtered out genes with expression values less than some quantile value of overall gene expression. We tried 90th quantile and 50th quantile. The output from this script is a DESeq object that can be used to obtain differential gene expression information (raw counts, normalized counts, hypothesis test results for gene expression including log2FoldChange and adjusted p-values).
 	
 \item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_female.R} - SCRIPT\newline
 \texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_female.sh} - EXECUTABLE
 	
-This script 
+This script uses the DESeq object produced in the last step for females to extract raw and normalized gene counts for the pan-cancer matrix. The script creates boxplots showing raw counts before normalization vs normalized and transformed counts. Used to view the effects of normalization. The user can specify the quantile threshold value they would like to use in the script.
 	
 \item\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_male.R} - SCRIPT \newline
 \texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_allcancers\_male.sh} - EXECUTABLE
 	
-This script 
+This script uses the DESeq object produced in the last step for males to extract raw and normalized gene counts for the pan-cancer matrix. The script creates boxplots showing raw counts before normalization vs normalized and transformed counts. Used to view the effects of normalization. The user can specify the quantile threshold value they would like to use in the script.
 
 \item\texttt{pca\_analysis\_mergedcancers\_quantiles\_prefiltering.R} - SCRIPT\newline
 \texttt{pca\_analysis\_mergedcancers\_quantiles\_prefiltering.sh} - EXECUTABLE
 
-This script
+This script runs principal component analysis on the normalized count data for males AND females to detect sources of variation in the gene expression data. The user can specify the quantile threshold value they would like to use in the script.
 	
 \item\texttt{dge\_analysis\_deseq2.R}
 	
 This script 
+
+RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 	
 \item\texttt{gsea\_analysis\_postdeseq.R}
 	
 This script
+
+RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 	
 \item\texttt{npmanova.R}
 	
