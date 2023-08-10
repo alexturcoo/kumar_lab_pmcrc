@@ -323,10 +323,43 @@
 	
 	When we added cancer type as a factor, we obtained much clearer clusters in the PCA plot, suggesting that cancer type is a factor that contributes to the variation in gene expression. We wanted to examine factors that contribute to this variance as these factors may influence which genes are found to be differentially expressed. 
 	
-	We also verified the statistical significance of the difference between normal and tumor tissue expression across all cancer types and within each cancer type using a non-parametric multivariate analysis of variance (NPMANOVA), also known as a permutational multivariate analysis of variance (PERMANOVA). This is a nonparametric test used to compare multivariate distributions of several groups and the null hypothesis for this test is that the centroids of all groups are equal \citep{anderson2005permutational}. In the case of this study, a low p-value indicates a significant difference in the centroids between normal tissue and tumor tissue. We did not have time to produce PCA plots that showed the centroids, but it would be beneficial to produce these plots in the future. We also did not perform an analysis that could identify the variance among the clusters so we could not statistically test if there was more heterogeneity among tumor tissue samples compared to normal tissue samples.
+	We also verified the statistical significance of the difference between normal and tumor tissue expression across all cancer types and within each cancer type using a non-parametric multivariate analysis of variance (NPMANOVA), also known as a permutational multivariate analysis of variance (PERMANOVA). This is a nonparametric test used to compare multivariate distributions of several groups and the null hypothesis for this test is that the centroids of all groups are equal \citep{anderson2005permutational}. In the case of this study, a low p-value indicates a significant difference in the centroids between normal tissue and tumor tissue. We did not have time to produce PCA plots that showed the centroids, but it would be beneficial to produce these plots in the future. We also did not perform an analysis that could identify the variance among the clusters so we could not statistically test if there was more heterogeneity among tumor tissue samples compared to normal tissue samples. \newline
 	
+	\begin{table}[!h]
+		\centering
+		\vspace{-0.2cm}\includegraphics[width=18cm, height=5cm]{allfemale_npmanova.png}
+		\caption{Results from one-way NPMANOVA comparing centroids of normal tissue and tumor tissue gene expression in females across all 12 cancer types considered in the study}
+		\label{table:2}
+	\end{table}
+
+	\begin{table}[!h]
+		\centering
+		\vspace{-0.2cm}\includegraphics[width=18cm, height=5cm]{allmale_npmanova.png}
+		\caption{Results from one-way NPMANOVA comparing centroids of normal tissue and tumor tissue gene expression in males across all 12 cancer types considered in the study}
+		\label{table:3}
+	\end{table}
+
+Table 2 and Table 3 show the results of the one-way NPMANOVA (for females and males respectively) comparing the centroids of tumor tissue and normal tissue expression across all 12 cancer types together. In both males and females, the small p-value indicates a significant difference in normal vs tumor tissue when considering all 12 cancer types collectively.
+	
+	\begin{table}[!h]
+		\centering
+		\includegraphics[width=18cm, height=6cm]{eachfemale_npmanova.png}
+		\caption{Results from pairwise NPMANOVA comparing centroids of normal tissue and tumor tissue gene expression in females for each individual cancer type considered in the study (full table not shown here)}
+		\label{table:4}
+	\end{table}
+
+	\begin{table}[!h]
+		\centering
+		\vspace{-0.4cm}\includegraphics[width=18cm, height=7cm]{eachmale_npmanova.png}
+		\caption{Results from pairwise NPMANOVA comparing centroids of normal tissue and tumor tissue gene expression in males for each individual cancer type considered in the study (full table not shown here)}
+		\label{table:5}
+	\end{table}
+
+	Table 4 and Table 5 show the results of the pairwise NPMANOVA (for females and males respectively) comparing the centroids of tumor tissue and normal tissue expression within each of the 12 cancer types individually. Shown in these tables are insignificant results (pairwise comparisons with adjusted p-value > 0.05) as it is easier to show which comparisons were not considered to be statistically significant. Only 3 rows of each table are shown, not the full tables.
 
 	\subsection{Differential Gene Expression Analysis with DESeq2}
+	
+	Based on the above analysis, we decided to control for cancer type as it was found to be an important source of variation that could potentially confound the comparison between normal and healthy tissue conditions. 
 	
 	\subsection{Gene Set Enrichment Analysis with ClusterProfiler}
 
