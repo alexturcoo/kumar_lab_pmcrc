@@ -2348,9 +2348,11 @@
     <bcf:citekey order="1">love2014moderated</bcf:citekey>
     <bcf:citekey order="2">love2014moderated</bcf:citekey>
     <bcf:citekey order="3">yeung2001principal</bcf:citekey>
+    <bcf:citekey order="4">anderson2005permutational</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
-    <bcf:citekey order="4">love2014moderated</bcf:citekey>
-    <bcf:citekey order="5">yeung2001principal</bcf:citekey>
+    <bcf:citekey order="5">love2014moderated</bcf:citekey>
+    <bcf:citekey order="6">yeung2001principal</bcf:citekey>
+    <bcf:citekey order="7">anderson2005permutational</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

@@ -19,6 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{anderson2005permutational}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ac185d4aa5241ecdd5e545c4420dcb64}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Marti\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac185d4aa5241ecdd5e545c4420dcb64}
+      \strng{fullhash}{ac185d4aa5241ecdd5e545c4420dcb64}
+      \strng{bibnamehash}{ac185d4aa5241ecdd5e545c4420dcb64}
+      \strng{authorbibnamehash}{ac185d4aa5241ecdd5e545c4420dcb64}
+      \strng{authornamehash}{ac185d4aa5241ecdd5e545c4420dcb64}
+      \strng{authorfullhash}{ac185d4aa5241ecdd5e545c4420dcb64}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Department of Statistics, University of Auckland, Auckland}
+      \field{title}{Permutational multivariate analysis of variance}
+      \field{volume}{26}
+      \field{year}{2005}
+      \field{pages}{32\bibrangedash 46}
+      \range{pages}{15}
+    \endentry
     \entry{cheng2021synthetic}{article}{}
       \name{author}{4}{}{%
         {{hash=d8e6ac6b3aa285a822883df14a8c6cc6}{%
@@ -293,7 +320,6 @@
       \field{title}{Principal component analysis for clustering gene expression data}
       \field{volume}{17}
       \field{year}{2001}
-      \true{nocite}
       \field{pages}{763\bibrangedash 774}
       \range{pages}{12}
     \endentry
