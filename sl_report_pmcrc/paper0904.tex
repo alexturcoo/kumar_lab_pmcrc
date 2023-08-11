@@ -406,6 +406,10 @@ Table 2 and Table 3 show the results of the one-way NPMANOVA (for females and ma
 		\caption{Dotplot showing the results of GSEA performed on ALL differentially expressed genes (892 female, 1289 male) found in females (left) and males (right). This example shows 10 activated and 10 suppressed enriched gene sets.}
 		\label{fig:7}
 	\end{figure}
+
+	\figref{fig:7} and \figref{fig:8} show the results of gene set enrichment analysis performed on all differentially expressed genes in males and females (\figref{fig:7}), and genes exclusively differentially expressed in males and females (\figref{fig:8}). On the y-axis of these plots are gene ontology (GO) biological processes/gene sets, and the size of the dot provides information regarding the number of genes from our input list that are associated with the given gene set/process. On the X-axis of these plots is a measure called gene ratio. The gene ratio is the number of genes in our input gene list associated with a given GO term, divided by the total number of input genes in that pathway. There are also two sides to the plot, one side shows "activated" while the other shows "suppressed". A gene set/process is labeled as activated when the majority of genes within that set show increased expression in tumor tissue compared to normal tissue. Conversely, a gene set/process is labeled as suppressed when the majority of genes within that set show decreased expression in tumor tissue compared to normal tissue.
+	
+	When looking at the most significantly enriched biological processes among all the differentially expressed genes we found in males and females (\figref{fig:7}), we find processes related to cancer development such as regulation of transcription, cell cycle processes, and chromosome organization. When looking at the most significantly enriched biological processes among differentially expressed genes found only in males and only in females, we find processes related to sex differences such as inflammatory response to antigenic stimulus in women, and leydig cell differentiation in men. These results show that even across cancers that are not specific to one sex, sex differences in gene expression exist, and could potentially be driving factors that contribute to the differences in cancer progression and treatment seen in men and women.
 		
 	\begin{figure}[!h]
 		\centering
@@ -417,13 +421,16 @@ Table 2 and Table 3 show the results of the one-way NPMANOVA (for females and ma
 
 	\subsection{Fishers Exact Test For Synthetic Lethality}
 	
+	To find potential synthetic lethal interactions between the genes 
+	
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[width=\textwidth, height=8cm]{interactions.png}
+		\includegraphics[width=16cm, height=6cm]{interactions.png}
 		\caption{Barplot showing the genes involved in the most number of potential synthetic lethal pairs found using Fishers exact test}
 		\label{fig:9}
 	\end{figure}
 
+\clearpage\newpage
 \section{Next Steps/Future Avenues}
 \begin{itemize}
 	\item Build male and female synthetic lethal interaction networks using results from Fishers exact test. Use the genes as nodes and the odds ratios as edges to build the networks. (Packages: \texttt{NetworkX} Python, \texttt{pyvis} Python). Find differences in the male and female networks.
@@ -432,6 +439,7 @@ Table 2 and Table 3 show the results of the one-way NPMANOVA (for females and ma
 	\item Normal tissue proxy: There is a lack of normal tissue samples in the TCGA database. This restricted the number of cancer types we used in the study, as well as the sample size of the cancer types we did use. Can we use a different database to find matched samples? Can we use a machine learning approach to generate normal tissue expression data? Emailed the author of this paper, interesting stuff in terms of generating normal tissue expression but the author never got back to me with her code. \citep{zeng2019selecting}
 	\item Do males have higher incidence of lung cancer because more of them are smokers, or is it because they are male. Can we try and better understand if other factors (like societal factors) cause sex differences, or is it truly due to genetic differences in sex?
 	\item Menopause? Age Differences? Differences in medications?
+	\item Include the centroids and statistical information on PCA plots to show the results of the NPMANOVA better
 \end{itemize}
 
 %	\subsection{Assessing the Evolution Simulator}
