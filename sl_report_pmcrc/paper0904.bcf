@@ -2351,12 +2351,15 @@
     <bcf:citekey order="4">anderson2005permutational</bcf:citekey>
     <bcf:citekey order="5">love2014moderated</bcf:citekey>
     <bcf:citekey order="6">love2014moderated</bcf:citekey>
-    <bcf:citekey order="7">zeng2019selecting</bcf:citekey>
+    <bcf:citekey order="7">yu2012clusterprofiler</bcf:citekey>
+    <bcf:citekey order="8">yu2012clusterprofiler</bcf:citekey>
+    <bcf:citekey order="9">zeng2019selecting</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
-    <bcf:citekey order="8">love2014moderated</bcf:citekey>
-    <bcf:citekey order="9">yeung2001principal</bcf:citekey>
-    <bcf:citekey order="10">anderson2005permutational</bcf:citekey>
-    <bcf:citekey order="11">zeng2019selecting</bcf:citekey>
+    <bcf:citekey order="10">love2014moderated</bcf:citekey>
+    <bcf:citekey order="11">yeung2001principal</bcf:citekey>
+    <bcf:citekey order="12">anderson2005permutational</bcf:citekey>
+    <bcf:citekey order="13">yu2012clusterprofiler</bcf:citekey>
+    <bcf:citekey order="14">zeng2019selecting</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

@@ -323,6 +323,52 @@
       \field{pages}{763\bibrangedash 774}
       \range{pages}{12}
     \endentry
+    \entry{yu2012clusterprofiler}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d286189169cc7db1ed789bf4f016af04}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Guangchuang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5f3674317aec5a30493ee2f33524bdbe}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Li-Gen},
+           giveni={L\bibinithyphendelim G\bibinitperiod}}}%
+        {{hash=02a45cbecc096a874738d2d7dc4b7247}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Yanyan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6990e072ce69debada74a713c89bcac0}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Qing-Yu},
+           giveni={Q\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Mary Ann Liebert, Inc. 140 Huguenot Street, 3rd Floor New Rochelle, NY 10801 USA}%
+      }
+      \strng{namehash}{4af86cca166e3f4970cbec37130575bd}
+      \strng{fullhash}{a046b16b0fb77499dcc70082c3cf8bd4}
+      \strng{bibnamehash}{a046b16b0fb77499dcc70082c3cf8bd4}
+      \strng{authorbibnamehash}{a046b16b0fb77499dcc70082c3cf8bd4}
+      \strng{authornamehash}{4af86cca166e3f4970cbec37130575bd}
+      \strng{authorfullhash}{a046b16b0fb77499dcc70082c3cf8bd4}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Omics: a journal of integrative biology}
+      \field{number}{5}
+      \field{title}{clusterProfiler: an R package for comparing biological themes among gene clusters}
+      \field{volume}{16}
+      \field{year}{2012}
+      \field{pages}{284\bibrangedash 287}
+      \range{pages}{4}
+    \endentry
     \entry{zeng2019selecting}{article}{}
       \name{author}{4}{}{%
         {{hash=6c8e50ea16498520af8bd97f6276a423}{%

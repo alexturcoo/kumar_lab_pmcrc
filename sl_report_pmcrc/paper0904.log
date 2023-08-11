@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  11 AUG 2023 09:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  11 AUG 2023 11:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1593,39 +1593,68 @@ d on input line 390.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[11 <./all_cancersvolcano_analysis_0.9.png>]
+<all_cancersgsea_alldegenes_male_female_bp0.9.png, id=189, 1084.05pt x 722.7pt>
+
+File: all_cancersgsea_alldegenes_male_female_bp0.9.png Graphic file (type png)
+<use all_cancersgsea_alldegenes_male_female_bp0.9.png>
+Package pdftex.def Info: all_cancersgsea_alldegenes_male_female_bp0.9.png  used
+ on input line 401.
+(pdftex.def)             Requested size: 483.69922pt x 284.53154pt.
+<all_cancersgsea_exclusivedegenes_male_female_bp0.9.png, id=190, 1228.59pt x 72
+2.7pt>
+File: all_cancersgsea_exclusivedegenes_male_female_bp0.9.png Graphic file (type
+ png)
+<use all_cancersgsea_exclusivedegenes_male_female_bp0.9.png>
+Package pdftex.def Info: all_cancersgsea_exclusivedegenes_male_female_bp0.9.png
+  used on input line 408.
+(pdftex.def)             Requested size: 505.89978pt x 312.9825pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<interactions.png, id=191, 867.24pt x 342.27875pt>
+File: interactions.png Graphic file (type png)
+<use interactions.png>
+Package pdftex.def Info: interactions.png  used on input line 418.
+(pdftex.def)             Requested size: 505.89758pt x 227.62816pt.
+[12 <./all_cancersvenndiagram_malede_vs_femalede_0.9.png> <./all_cancersgsea_al
+ldegenes_male_female_bp0.9.png>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-03.
+25.
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [11 <./all_cancersvolcano_analysis_0.9.png>] [12 <./all_cancersvenndiagram_ma
-lede_vs_femalede_0.9.png>] [13
+) [13 <./all_cancersgsea_exclusivedegenes_male_female_bp0.9.png> <./interaction
+s.png>] [14] [15
 
-] [14]
-Overfull \hbox (22.85979pt too wide) in paragraph at lines 506--508
+]
+[16]
+Overfull \hbox (22.85979pt too wide) in paragraph at lines 528--530
 \T1/pcr/m/n/10 deseq2_preprocessing_boxplots_quantile_prefiltering_allcancers_f
 emale.sh \T1/ptm/m/n/10 - EX-E-CUTABLE 
  []
 
-[15]
-Overfull \hbox (10.85979pt too wide) in paragraph at lines 511--513
+[17]
+Overfull \hbox (10.85979pt too wide) in paragraph at lines 533--535
 \T1/pcr/m/n/10 deseq2_preprocessing_boxplots_quantile_prefiltering_allcancers_m
 ale.sh \T1/ptm/m/n/10 - EX-E-CUTABLE 
  []
 
-[16]
+[18]
 
 Package biblatex Warning: 'sorting' option to '\printbibliography' is no longer
  supported.
 (biblatex)                Please use 'sorting' option to '\newrefcontext'.
 
 
-Overfull \hbox (1.80498pt too wide) in paragraph at lines 546--546
+Overfull \hbox (1.80498pt too wide) in paragraph at lines 568--568
 [][]\T1/ptm/m/n/10 Yeung K Y and Ruzzo W L (2001). Prin-ci-pal com-po-nent anal
 -y-sis for clus-ter-ing gene ex-pres-sion data. Bioin-for-mat-ics 17(9), 763^^U
 
  []
 
-[17
+[19
 
 ] (./paper0904.aux)
 Package rerunfilecheck Info: File `paper0904.out' has not changed.
@@ -1635,10 +1664,10 @@ Package logreq Info: Writing requests to 'paper0904.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46007 strings out of 478287
- 1043451 string characters out of 5849290
- 1837829 words of memory out of 5000000
- 63401 multiletter control sequences out of 15000+600000
+ 46043 strings out of 478287
+ 1044674 string characters out of 5849290
+ 1838591 words of memory out of 5000000
+ 63428 multiletter control sequences out of 15000+600000
  507494 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,117p,2000b,1517s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1648,10 +1677,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper0904.pdf (17 pages, 5091194 bytes).
+Output written on paper0904.pdf (19 pages, 6658183 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 500000)
- 204 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 306 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -135,7 +135,7 @@
 %\usepackage[hidelinks,colorlinks=false,citecolor=blue,urlcolor=darkbrown]{hyperref}
 \tikzexternalize
 
-\lhead{Synthetic Lethality} %This needs to change
+\lhead{Sex Specific Synthetic Lethality} %This needs to change
 \rhead{Alexander Turco}
 \title{\sc Building sex-specific synthetic lethality network in cancer - Temp Name}
 \author{\sc Alexander Turco}
@@ -394,9 +394,31 @@ Table 2 and Table 3 show the results of the one-way NPMANOVA (for females and ma
 	
 	\subsection{Gene Set Enrichment Analysis with ClusterProfiler}
 	
+	We used the \texttt{clusterProfiler} R package to perform gene set enrichment analysis (GSEA) in order to gain insight into the functional groups of genes enriched in certain biological pathways. The package depends on annotation data from GO.db (Gene Ontology) and KEGG.db (Kyoto Encyclopedia of Genes and Genomes) in order to calculate enrichment test for GO and KEGG pathways \citep{yu2012clusterprofiler}. Essentially the analysis determines whether members of a gene set (unordered collections of genes that are functionally related) are randomly distributed in a list of differentially expressed genes, or primarily found at the top (overexpressed) or bottom (underexpressed) when sorted based on log2FoldChange \citep{yu2012clusterprofiler}.
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=17cm, height=10cm]{all_cancersgsea_alldegenes_male_female_bp0.9.png}
+		\caption{Dotplot showing the results of GSEA performed on ALL differentially expressed genes (892 female, 1289 male) found in females (left) and males (right). This example shows 10 activated and 10 suppressed enriched gene sets.}
+		\label{fig:7}
+	\end{figure}
+		
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=\textwidth, height=11cm]{all_cancersgsea_exclusivedegenes_male_female_bp0.9.png}
+		\caption{Dotplot showing the results of GSEA performed on EXCLUSIVELY differentially expressed genes (241 female, 638 male) found in females (left) and males (right). This example shows 10 activated and 10 suppressed enriched gene sets.}
+		\label{fig:8}
+	\end{figure}
 	
 
 	\subsection{Fishers Exact Test For Synthetic Lethality}
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=\textwidth, height=8cm]{interactions.png}
+		\caption{Barplot showing the genes involved in the most number of potential synthetic lethal pairs found using Fishers exact test}
+		\label{fig:9}
+	\end{figure}
 
 \section{Next Steps/Future Avenues}
 \begin{itemize}
@@ -405,7 +427,7 @@ Table 2 and Table 3 show the results of the one-way NPMANOVA (for females and ma
 	\item Incorporate other types of data. We only included RNA-seq data, what about copy number variation, methylation, etc... this could strengthen the validity of the study.
 	\item Normal tissue proxy: There is a lack of normal tissue samples in the TCGA database. This restricted the number of cancer types we used in the study, as well as the sample size of the cancer types we did use. Can we use a different database to find matched samples? Can we use a machine learning approach to generate normal tissue expression data? Emailed the author of this paper, interesting stuff in terms of generating normal tissue expression but the author never got back to me with her code. \citep{zeng2019selecting}
 	\item Do males have higher incidence of lung cancer because more of them are smokers, or is it because they are male. Can we try and better understand if other factors (like societal factors) cause sex differences, or is it truly due to genetic differences in sex?
-	\item Menopause?
+	\item Menopause? Age Differences? Differences in medications?
 \end{itemize}
 
 %	\subsection{Assessing the Evolution Simulator}
@@ -520,19 +542,19 @@ This script runs principal component analysis on the normalized count data for m
 	
 \item\texttt{dge\_analysis\_deseq2.R}
 	
-This script 
+This script performs a lot of tasks.
 
 RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 	
 \item\texttt{gsea\_analysis\_postdeseq.R}
 	
-This script
+This script performs gene set enrichment analysis using \texttt{clusterProfiler}.
 
 RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 	
 \item\texttt{npmanova.R}
 	
-This script
+This script performs a non parametric multivariate analysis of variance (NPMANOVA) in order to determine if differences between 
 	
 \end{enumerate}
 
