@@ -291,7 +291,7 @@
 	
 	Raw count gene expression matrices for males and females were pre-filtered to remove genes unlikely to exhibit differential expression. For each matrix, we calculated the 90th quantile of overall gene expression as a threshold. For each gene in the matrix, we checked to see whether its expression was greater than the threshold in at least 1 sample. We removed genes where no samples showed an expression value greater than the quantile threshold. 
 	
-	The pre-filtered matrices were then normalized using the DESeq2 package in R \citep{love2014moderated}. RNA-seq data must be normalized in order to account for factors that prevent the direct comparison of expression measures. The DESeq2 package employs a median of ratios normalization method to account for the inherent biases associated with RNA-seq data. Both sequencing depth (\# of reads generated per sample) and RNA composition (differences in composition of RNA molecules in a sample) are factors accounted for by the DESeq2 package. Raw counts are divided by size factors determined for each sample by computing the median ratio of gene counts relative to the geometric gene calculated per gene \citep{love2014moderated}. \figref{fig:1} summarizes the effects of normalization for both male and female RNA-seq data. The distribution of counts across samples becomes much more consistent, thus making the samples comparable.
+	The pre-filtered matrices were then normalized using the \texttt{DESeq2} package in R \citep{love2014moderated}. RNA-seq data must be normalized in order to account for factors that prevent the direct comparison of expression measures. The \texttt{DESeq2} package employs a median of ratios normalization method to account for the inherent biases associated with RNA-seq data. Both sequencing depth (\# of reads generated per sample) and RNA composition (differences in composition of RNA molecules in a sample) are factors accounted for by the \texttt{DESeq2} package. Raw counts are divided by size factors determined for each sample by computing the median ratio of gene counts relative to the geometric gene calculated per gene \citep{love2014moderated}. \figref{fig:1} summarizes the effects of normalization for both male and female RNA-seq data. The distribution of counts across samples becomes much more consistent, thus making the samples comparable.
 	
 	\begin{figure}[!h]
 		\centering	
@@ -359,13 +359,54 @@ Table 2 and Table 3 show the results of the one-way NPMANOVA (for females and ma
 
 	\subsection{Differential Gene Expression Analysis with DESeq2}
 	
-	Based on the above analysis, we decided to control for cancer type as it was found to be an important source of variation that could potentially confound the comparison between normal and healthy tissue conditions. 
+	Based on the above analysis, we decided to control for cancer type as it was found to be an important source of variation that could potentially confound the comparison between normal and healthy tissue conditions. We used \texttt{DESeq2} to identify differentially expressed genes \citep{love2014moderated}. \texttt{DESeq2} utilizes the negative binomial distribution (AKA gamma-poisson distribution) to model the expression count data. The reason for using the negative binomial distribution as opposed to using the Poisson distribution (another distribution used to model count data) is due to the negative binomial distributions ability to account for variance (second paramter called dispersion). Typically with RNA-seq data, what we see is that the mean does not equal the variance. \figref{fig:4} shows this relationship and what we see is that the variance increases with mean expression (mean does not equal variance, hence Poisson is a poor choice). 
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=10cm, height=10cm]{all_cancersmean_vs_variance_male.png}
+		\caption{Scatter plot showing the mean of gene counts (x-axis) vs variance of gene counts (y-axis) in males for all 12 cancer types considered in the study. The red line shows mean vs mean.}
+		\label{fig:4}
+	\end{figure}
+	
+	\texttt{DESeq2} calculates dispersion estimates which accounts for the inherent variability in RNA-seq count data. Once dispersion estimates are calculated for each gene, a negative binomial generalized linear model (GLM) is fit for each gene which incorporates parameters for both mean and dispersion. Once GLM's are fit for each gene, a statistical test called the Wald test is employed to find differentially expressed genes between conditions of interest. Since \texttt{DESeq2} uses a linear model, it gives us the ability to create more complex designs \citep{love2014moderated}. In our analysis, we incorporated cancer type as a factor in the GLM. The following formula below was used by DESeq2 to test the effect of condition (normal vs tumor tissue) while controlling for the effect of cancer type.
+	
+	\begin{equation}
+		design = cancer\_type + condition
+	\end{equation}
+
+	Genes found to be significantly differentially expressed were visualized using a volcano plot shown in \figref{fig:5}. Each gene is represented by an individual dot and the colour of the dot represents the gene passing a specific significance threshold. Red dots indicate that the gene had a p-value < 10e-20, and a log2FoldChange > 1.5 or < -1.5 whereas green dots indicate that the gene ONLY had a log2FoldChange > 1.5 or < 1.5. The log2FoldChange is a metric that quantifies the magnitude of change in gene expression between normal and tumor tissue conditions. Dots on the left side of each plot, with a log2FoldChange < -1.5, indicate donwregulation/decreased expression of the gene in tumor tissue compared to normal tissue. Dots on the right side of each plot, with a log2FoldChange > 1.5 indicate upregulation/increased expression of the gene in tumour tissue compared to normal tissue. We set the p-value threshold high when making these volcano plots to minimize the number of genes shown on the plot for aesthetic purposes.
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=\textwidth, height=12cm]{all_cancersvolcano_analysis_0.9.png}
+		\caption{Volcano plot highlighting the genes found to be differentially expressed in tumor tissue compared to normal tissue in males (left) and females (right). A red dot indicates the gene had a p-value < 10e-20 and log2FoldChange > 1.5 or < -1.5. A green dot indicates the gene only had a log2FoldChange > 1.5 or < -1.5}
+		\label{fig:5}
+	\end{figure}
+
+	The total number of differentially expressed genes are shown below in \figref{fig:6}. We found 1289 male genes to be significantly differentially expressed and 892 female genes to be significantly differentially expressed. (adj p-value < 0.05 AND |log2FoldChange| > 1.5). We compared the differentially expressed genes found in males and females and discovered 651 shared genes, 638 genes found only differentially expressed in males, and 241 genes found only differentially expressed in females. We also determined the number of genes found upregulated and downregulated in tumor tissue. In males, of the 1289 total genes found, 497 were found downregulated in tumor tissue while 792 were found upregulated in tumor tissue. In females, of the 892 total genes found, 287 were found downregulated in tumor tissue and 605 were found upregulated in tumor tissue.
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=8cm, height=5cm]{all_cancersvenndiagram_malede_vs_femalede_0.9.png}
+		\caption{Venn diagram showing the similarities and differences between differentially expressed genes found in males and females}
+		\label{fig:6}
+	\end{figure}
 	
 	\subsection{Gene Set Enrichment Analysis with ClusterProfiler}
+	
+	
 
 	\subsection{Fishers Exact Test For Synthetic Lethality}
 
 \section{Next Steps/Future Avenues}
+\begin{itemize}
+	\item Build male and female synthetic lethal interaction networks using results from Fishers exact test. Use the genes as nodes and the odds ratios as edges to build the networks. (Packages: \texttt{NetworkX} Python, \texttt{pyvis} Python). Find differences in the male and female networks.
+	\item Perform survival analysis on the SL pairs found using Fishers exact test and see which pairs contribute to improved patient survival. This could provide us with more clinically relevant synthetic lethal interactions.
+	\item Incorporate other types of data. We only included RNA-seq data, what about copy number variation, methylation, etc... this could strengthen the validity of the study.
+	\item Normal tissue proxy: There is a lack of normal tissue samples in the TCGA database. This restricted the number of cancer types we used in the study, as well as the sample size of the cancer types we did use. Can we use a different database to find matched samples? Can we use a machine learning approach to generate normal tissue expression data? Emailed the author of this paper, interesting stuff in terms of generating normal tissue expression but the author never got back to me with her code. \citep{zeng2019selecting}
+	\item Do males have higher incidence of lung cancer because more of them are smokers, or is it because they are male. Can we try and better understand if other factors (like societal factors) cause sex differences, or is it truly due to genetic differences in sex?
+	\item Menopause?
+\end{itemize}
 
 %	\subsection{Assessing the Evolution Simulator}
 

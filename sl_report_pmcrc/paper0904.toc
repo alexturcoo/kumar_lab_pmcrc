@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {}Pre-filtering and Normalization of Raw RNA-seq Count Data}{6}{subsection.3.2}%
 \contentsline {subsection}{\numberline {}Data Quality Assessment (PCA, NPManova)}{6}{subsection.3.3}%
 \contentsline {subsection}{\numberline {}Differential Gene Expression Analysis with DESeq2}{9}{subsection.3.4}%
-\contentsline {subsection}{\numberline {}Gene Set Enrichment Analysis with ClusterProfiler}{10}{subsection.3.5}%
-\contentsline {subsection}{\numberline {}Fishers Exact Test For Synthetic Lethality}{10}{subsection.3.6}%
-\contentsline {section}{\numberline {}Next Steps/Future Avenues}{10}{section.4}%
-\contentsline {section}{\numberline {}Code \& Supplementary Materials (Transition Document)}{11}{section.5}%
-\contentsline {section}{\numberline {}References}{15}{section.6}%
+\contentsline {subsection}{\numberline {}Gene Set Enrichment Analysis with ClusterProfiler}{12}{subsection.3.5}%
+\contentsline {subsection}{\numberline {}Fishers Exact Test For Synthetic Lethality}{12}{subsection.3.6}%
+\contentsline {section}{\numberline {}Next Steps/Future Avenues}{12}{section.4}%
+\contentsline {section}{\numberline {}Code \& Supplementary Materials (Transition Document)}{13}{section.5}%
+\contentsline {section}{\numberline {}References}{17}{section.6}%

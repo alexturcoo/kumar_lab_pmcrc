@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  10 AUG 2023 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  11 AUG 2023 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1479,6 +1479,12 @@ LaTeX Info: Redefining \nameref on input line 213.
 \openout6 = `paper0904.toc'.
 
  [2] [3] [4] [5]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 29
+4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 <normalied_male.png, id=119, 1300.86pt x 722.7pt>
 File: normalied_male.png Graphic file (type png)
 <use normalied_male.png>
@@ -1500,7 +1506,7 @@ ut line 310.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <./normalied_male.png> <./normalied_female.png>]
-<all_cancerspca_analysis_condition_cancertype_0.9.png, id=132, 2168.1pt x 1084.
+<all_cancerspca_analysis_condition_cancertype_0.9.png, id=133, 2168.1pt x 1084.
 05pt>
 File: all_cancerspca_analysis_condition_cancertype_0.9.png Graphic file (type p
 ng)
@@ -1514,7 +1520,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--327
 
  []
 
-<allfemale_npmanova.png, id=141, 384.43625pt x 123.46124pt>
+<allfemale_npmanova.png, id=142, 384.43625pt x 123.46124pt>
 File: allfemale_npmanova.png Graphic file (type png)
 <use allfemale_npmanova.png>
 Package pdftex.def Info: allfemale_npmanova.png  used on input line 330.
@@ -1524,7 +1530,7 @@ Overfull \hbox (6.33649pt too wide) in paragraph at lines 330--331
  [][] 
  []
 
-<allmale_npmanova.png, id=143, 391.4625pt x 122.4575pt>
+<allmale_npmanova.png, id=144, 391.4625pt x 122.4575pt>
 File: allmale_npmanova.png Graphic file (type png)
 <use allmale_npmanova.png>
 Package pdftex.def Info: allmale_npmanova.png  used on input line 337.
@@ -1534,7 +1540,7 @@ Overfull \hbox (6.29048pt too wide) in paragraph at lines 337--338
  [][] 
  []
 
-<eachfemale_npmanova.png, id=144, 393.47pt x 139.52126pt>
+<eachfemale_npmanova.png, id=145, 393.47pt x 139.52126pt>
 File: eachfemale_npmanova.png Graphic file (type png)
 <use eachfemale_npmanova.png>
 Package pdftex.def Info: eachfemale_npmanova.png  used on input line 346.
@@ -1547,7 +1553,7 @@ Overfull \hbox (6.29936pt too wide) in paragraph at lines 346--347
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<eachmale_npmanova.png, id=145, 400.49625pt x 161.60374pt>
+<eachmale_npmanova.png, id=146, 400.49625pt x 161.60374pt>
 File: eachmale_npmanova.png Graphic file (type png)
 <use eachmale_npmanova.png>
 Package pdftex.def Info: eachmale_npmanova.png  used on input line 353.
@@ -1561,40 +1567,65 @@ Overfull \hbox (6.3279pt too wide) in paragraph at lines 353--354
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8 <./allfemale_npmanova.png> <./allmale_npmanova.png>] [9 <./eachfemale_npmano
-va.png> <./eachmale_npmanova.png>] [10]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 38
-7.
+va.png> <./eachmale_npmanova.png>]
+<all_cancersmean_vs_variance_male.png, id=167, 578.16pt x 578.16pt>
+File: all_cancersmean_vs_variance_male.png Graphic file (type png)
+<use all_cancersmean_vs_variance_male.png>
+Package pdftex.def Info: all_cancersmean_vs_variance_male.png  used on input li
+ne 366.
+(pdftex.def)             Requested size: 284.52713pt x 284.52713pt.
+ [10 <./all_cancersmean_vs_variance_male.png>]
+<all_cancersvolcano_analysis_0.9.png, id=179, 1084.05pt x 722.7pt>
+File: all_cancersvolcano_analysis_0.9.png Graphic file (type png)
+<use all_cancersvolcano_analysis_0.9.png>
+Package pdftex.def Info: all_cancersvolcano_analysis_0.9.png  used on input lin
+e 381.
+(pdftex.def)             Requested size: 505.88104pt x 341.43344pt.
+<all_cancersvenndiagram_malede_vs_femalede_0.9.png, id=181, 578.16pt x 361.35pt
+>
+File: all_cancersvenndiagram_malede_vs_femalede_0.9.png Graphic file (type png)
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [11
+<use all_cancersvenndiagram_malede_vs_femalede_0.9.png>
+Package pdftex.def Info: all_cancersvenndiagram_malede_vs_femalede_0.9.png  use
+d on input line 390.
+(pdftex.def)             Requested size: 227.61641pt x 142.26578pt.
 
-] [12]
-Overfull \hbox (22.85979pt too wide) in paragraph at lines 465--467
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
+03.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [11 <./all_cancersvolcano_analysis_0.9.png>] [12 <./all_cancersvenndiagram_ma
+lede_vs_femalede_0.9.png>] [13
+
+] [14]
+Overfull \hbox (22.85979pt too wide) in paragraph at lines 506--508
 \T1/pcr/m/n/10 deseq2_preprocessing_boxplots_quantile_prefiltering_allcancers_f
 emale.sh \T1/ptm/m/n/10 - EX-E-CUTABLE 
  []
 
-[13]
-Overfull \hbox (10.85979pt too wide) in paragraph at lines 470--472
+[15]
+Overfull \hbox (10.85979pt too wide) in paragraph at lines 511--513
 \T1/pcr/m/n/10 deseq2_preprocessing_boxplots_quantile_prefiltering_allcancers_m
 ale.sh \T1/ptm/m/n/10 - EX-E-CUTABLE 
  []
 
-[14]
+[16]
 
 Package biblatex Warning: 'sorting' option to '\printbibliography' is no longer
  supported.
 (biblatex)                Please use 'sorting' option to '\newrefcontext'.
 
 
-Overfull \hbox (1.80498pt too wide) in paragraph at lines 505--505
+Overfull \hbox (1.80498pt too wide) in paragraph at lines 546--546
 [][]\T1/ptm/m/n/10 Yeung K Y and Ruzzo W L (2001). Prin-ci-pal com-po-nent anal
 -y-sis for clus-ter-ing gene ex-pres-sion data. Bioin-for-mat-ics 17(9), 763^^U
 
  []
 
-[15
+[17
 
 ] (./paper0904.aux)
 Package rerunfilecheck Info: File `paper0904.out' has not changed.
@@ -1604,22 +1635,23 @@ Package logreq Info: Writing requests to 'paper0904.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45943 strings out of 478287
- 1041828 string characters out of 5849290
- 1837040 words of memory out of 5000000
- 63351 multiletter control sequences out of 15000+600000
- 505536 words of font info for 65 fonts, out of 8000000 for 9000
+ 46007 strings out of 478287
+ 1043451 string characters out of 5849290
+ 1837829 words of memory out of 5000000
+ 63401 multiletter control sequences out of 15000+600000
+ 507494 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,12n,117p,2000b,1453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 114i,12n,117p,2000b,1517s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmr8a.pfb>
-Output written on paper0904.pdf (15 pages, 3475595 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
+es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper0904.pdf (17 pages, 5091194 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 204 words of extra memory for PDF output out of 10000 (max. 10000000)
 
