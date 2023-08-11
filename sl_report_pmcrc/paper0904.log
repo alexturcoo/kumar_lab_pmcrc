@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  11 AUG 2023 11:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  11 AUG 2023 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1478,88 +1478,94 @@ LaTeX Info: Redefining \nameref on input line 213.
 \tf@toc=\write6
 \openout6 = `paper0904.toc'.
 
- [2] [3] [4] [5]
+ [2]
+<project_workflow_slpmcrc.png, id=103, 722.7pt x 505.89pt>
+File: project_workflow_slpmcrc.png Graphic file (type png)
+<use project_workflow_slpmcrc.png>
+Package pdftex.def Info: project_workflow_slpmcrc.png  used on input line 237.
+(pdftex.def)             Requested size: 505.88655pt x 369.891pt.
+ [3 <./project_workflow_slpmcrc.png>] [4]
+[5]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 29
-4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+8.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<normalied_male.png, id=119, 1300.86pt x 722.7pt>
+<normalied_male.png, id=122, 1300.86pt x 722.7pt>
 File: normalied_male.png Graphic file (type png)
 <use normalied_male.png>
-Package pdftex.def Info: normalied_male.png  used on input line 298.
+Package pdftex.def Info: normalied_male.png  used on input line 302.
 (pdftex.def)             Requested size: 241.8463pt x 170.71672pt.
-<normalied_female.png, id=120, 1084.05pt x 722.7pt>
+<normalied_female.png, id=123, 1084.05pt x 722.7pt>
 File: normalied_female.png Graphic file (type png)
 <use normalied_female.png>
-Package pdftex.def Info: normalied_female.png  used on input line 299.
+Package pdftex.def Info: normalied_female.png  used on input line 303.
 (pdftex.def)             Requested size: 241.83307pt x 170.71672pt.
-<all_cancerspca_analysis_condition_0.9.png, id=122, 2168.1pt x 1084.05pt>
+<all_cancerspca_analysis_condition_0.9.png, id=125, 2168.1pt x 1084.05pt>
 File: all_cancerspca_analysis_condition_0.9.png Graphic file (type png)
 <use all_cancerspca_analysis_condition_0.9.png>
 Package pdftex.def Info: all_cancerspca_analysis_condition_0.9.png  used on inp
-ut line 310.
+ut line 314.
 (pdftex.def)             Requested size: 505.8645pt x 256.07509pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <./normalied_male.png> <./normalied_female.png>]
-<all_cancerspca_analysis_condition_cancertype_0.9.png, id=133, 2168.1pt x 1084.
+<all_cancerspca_analysis_condition_cancertype_0.9.png, id=136, 2168.1pt x 1084.
 05pt>
 File: all_cancerspca_analysis_condition_cancertype_0.9.png Graphic file (type p
 ng)
 <use all_cancerspca_analysis_condition_cancertype_0.9.png>
 Package pdftex.def Info: all_cancerspca_analysis_condition_cancertype_0.9.png  
-used on input line 319.
+used on input line 323.
 (pdftex.def)             Requested size: 505.8645pt x 256.07509pt.
  [7 <./all_cancerspca_analysis_condition_0.9.png> <./all_cancerspca_analysis_co
 ndition_cancertype_0.9.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
-<allfemale_npmanova.png, id=142, 384.43625pt x 123.46124pt>
+<allfemale_npmanova.png, id=145, 384.43625pt x 123.46124pt>
 File: allfemale_npmanova.png Graphic file (type png)
 <use allfemale_npmanova.png>
-Package pdftex.def Info: allfemale_npmanova.png  used on input line 330.
+Package pdftex.def Info: allfemale_npmanova.png  used on input line 334.
 (pdftex.def)             Requested size: 512.22649pt x 142.2713pt.
 
-Overfull \hbox (6.33649pt too wide) in paragraph at lines 330--331
+Overfull \hbox (6.33649pt too wide) in paragraph at lines 334--335
  [][] 
  []
 
-<allmale_npmanova.png, id=144, 391.4625pt x 122.4575pt>
+<allmale_npmanova.png, id=146, 391.4625pt x 122.4575pt>
 File: allmale_npmanova.png Graphic file (type png)
 <use allmale_npmanova.png>
-Package pdftex.def Info: allmale_npmanova.png  used on input line 337.
+Package pdftex.def Info: allmale_npmanova.png  used on input line 341.
 (pdftex.def)             Requested size: 512.18048pt x 142.26753pt.
 
-Overfull \hbox (6.29048pt too wide) in paragraph at lines 337--338
+Overfull \hbox (6.29048pt too wide) in paragraph at lines 341--342
  [][] 
  []
 
-<eachfemale_npmanova.png, id=145, 393.47pt x 139.52126pt>
+<eachfemale_npmanova.png, id=147, 393.47pt x 139.52126pt>
 File: eachfemale_npmanova.png Graphic file (type png)
 <use eachfemale_npmanova.png>
-Package pdftex.def Info: eachfemale_npmanova.png  used on input line 346.
+Package pdftex.def Info: eachfemale_npmanova.png  used on input line 350.
 (pdftex.def)             Requested size: 512.18936pt x 170.72235pt.
 
-Overfull \hbox (6.29936pt too wide) in paragraph at lines 346--347
+Overfull \hbox (6.29936pt too wide) in paragraph at lines 350--351
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<eachmale_npmanova.png, id=146, 400.49625pt x 161.60374pt>
+<eachmale_npmanova.png, id=148, 400.49625pt x 161.60374pt>
 File: eachmale_npmanova.png Graphic file (type png)
 <use eachmale_npmanova.png>
-Package pdftex.def Info: eachmale_npmanova.png  used on input line 353.
+Package pdftex.def Info: eachmale_npmanova.png  used on input line 357.
 (pdftex.def)             Requested size: 512.2179pt x 199.18076pt.
 
-Overfull \hbox (6.3279pt too wide) in paragraph at lines 353--354
+Overfull \hbox (6.3279pt too wide) in paragraph at lines 357--358
  [][] 
  []
 
@@ -1568,60 +1574,60 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8 <./allfemale_npmanova.png> <./allmale_npmanova.png>] [9 <./eachfemale_npmano
 va.png> <./eachmale_npmanova.png>]
-<all_cancersmean_vs_variance_male.png, id=167, 578.16pt x 578.16pt>
+<all_cancersmean_vs_variance_male.png, id=169, 578.16pt x 578.16pt>
 File: all_cancersmean_vs_variance_male.png Graphic file (type png)
 <use all_cancersmean_vs_variance_male.png>
 Package pdftex.def Info: all_cancersmean_vs_variance_male.png  used on input li
-ne 366.
+ne 370.
 (pdftex.def)             Requested size: 284.52713pt x 284.52713pt.
  [10 <./all_cancersmean_vs_variance_male.png>]
-<all_cancersvolcano_analysis_0.9.png, id=179, 1084.05pt x 722.7pt>
+<all_cancersvolcano_analysis_0.9.png, id=181, 1084.05pt x 722.7pt>
 File: all_cancersvolcano_analysis_0.9.png Graphic file (type png)
 <use all_cancersvolcano_analysis_0.9.png>
 Package pdftex.def Info: all_cancersvolcano_analysis_0.9.png  used on input lin
-e 381.
+e 385.
 (pdftex.def)             Requested size: 505.88104pt x 341.43344pt.
-<all_cancersvenndiagram_malede_vs_femalede_0.9.png, id=181, 578.16pt x 361.35pt
+<all_cancersvenndiagram_malede_vs_femalede_0.9.png, id=183, 578.16pt x 361.35pt
 >
 File: all_cancersvenndiagram_malede_vs_femalede_0.9.png Graphic file (type png)
 
 <use all_cancersvenndiagram_malede_vs_femalede_0.9.png>
 Package pdftex.def Info: all_cancersvenndiagram_malede_vs_femalede_0.9.png  use
-d on input line 390.
+d on input line 394.
 (pdftex.def)             Requested size: 227.61641pt x 142.26578pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [11 <./all_cancersvolcano_analysis_0.9.png>]
-<all_cancersgsea_alldegenes_male_female_bp0.9.png, id=189, 1084.05pt x 722.7pt>
+<all_cancersgsea_alldegenes_male_female_bp0.9.png, id=191, 1084.05pt x 722.7pt>
 
 File: all_cancersgsea_alldegenes_male_female_bp0.9.png Graphic file (type png)
 <use all_cancersgsea_alldegenes_male_female_bp0.9.png>
 Package pdftex.def Info: all_cancersgsea_alldegenes_male_female_bp0.9.png  used
- on input line 401.
+ on input line 405.
 (pdftex.def)             Requested size: 483.69922pt x 284.53154pt.
-<all_cancersgsea_exclusivedegenes_male_female_bp0.9.png, id=190, 1228.59pt x 72
+<all_cancersgsea_exclusivedegenes_male_female_bp0.9.png, id=192, 1228.59pt x 72
 2.7pt>
 File: all_cancersgsea_exclusivedegenes_male_female_bp0.9.png Graphic file (type
  png)
 <use all_cancersgsea_exclusivedegenes_male_female_bp0.9.png>
 Package pdftex.def Info: all_cancersgsea_exclusivedegenes_male_female_bp0.9.png
-  used on input line 408.
+  used on input line 412.
 (pdftex.def)             Requested size: 505.89978pt x 312.9825pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<interactions.png, id=191, 867.24pt x 342.27875pt>
+<interactions.png, id=193, 867.24pt x 342.27875pt>
 File: interactions.png Graphic file (type png)
 <use interactions.png>
-Package pdftex.def Info: interactions.png  used on input line 418.
+Package pdftex.def Info: interactions.png  used on input line 422.
 (pdftex.def)             Requested size: 505.89758pt x 227.62816pt.
 [12 <./all_cancersvenndiagram_malede_vs_femalede_0.9.png> <./all_cancersgsea_al
 ldegenes_male_female_bp0.9.png>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-25.
+29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1630,13 +1636,13 @@ s.png>] [14] [15
 
 ]
 [16]
-Overfull \hbox (22.85979pt too wide) in paragraph at lines 528--530
+Overfull \hbox (22.85979pt too wide) in paragraph at lines 532--534
 \T1/pcr/m/n/10 deseq2_preprocessing_boxplots_quantile_prefiltering_allcancers_f
 emale.sh \T1/ptm/m/n/10 - EX-E-CUTABLE 
  []
 
 [17]
-Overfull \hbox (10.85979pt too wide) in paragraph at lines 533--535
+Overfull \hbox (10.85979pt too wide) in paragraph at lines 537--539
 \T1/pcr/m/n/10 deseq2_preprocessing_boxplots_quantile_prefiltering_allcancers_m
 ale.sh \T1/ptm/m/n/10 - EX-E-CUTABLE 
  []
@@ -1648,7 +1654,7 @@ Package biblatex Warning: 'sorting' option to '\printbibliography' is no longer
 (biblatex)                Please use 'sorting' option to '\newrefcontext'.
 
 
-Overfull \hbox (1.80498pt too wide) in paragraph at lines 568--568
+Overfull \hbox (1.80498pt too wide) in paragraph at lines 572--572
 [][]\T1/ptm/m/n/10 Yeung K Y and Ruzzo W L (2001). Prin-ci-pal com-po-nent anal
 -y-sis for clus-ter-ing gene ex-pres-sion data. Bioin-for-mat-ics 17(9), 763^^U
 
@@ -1658,16 +1664,16 @@ Overfull \hbox (1.80498pt too wide) in paragraph at lines 568--568
 
 ] (./paper0904.aux)
 Package rerunfilecheck Info: File `paper0904.out' has not changed.
-(rerunfilecheck)             Checksum: 4E0016F0527AFEE2D569296FEB35473B;4520.
+(rerunfilecheck)             Checksum: 2F9CBB8BC6AC0BDC06598305B24BBF80;4573.
 Package logreq Info: Writing requests to 'paper0904.run.xml'.
 \openout1 = `paper0904.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46043 strings out of 478287
- 1044674 string characters out of 5849290
+ 46050 strings out of 478287
+ 1044901 string characters out of 5849290
  1838591 words of memory out of 5000000
- 63428 multiletter control sequences out of 15000+600000
+ 63434 multiletter control sequences out of 15000+600000
  507494 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,117p,2000b,1517s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1677,10 +1683,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper0904.pdf (19 pages, 6658183 bytes).
+Output written on paper0904.pdf (19 pages, 8054080 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
+ 308 PDF objects out of 1000 (max. 8388607)
  250 compressed objects within 3 object streams
  79 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
