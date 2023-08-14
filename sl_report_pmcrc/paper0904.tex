@@ -137,7 +137,7 @@
 
 \lhead{Sex Specific Synthetic Lethality} %This needs to change
 \rhead{Alexander Turco}
-\title{\sc Building sex-specific synthetic lethality network in cancer - Temp Name}
+\title{\sc Double Trouble: Understanding Sex Differences in Synthetic Lethal Interactions in Human Cancers}
 \author{\sc Alexander Turco}
 
 \providecommand{\figref}[1]{Figure \ref{#1}}  %what?
@@ -421,14 +421,16 @@ Table 2 and Table 3 show the results of the one-way NPMANOVA (for females and ma
 
 	\subsection{Fishers Exact Test For Synthetic Lethality}
 	
-	To find potential synthetic lethal interactions between the genes 
+	To find potential synthetic lethal interactions between the genes found to be differentially expressed, we employed a Fisher exact test. The reason for doing this was based off the paper written by \citet{lee2018harnessing}. In this paper, a hypergeometric test (same as one-sided Fishers exact test) was employed to check whether the co-inactivation of potential synthetic lethal pairs were underrepresented among tumors. This stems from the idea that synthetic lethal pairs are deleterious to tumors, so they are more likley to be under negative selection \citep{lee2018harnessing}. For the purpose of our study, we did something a bit different. We used a Fisher exact test to identify pairs of genes that were both perturbed (both underexpressed or both overexpressed) more frequently than individually perturbed (one overexpressed or one underexpressed). Those pairs found to be both perturbed significantly more frequently than individually perturbed were the pairs we considered to be potential synthetic lethal.
 	
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[width=16cm, height=6cm]{interactions.png}
-		\caption{Barplot showing the genes involved in the most number of potential synthetic lethal pairs found using Fishers exact test}
+		\caption{Barplot showing the genes involved in the most number of potential synthetic lethal pairs found using Fishers exact test. All genes shown here have an adjusted p-value < 0.05 and odds ratio (OR) > 2}
 		\label{fig:9}
 	\end{figure}
+
+	\figref{fig:9} shows the genes found to be involved in the largest number of significant candidate synthetic lethal gene pairs that we found using the Fisher test. It gives us a good indication of which genes act as major hubs for synthetic lethal interactions in males and females. 
 
 \clearpage\newpage
 \section{Next Steps/Future Avenues}
@@ -550,7 +552,11 @@ This script uses the DESeq object produced in the last step for males to extract
 \item\texttt{pca\_analysis\_mergedcancers\_quantiles\_prefiltering.R} - SCRIPT\newline
 \texttt{pca\_analysis\_mergedcancers\_quantiles\_prefiltering.sh} - EXECUTABLE
 
-This script runs principal component analysis on the normalized count data for males AND females to detect sources of variation in the gene expression data. The user can specify the quantile threshold value they would like to use in the script.
+This script runs principal component analysis on the normalized count data for males AND females (again using the DESeq object from scripts 11 and 12) to detect sources of variation in the gene expression data. The user can specify the quantile threshold value they would like to use in the script. The plots produced by this script show differences in gene expression based on normal vs tumor tissue condition as well as differences in gene expression based on tissue condition AND cancer type.
+
+\item\texttt{npmanova.R}
+
+This script performs a non parametric multivariate analysis of variance (NPMANOVA) in order to determine if statistically significant differences exist between normal and tumor tissue conditions. Think of this test as a way to sort of statistically verify the differences we saw in the PCA.
 	
 \item\texttt{dge\_analysis\_deseq2.R}
 	
@@ -563,10 +569,12 @@ RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOA
 This script performs gene set enrichment analysis using \texttt{clusterProfiler}.
 
 RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
-	
-\item\texttt{npmanova.R}
-	
-This script performs a non parametric multivariate analysis of variance (NPMANOVA) in order to determine if differences between 
+
+\item\texttt{sl\_analysis.ipynb}
+
+Synthetic lethality analysis.
+
+RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 	
 \end{enumerate}
 
