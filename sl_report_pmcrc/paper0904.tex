@@ -425,17 +425,26 @@ Table 2 and Table 3 show the results of the one-way NPMANOVA (for females and ma
 	
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[width=16cm, height=6cm]{interactions.png}
-		\caption{Barplot showing the genes involved in the most number of potential synthetic lethal pairs found using Fishers exact test. All genes shown here have an adjusted p-value < 0.05 and odds ratio (OR) > 2}
+		\includegraphics[width=\textwidth, height=7cm]{interactions_or4.png}
+		\caption{Barplot showing the genes involved in the most number of potential synthetic lethal pairs found using Fishers exact test. All genes shown here have an adjusted p-value < 0.05 and odds ratio (OR) > 4}
 		\label{fig:9}
 	\end{figure}
 
-	\figref{fig:9} shows the genes found to be involved in the largest number of significant candidate synthetic lethal gene pairs that we found using the Fisher test. It gives us a good indication of which genes act as major hubs for synthetic lethal interactions in males and females. 
+	\figref{fig:9} shows the genes found to be involved in the largest number of significant candidate synthetic lethal gene pairs that we found using the Fisher test. It gives us a good indication of which genes act as major hubs for synthetic lethal interactions in males and females. Ideally, the next thing we want to do is visualize these plots as a network, with nodes representing major synthetic lethal hub genes and edges representing the odds ratio and direction of regulation (up or down) between potential synthetic lethal pairs.
+	
+	We verified that our approach produced legitimate results by comparing the SL pairs we found to SL pairs found in the literature. All of the data we compared our pairs to can be found in the supplementary materials of the paper by \citet{cheng2021synthetic}. \figref{fig:10} summarizes the results of the comparisons. Isle results represent SL pairs found using the ISLE approach \citep{lee2018harnessing}, while experimentally validated results represent SL pairs that have been experimentally tested in a wet-lab setting. The experimentally validated pairs were collected from 18 different studies (shRNA, sgRNA, isogenic cell line mutations, etc). In males, 14 pairs we found were also found by the ISLE approach, and 21 pairs we found were also experimentally validated SL pairs. In females, 11 pairs we found were also found by the ISLE approach and only 2 pairs we found were also experimentally validated SL pairs. We have not looked into the differences in SL pairs found in men and women (a network approach would make it easier to potentially find these differences in SL pair function between males and females)
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=\textwidth, height=13cm]{validating_syntheticlethal_pairs.png}
+		\caption{Showing which synthetic lethal gene pairs we found in males and females were also found validated in the literature}
+		\label{fig:10}
+	\end{figure}
 
 \clearpage\newpage
 \section{Next Steps/Future Avenues}
 \begin{itemize}
-	\item Build male and female synthetic lethal interaction networks using results from Fishers exact test. Use the genes as nodes and the odds ratios as edges to build the networks. (Packages: \texttt{NetworkX} Python, \texttt{pyvis} Python). Find differences in the male and female networks.
+	\item Build male and female synthetic lethal interaction networks using results from Fishers exact test. Use the genes as nodes and the odds ratios as edges to build the networks. (Packages: \texttt{NetworkX} Python, \texttt{pyvis} Python). Find differences in the male and female networks. Is the function of the genes involved in the SL pairs specific to male or female biology? What types of processes are the different SL pairs involved in in both men and women?
 	\item Perform survival analysis on the SL pairs found using Fishers exact test and see which pairs contribute to improved patient survival. This could provide us with more clinically relevant synthetic lethal interactions.
 	\item Incorporate other types of data. We only included RNA-seq data, what about copy number variation, methylation, etc... this could strengthen the validity of the study.
 	\item Normal tissue proxy: There is a lack of normal tissue samples in the TCGA database. This restricted the number of cancer types we used in the study, as well as the sample size of the cancer types we did use. Can we use a different database to find matched samples? Can we use a machine learning approach to generate normal tissue expression data? Emailed the author of this paper, interesting stuff in terms of generating normal tissue expression but the author never got back to me with her code. \citep{zeng2019selecting}
@@ -560,19 +569,20 @@ This script performs a non parametric multivariate analysis of variance (NPMANOV
 	
 \item\texttt{dge\_analysis\_deseq2.R}
 	
-This script performs a lot of tasks.
+This script performs a lot of tasks related to differential gene expression. Since the differential expression analysis was performed in scripts 11 and 12, we use the results of those scripts here. Essentially what this script does is filter the results of the differential gene expression analysis. The script finds all the genes with an adjusted p-value less than .05 and a log fold change greater than 1.5 (threshold for overexpression) or less than -1.5 (threshold for underexpression). Once signficantly differentially expressed genes are found, the script annotates these genes and creates boxplots that show the distribution of the genes found across the different chromosomes. Finally, the script compares the differentially expressed genes found in males and females to see which genes are found both differentially expressed in males and females and which are found exclusively differentially expressed in either males or females.
 
 RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 	
 \item\texttt{gsea\_analysis\_postdeseq.R}
 	
-This script performs gene set enrichment analysis using \texttt{clusterProfiler}.
+This script performs gene set enrichment analysis using \texttt{clusterProfiler}. Refer to this site to better understand the code written in this script.
+\url{http://yulab-smu.top/biomedical-knowledge-mining-book/enrichment-overview.html}. This script uses the results produced from the last script (17). It performs gene set enrichment analysis on the differentially expressed genes found in BOTH sexes and found EXCLUSIVELY in each of the sexes.
 
 RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 
 \item\texttt{sl\_analysis.ipynb}
 
-Synthetic lethality analysis.
+This jupyter notebook contains all the code used to find synthetic lethal pairs using our differentially expressed genes of interest.
 
 RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
 	
