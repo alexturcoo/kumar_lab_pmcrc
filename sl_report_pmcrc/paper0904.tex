@@ -582,9 +582,28 @@ RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOA
 
 \item\texttt{sl\_analysis.ipynb}
 
-This jupyter notebook contains all the code used to find synthetic lethal pairs using our differentially expressed genes of interest.
+This jupyter notebook contains all the code used to find synthetic lethal pairs using our differentially expressed genes of interest. The files utilized in the synthetic lethality analysis (gene lists, count data, etc) are included in the directory with the jupyter notebook (user can just go through jupyter notebook and see which files are utilized). This script essentially quantifies gene expression values into 3 categories (high, med, low) based on quantiles of overall gene expression. We create contingency tables for each gene, which summarize the quantity of samples that have a particular gene pair with HIGH-HIGH, LOW-LOW, HIGH-LOW, or LOW-HIGH expression. The script then conducts a Fisher exact test, adjusts p values using Benjamani Hochberg, and outputs all pairs with adjusted p-value < 0.05 and odds ratio > 4. The script also produces bar plots showing the genes involved in the most synthetic lethal interactions, AND the script finds which synthetic lethal pairs were found to be validated in the literature.
 
 RUN ON LOGIN NODE/LOCAL COMPUTER, NOT ON COMPUTE NODE, COMPUTE NODE CANT DOWNLOAD
+	
+\end{enumerate}
+
+SCRIPTS NOT USED IN WORKFLOW BUT STILL COOL AND POTENTIALLY USEFUL
+
+\begin{enumerate}
+	\item \texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_female.R} - SCRIPT \newline
+	\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_female.sh} - EXECUTION 
+	
+	This script produces boxplots of normalized counts for each individual cancer type for females. It shows the difference in raw vs normalized counts across samples on a cancer specific level as opposed to a pan-cancer level.
+	
+	\item \texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_male.R} - SCRIPT \newline
+	\texttt{deseq2\_preprocessing\_boxplots\_quantile\_prefiltering\_male.sh} - EXECUTION 
+	
+	This script produces boxplots of normalized counts for each individual cancer type for males. It shows the difference in raw vs normalized counts across samples on a cancer specific level as opposed to a pan-cancer level.
+	
+	\item \texttt{paired\_boxplots.R} - SCRIPT
+	
+	This script produces boxplots that show the difference between tumor tissue and normal tissue gene expression on a cancer specific level. There are two bars for each cancer type, one representing normal tissue expression and one representing tumor tissue expression. Lines are drawn between paired samples and a t-test is conducted to show significant differences in normal vs tumor expression across each cancer type.
 	
 \end{enumerate}
 
