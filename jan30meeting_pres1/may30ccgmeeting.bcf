@@ -2351,16 +2351,15 @@
     <bcf:citekey order="3">shen2018synthetic</bcf:citekey>
     <bcf:citekey order="4">o2015targeting</bcf:citekey>
     <bcf:citekey order="5">cheng2021synthetic</bcf:citekey>
-    <bcf:citekey order="6">cheng2021synthetic</bcf:citekey>
+    <bcf:citekey order="6">lee2018harnessing</bcf:citekey>
     <bcf:citekey order="7">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="8">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="9">oliva2020impact</bcf:citekey>
-    <bcf:citekey order="10">nijman2011synthetic</bcf:citekey>
-    <bcf:citekey order="11">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="12">shen2018synthetic</bcf:citekey>
-    <bcf:citekey order="13">o2015targeting</bcf:citekey>
-    <bcf:citekey order="14">cheng2021synthetic</bcf:citekey>
-    <bcf:citekey order="15">oliva2020impact</bcf:citekey>
+    <bcf:citekey order="8">oliva2020impact</bcf:citekey>
+    <bcf:citekey order="9">nijman2011synthetic</bcf:citekey>
+    <bcf:citekey order="10">lee2018harnessing</bcf:citekey>
+    <bcf:citekey order="11">shen2018synthetic</bcf:citekey>
+    <bcf:citekey order="12">o2015targeting</bcf:citekey>
+    <bcf:citekey order="13">cheng2021synthetic</bcf:citekey>
+    <bcf:citekey order="14">oliva2020impact</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

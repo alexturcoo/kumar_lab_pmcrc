@@ -230,14 +230,16 @@ fill=green!30]
 	\end{frame}
 
 	%%%%% APPRACH SECTION BEGINS HERE, 2 SLIDES
-	\section{Approaches}
 
-	\begin{frame}{A Promising New Approach}
-		\textbf{\color{blue}Tissue cSL Load:} Median cSL load value across all samples of each tissue type
+	\begin{frame}{Third Generation Sequencing: A Promising New Approach}
+		\textbf{\color{blue}Single Molecule, Real Time Sequencing (SMRT):} Pacbio's third generation sequencing machine
+		\begin{itemize}
+			\item Emits a fluorescent pulse when nucleotide is detected - the time interval between two pulses is called the interpulse duration (IPD)
+			\item Guiblet et al (2018), showed that there is a significant divergence between IPDs in non-B DNA motif regions compared to B-DNA regions
+		\end{itemize}
 		
 		\centering
-		\includegraphics[width=8cm, height=6cm]{tcl1.png}
-		\footnotetext[5]{\tiny\cite{cheng2021synthetic}}
+		\includegraphics[width=10cm, height=4.5cm]{sequencing_evolution.png}
 	\end{frame}
 
 	\begin{frame}{Oxford Nanopore Sequencing Technology}
@@ -262,7 +264,7 @@ fill=green!30]
 	\footnotetext[5]{\tiny\cite{cheng2021synthetic}}
 	\end{frame}
 
-	\begin{frame}{Where did the Data come From?}
+	\begin{frame}{Predicting Non-B Structures From Nanopore Sequencing}
 		A recently published reference set of genome-wide cSLs common to many cancer types was utilized
 		\begin{center}
 				\includegraphics[width=6cm,height=6cm]{corenet.png}

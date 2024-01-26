@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  26 JAN 2024 07:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  26 JAN 2024 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,7 +1287,7 @@ Package biblatex Info: ... file 'may30ccgmeeting.bbl' found.
 Package biblatex Info: Reference section=0 on input line 98.
 Package biblatex Info: Reference segment=0 on input line 98.
  (./may30ccgmeeting.nav)
-<logo.png, id=66, 529.98pt x 95.35625pt>
+<logo.png, id=62, 529.98pt x 95.35625pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 108.
@@ -1307,7 +1307,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 146
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<rosy.png, id=79, 1269.74374pt x 371.3875pt>
+<rosy.png, id=75, 1269.74374pt x 371.3875pt>
 File: rosy.png Graphic file (type png)
 <use rosy.png>
 Package pdftex.def Info: rosy.png  used on input line 146.
@@ -1315,7 +1315,7 @@ Package pdftex.def Info: rosy.png  used on input line 146.
  [2
 
  <./rosy.png>]
-<repeats.png, id=92, 767.86874pt x 94.3525pt>
+<repeats.png, id=88, 767.86874pt x 94.3525pt>
 File: repeats.png Graphic file (type png)
 <use repeats.png>
 Package pdftex.def Info: repeats.png  used on input line 164.
@@ -1324,7 +1324,7 @@ Package pdftex.def Info: repeats.png  used on input line 164.
 [3
 
  <./repeats.png>]
-<nonb_types.png, id=104, 2143.00626pt x 1860.9525pt>
+<nonb_types.png, id=100, 2143.00626pt x 1860.9525pt>
 File: nonb_types.png Graphic file (type png)
 <use nonb_types.png>
 Package pdftex.def Info: nonb_types.png  used on input line 184.
@@ -1336,7 +1336,7 @@ Package pdftex.def Info: nonb_types.png  used on input line 184.
 ] [6
 
 ]
-<Predicting_nonb_structures.png, id=132, 406.6392pt x 284.5029pt>
+<Predicting_nonb_structures.png, id=128, 406.6392pt x 284.5029pt>
 File: Predicting_nonb_structures.png Graphic file (type png)
 <use Predicting_nonb_structures.png>
 Package pdftex.def Info: Predicting_nonb_structures.png  used on input line 230
@@ -1349,42 +1349,46 @@ Overfull \vbox (0.21753pt too high) detected at line 230
 [7
 
  <./Predicting_nonb_structures.png>]
-<tcl1.png, id=142, 424.58624pt x 352.31625pt>
-File: tcl1.png Graphic file (type png)
-<use tcl1.png>
-Package pdftex.def Info: tcl1.png  used on input line 241.
-(pdftex.def)             Requested size: 227.6211pt x 170.71727pt.
- [8
+<sequencing_evolution.png, id=138, 1284.8pt x 603.25375pt>
+File: sequencing_evolution.png Graphic file (type png)
+<use sequencing_evolution.png>
+Package pdftex.def Info: sequencing_evolution.png  used on input line 243.
+(pdftex.def)             Requested size: 284.5193pt x 128.03093pt.
 
- <./tcl1.png>]
-<ont_machine.jpg, id=153, 658.46pt x 623.32875pt>
+Overfull \vbox (7.68953pt too high) detected at line 243
+ []
+
+[8
+
+ <./sequencing_evolution.png>]
+<ont_machine.jpg, id=147, 658.46pt x 623.32875pt>
 File: ont_machine.jpg Graphic file (type jpg)
 <use ont_machine.jpg>
-Package pdftex.def Info: ont_machine.jpg  used on input line 263.
+Package pdftex.def Info: ont_machine.jpg  used on input line 265.
 (pdftex.def)             Requested size: 99.57857pt x 170.71686pt.
  [9
 
  <./ont_machine.jpg>]
-<corenet.png, id=165, 760.8425pt x 768.8725pt>
+<corenet.png, id=160, 760.8425pt x 768.8725pt>
 File: corenet.png Graphic file (type png)
 <use corenet.png>
-Package pdftex.def Info: corenet.png  used on input line 271.
+Package pdftex.def Info: corenet.png  used on input line 273.
 (pdftex.def)             Requested size: 170.71779pt x 170.71283pt.
-[10
+ [10
 
  <./corenet.png>]
-<isle.png, id=175, 1384.17125pt x 675.52374pt>
+<isle.png, id=170, 1384.17125pt x 675.52374pt>
 File: isle.png Graphic file (type png)
 <use isle.png>
-Package pdftex.def Info: isle.png  used on input line 279.
+Package pdftex.def Info: isle.png  used on input line 281.
 (pdftex.def)             Requested size: 369.88727pt x 199.16438pt.
 
-Overfull \hbox (27.59196pt too wide) in paragraph at lines 279--279
+Overfull \hbox (27.59196pt too wide) in paragraph at lines 281--281
  [][] 
  []
 
 
-Overfull \vbox (1.85457pt too high) detected at line 279
+Overfull \vbox (1.85457pt too high) detected at line 281
  []
 
 [11
@@ -1394,10 +1398,10 @@ Overfull \vbox (1.85457pt too high) detected at line 279
 ] [13
 
 ]
-<sex.png, id=203, 435.6275pt x 502.87875pt>
+<sex.png, id=198, 435.6275pt x 502.87875pt>
 File: sex.png Graphic file (type png)
 <use sex.png>
-Package pdftex.def Info: sex.png  used on input line 313.
+Package pdftex.def Info: sex.png  used on input line 315.
 (pdftex.def)             Requested size: 170.71164pt x 199.16821pt.
  [14
 
@@ -1415,16 +1419,16 @@ Package pdftex.def Info: sex.png  used on input line 313.
 
  (./may30ccgmeeting.aux)
 Package rerunfilecheck Info: File `may30ccgmeeting.out' has not changed.
-(rerunfilecheck)             Checksum: D827EB0708B03611A9349570B8B0328B;367.
+(rerunfilecheck)             Checksum: A0E3C9E5838BD71D1A85568D4C3724F0;274.
 Package logreq Info: Writing requests to 'may30ccgmeeting.run.xml'.
 \openout1 = `may30ccgmeeting.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36332 strings out of 478287
- 757967 string characters out of 5849290
- 1413754 words of memory out of 5000000
- 53810 multiletter control sequences out of 15000+600000
+ 36326 strings out of 478287
+ 758020 string characters out of 5849290
+ 1413751 words of memory out of 5000000
+ 53805 multiletter control sequences out of 15000+600000
  478514 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,748b,1321s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1451,10 +1455,10 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on may30ccgmeeting.pdf (15 pages, 2776323 bytes).
+Output written on may30ccgmeeting.pdf (15 pages, 2790643 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
- 267 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
