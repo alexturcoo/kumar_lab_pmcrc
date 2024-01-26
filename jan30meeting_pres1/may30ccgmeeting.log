@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  22 JAN 2024 13:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  26 JAN 2024 07:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1306,110 +1306,102 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 146
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2
+)
+<rosy.png, id=79, 1269.74374pt x 371.3875pt>
+File: rosy.png Graphic file (type png)
+<use rosy.png>
+Package pdftex.def Info: rosy.png  used on input line 146.
+(pdftex.def)             Requested size: 312.97897pt x 99.5846pt.
+ [2
+
+ <./rosy.png>]
+<repeats.png, id=92, 767.86874pt x 94.3525pt>
+File: repeats.png Graphic file (type png)
+<use repeats.png>
+Package pdftex.def Info: repeats.png  used on input line 164.
+(pdftex.def)             Requested size: 256.0806pt x 34.1425pt.
+
+[3
+
+ <./repeats.png>]
+<nonb_types.png, id=104, 2143.00626pt x 1860.9525pt>
+File: nonb_types.png Graphic file (type png)
+<use nonb_types.png>
+Package pdftex.def Info: nonb_types.png  used on input line 184.
+(pdftex.def)             Requested size: 256.07057pt x 184.94193pt.
+ [4
+
+ <./nonb_types.png (PNG copy)>] [5
+
+] [6
 
 ]
-<slbasic.png, id=91, 852.18375pt x 170.6375pt>
-File: slbasic.png Graphic file (type png)
-<use slbasic.png>
-Package pdftex.def Info: slbasic.png  used on input line 161.
-(pdftex.def)             Requested size: 312.98846pt x 71.13348pt.
- [3
+<Predicting_nonb_structures.png, id=132, 406.6392pt x 284.5029pt>
+File: Predicting_nonb_structures.png Graphic file (type png)
+<use Predicting_nonb_structures.png>
+Package pdftex.def Info: Predicting_nonb_structures.png  used on input line 230
+.
+(pdftex.def)             Requested size: 341.4381pt x 227.61998pt.
 
- <./slbasic.png>] [4
-
-] [5
-
-]
-<olaparib2.png, id=167, 660.4675pt x 423.5825pt>
-File: olaparib2.png Graphic file (type png)
-<use olaparib2.png>
-Package pdftex.def Info: olaparib2.png  used on input line 205.
-(pdftex.def)             Requested size: 241.84967pt x 170.7162pt.
-
-Overfull \vbox (8.74388pt too high) detected at line 205
+Overfull \vbox (0.21753pt too high) detected at line 230
  []
 
-[6
+[7
 
- <./olaparib2.png>] [7
-
-]
-<csl.png, id=188, 842.14626pt x 554.07pt>
-File: csl.png Graphic file (type png)
-<use csl.png>
-Package pdftex.def Info: csl.png  used on input line 226.
-(pdftex.def)             Requested size: 284.52693pt x 162.18106pt.
- [8
-
- <./csl.png>]
-<tcl1.png, id=200, 424.58624pt x 352.31625pt>
+ <./Predicting_nonb_structures.png>]
+<tcl1.png, id=142, 424.58624pt x 352.31625pt>
 File: tcl1.png Graphic file (type png)
 <use tcl1.png>
-Package pdftex.def Info: tcl1.png  used on input line 237.
+Package pdftex.def Info: tcl1.png  used on input line 241.
 (pdftex.def)             Requested size: 227.6211pt x 170.71727pt.
-
-Overfull \vbox (7.13663pt too high) detected at line 237
- []
-
-[9
+ [8
 
  <./tcl1.png>]
-<tcl2.png, id=210, 693.59125pt x 309.155pt>
-File: tcl2.png Graphic file (type png)
-<use tcl2.png>
-Package pdftex.def Info: tcl2.png  used on input line 254.
-(pdftex.def)             Requested size: 199.1678pt x 99.5826pt.
+<ont_machine.jpg, id=153, 658.46pt x 623.32875pt>
+File: ont_machine.jpg Graphic file (type jpg)
+<use ont_machine.jpg>
+Package pdftex.def Info: ont_machine.jpg  used on input line 263.
+(pdftex.def)             Requested size: 99.57857pt x 170.71686pt.
+ [9
 
-Overfull \hbox (28.02016pt too wide) in paragraph at lines 254--254
- [][] 
- []
-
-<tcl3.png, id=211, 577.15625pt x 289.08pt>
-File: tcl3.png Graphic file (type png)
-<use tcl3.png>
-Package pdftex.def Info: tcl3.png  used on input line 254.
-(pdftex.def)             Requested size: 170.71756pt x 85.35725pt.
-[10
-
- <./tcl2.png> <./tcl3.png>]
-<corenet.png, id=222, 760.8425pt x 768.8725pt>
+ <./ont_machine.jpg>]
+<corenet.png, id=165, 760.8425pt x 768.8725pt>
 File: corenet.png Graphic file (type png)
 <use corenet.png>
-Package pdftex.def Info: corenet.png  used on input line 262.
+Package pdftex.def Info: corenet.png  used on input line 271.
 (pdftex.def)             Requested size: 170.71779pt x 170.71283pt.
- [11
+[10
 
  <./corenet.png>]
-<isle.png, id=232, 1384.17125pt x 675.52374pt>
+<isle.png, id=175, 1384.17125pt x 675.52374pt>
 File: isle.png Graphic file (type png)
 <use isle.png>
-Package pdftex.def Info: isle.png  used on input line 270.
+Package pdftex.def Info: isle.png  used on input line 279.
 (pdftex.def)             Requested size: 369.88727pt x 199.16438pt.
 
-Overfull \hbox (27.59196pt too wide) in paragraph at lines 270--270
+Overfull \hbox (27.59196pt too wide) in paragraph at lines 279--279
  [][] 
  []
 
 
-Overfull \vbox (1.85457pt too high) detected at line 270
+Overfull \vbox (1.85457pt too high) detected at line 279
  []
 
-[12
+[11
 
- <./isle.png>] [13
+ <./isle.png>] [12
 
-] [14
+] [13
 
 ]
-<sex.png, id=257, 435.6275pt x 502.87875pt>
+<sex.png, id=203, 435.6275pt x 502.87875pt>
 File: sex.png Graphic file (type png)
 <use sex.png>
-Package pdftex.def Info: sex.png  used on input line 304.
+Package pdftex.def Info: sex.png  used on input line 313.
 (pdftex.def)             Requested size: 170.71164pt x 199.16821pt.
- [15
+ [14
 
- <./sex.png>] [16
+ <./sex.png>] [15
 
 ]
 \tf@nav=\write7
@@ -1429,13 +1421,13 @@ Package logreq Info: Writing requests to 'may30ccgmeeting.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36358 strings out of 478287
- 758687 string characters out of 5849290
- 1417702 words of memory out of 5000000
- 53837 multiletter control sequences out of 15000+600000
- 479165 words of font info for 65 fonts, out of 8000000 for 9000
+ 36332 strings out of 478287
+ 757967 string characters out of 5849290
+ 1413754 words of memory out of 5000000
+ 53810 multiletter control sequences out of 15000+600000
+ 478514 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,748b,1323s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,15n,122p,748b,1321s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.0@oliva2020impact} has been referenced but d
 oes not exist, replaced by a fixed one
 
@@ -1458,12 +1450,11 @@ pdfTeX warning (dest): name{cite.0@nijman2011synthetic} has been referenced but
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on may30ccgmeeting.pdf (16 pages, 1906895 bytes).
+mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on may30ccgmeeting.pdf (15 pages, 2776323 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
+ 257 PDF objects out of 1000 (max. 8388607)
+ 180 compressed objects within 2 object streams
  44 named destinations out of 1000 (max. 500000)
- 405 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 words of extra memory for PDF output out of 10000 (max. 10000000)
 
