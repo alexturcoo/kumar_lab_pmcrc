@@ -265,24 +265,33 @@ fill=green!30]
 	\end{frame}
 
 	\begin{frame}{Predicting Non-B Structures From Nanopore Sequencing}
-		A recently published reference set of genome-wide cSLs common to many cancer types was utilized
-		\begin{center}
-				\includegraphics[width=6cm,height=6cm]{corenet.png}
-		\end{center}
+		A recently published paper utilized translocation times from ONT sequencing to predict non-B DNA structures (citation)
+		\begin{itemize}
+			\item Developed the first computational pipeline and a novel unsupervised deep statistical model for predicting non-B DNA structures \newline
+		\end{itemize}
+	
+		Benefits  of unsupervised approach;
+		\begin{enumerate}
+			\item non-B database labels are noisy (just because motif is present does not mean structure is)
+			\item Even if high quality labeling for non-B DNA were available, substantially more B-DNA samples are available
+			\item Unknown non-B structures or non-B DNA without sequence motifs cannot be modelled by a supervised approach
+		\end{enumerate}
 	\footnotetext[2]{\tiny\cite{lee2018harnessing}}
 	\end{frame}
 
 	%EXPLAIN THE PROCESS OF ISLE HERE
-	\begin{frame}{Building Pan-Cancer Synthetic Lethality Networks}
-		\centering
-		\includegraphics[width=13cm, height=7cm]{isle.png}
+	\begin{frame}{GoFAE-DND: Deep Statistical modelling of non-B DNA}
+		Anomaly Detection Problem: Identifying patterns within data that deviate significantly from the norm or expected behaviour of the majority of the data
+		\begin{center}
+		\includegraphics[width=12cm, height=5cm]{gofae.jpeg}
+		\end{center}
 		%\movie[width=10cm,height=7cm,showcontrols=true]{\includegraphics[width=10cm, height=7cm]{pompe_thumbnail.png}}{pompe_trimmed.mp4}
 		\footnotetext[2]{\tiny\cite{lee2018harnessing}}
 	\end{frame}
 
 	%%% EXPLAIN NSSE SURVEY A BIT
 	%%% WHEN YOU TALK MENTION THAT THEY DID THIS SURVEY AFTER PLAYING THE GAME IN CLASS
-	\begin{frame}{There is Variability in Synthetic Lethal Interactions Depending on Cancer Type}
+	\begin{frame}{Results of the Model}
 		
 		\textbf{\color{blue}Pan-Cancer Analysis:} Analysis of multiple types of cancer simultaneously, aims to identify commonalities shared across different types
 		
@@ -299,7 +308,7 @@ fill=green!30]
 	%%%%RESULTS BEGIN HERE
 	\section{Results}
 	
-	\begin{frame}{Sex Differences Add an Additional Layer of Complexity}
+	\begin{frame}{The Objective}
 		Human sex differences are mainly caused by;
 		\begin{enumerate}
 			\item Gonadal hormone secretions
@@ -308,19 +317,10 @@ fill=green!30]
 	This leads to differences in the frequency of certain cancer types and the efficacy of treatments in males and females
 	\end{frame}
 
-	\begin{frame}{Sex Differences Add an Additional Layer of Complexity}
+	\begin{frame}{Preprocessing Workflow}
 		\centering
 		\includegraphics[width=6cm,height=7cm]{sex.png}
 		\footnotetext[6]{\tiny\cite{oliva2020impact}}
-	\end{frame}
-
-	\begin{frame}{The Objective}
-		\begin{center}
-		%\includegraphics[width=11cm, height=6cm]{types_of_courses_taken.jpg}
-		Can we build sex-specific synthetic lethality networks for various cancer types? \newline
-		
-		More specifically, we are trying to elucidate the differences in synthetic lethal interactions between males and females using a network based approach.
-		\end{center}
 	\end{frame}
 
 \end{document}
