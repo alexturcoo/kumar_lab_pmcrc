@@ -291,17 +291,13 @@ fill=green!30]
 
 	%%% EXPLAIN NSSE SURVEY A BIT
 	%%% WHEN YOU TALK MENTION THAT THEY DID THIS SURVEY AFTER PLAYING THE GAME IN CLASS
-	\begin{frame}{Results of the Model}
+	\begin{frame}{Model Performance}
+		At an FDR control level $\alpha = 0.2$, SVM and GoFAE-DND generated the most novelties, with GoFAE-DND yielding the most predictions for all non-B types besides G4
+		\begin{center}
+			\vspace{-1cm}
+			\includegraphics[width=12cm, height=8cm]{model_performance_gofae.png}
+		\end{center}
 		
-		\textbf{\color{blue}Pan-Cancer Analysis:} Analysis of multiple types of cancer simultaneously, aims to identify commonalities shared across different types
-		
-		
-		\textbf{\color{blue}Cancer-Specific Analysis:} Analysis of individual cancer types to better understand the variation within a specific cancer type \vspace{1cm}
-		
-		\begin{itemize}
-			\item Pan-cancer analyses may overlook cancer-specific differences
-			\item Availability of datasets for all cancer types varies, this may limit statistical power of pan-cancer analyses
-		\end{itemize}
 		
 	\end{frame}
 
@@ -309,12 +305,11 @@ fill=green!30]
 	\section{Results}
 	
 	\begin{frame}{The Objective}
-		Human sex differences are mainly caused by;
+		Given the dramatic increase in genome-scale data produced using ONT platforms, and the relevance of non-B structures in human cancers; \newline
 		\begin{enumerate}
-			\item Gonadal hormone secretions
-			\item Genes located on the sex chromosomes (X and Y) \newline
+			\item Utilize the model to analyze nanopore samples from the human pangenome reference consortium (HPRC)
+			\item Eventually improve the model, with an emphasis on the detection of G4 quadruplexes - Linking methylation, gene expression profiles which are available for HPRC samples\newline
 		\end{enumerate}
-	This leads to differences in the frequency of certain cancer types and the efficacy of treatments in males and females
 	\end{frame}
 
 	\begin{frame}{Preprocessing Workflow}
