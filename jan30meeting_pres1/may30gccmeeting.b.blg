@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'may30gccmeeting.b.blg'
+[45] biber:340> INFO - === Mon Jan 29, 2024, 22:12:32
+[125] Utils.pm:398> ERROR - Cannot find 'may30gccmeeting.b.bcf'!
+[125] Biber.pm:135> INFO - ERRORS: 1

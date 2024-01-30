@@ -2345,21 +2345,14 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">ABC1.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">nijman2011synthetic</bcf:citekey>
-    <bcf:citekey order="2">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="3">nijman2011synthetic</bcf:citekey>
-    <bcf:citekey order="3">shen2018synthetic</bcf:citekey>
-    <bcf:citekey order="4">o2015targeting</bcf:citekey>
-    <bcf:citekey order="5">cheng2021synthetic</bcf:citekey>
-    <bcf:citekey order="6">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="7">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="8">oliva2020impact</bcf:citekey>
-    <bcf:citekey order="9">nijman2011synthetic</bcf:citekey>
-    <bcf:citekey order="10">lee2018harnessing</bcf:citekey>
-    <bcf:citekey order="11">shen2018synthetic</bcf:citekey>
-    <bcf:citekey order="12">o2015targeting</bcf:citekey>
-    <bcf:citekey order="13">cheng2021synthetic</bcf:citekey>
-    <bcf:citekey order="14">oliva2020impact</bcf:citekey>
+    <bcf:citekey order="1">watson1953structure</bcf:citekey>
+    <bcf:citekey order="2">wang2023dynamic</bcf:citekey>
+    <bcf:citekey order="3">wang2023dynamic</bcf:citekey>
+    <bcf:citekey order="4">hosseini2023deep</bcf:citekey>
+    <bcf:citekey order="5">hosseini2023deep</bcf:citekey>
+    <bcf:citekey order="6">watson1953structure</bcf:citekey>
+    <bcf:citekey order="7">wang2023dynamic</bcf:citekey>
+    <bcf:citekey order="8">hosseini2023deep</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

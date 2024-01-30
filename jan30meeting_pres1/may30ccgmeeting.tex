@@ -47,7 +47,7 @@
 % Title page details: 
 \title[BEAP Dec 2022]{Current Affairs: Utilizing Oxford Nanopore Sequencing Data to Detect Non-Canonical DNA Structures} 
 \author{Alexander Turco}
-\date{\today}
+\date{January 30, 2024}
 \logo{\includegraphics[height=0.5cm, width=3cm]{logo.png}}
 
 % Bibliography stuff
@@ -141,7 +141,7 @@ fill=green!30]
 		\centering
 		\includegraphics[width=11cm, height=3.5cm]{rosy.png}
 		
-		\footnotetext[1]{\tiny\cite{nijman2011synthetic}}
+		\footnotetext[1]{\tiny\cite{watson1953structure}}
 		
 	\end{frame}
 	
@@ -158,7 +158,7 @@ fill=green!30]
 			\end{center}
 			 
 			\item A crucial feature of some repetitive sequences is their ability to fold into non-canonical DNA structures (non-B DNA)
-			\footnotetext[2]{\tiny\cite{lee2018harnessing}}
+			\footnotetext[2]{\tiny\cite{wang2023dynamic}}
 		\end{itemize}
 		
 	\end{frame}
@@ -179,7 +179,7 @@ fill=green!30]
 		\centering
 		\includegraphics[width=9cm, height=6.5cm]{nonb_types.png}
 	
-	\footnotetext[3]{\tiny\cite{nijman2011synthetic,shen2018synthetic}}
+	\footnotetext[2]{\tiny Figure from \cite{wang2023dynamic}}
 	
 	\end{frame}
 
@@ -199,7 +199,6 @@ fill=green!30]
 		\centering
 		%\includegraphics[width=8.5cm, height=6cm]{olaparib2.png}
 		
-		\footnotetext[4]{\tiny Figure From  \cite{o2015targeting}}
 	\end{frame}
 
 	%SLIDE 6 
@@ -260,8 +259,6 @@ fill=green!30]
 			\end{minipage}
 		\end{figure}
 		
-			
-	\footnotetext[5]{\tiny\cite{cheng2021synthetic}}
 	\end{frame}
 
 	\begin{frame}{Predicting Non-B Structures From Nanopore Sequencing}
@@ -276,7 +273,7 @@ fill=green!30]
 			\item Even if high quality labeling for non-B DNA were available, substantially more B-DNA samples are available
 			\item Unknown non-B structures or non-B DNA without sequence motifs cannot be modelled by a supervised approach
 		\end{enumerate}
-	\footnotetext[2]{\tiny\cite{lee2018harnessing}}
+	\footnotetext[2]{\tiny\cite{hosseini2023deep}}
 	\end{frame}
 
 	%EXPLAIN THE PROCESS OF ISLE HERE
@@ -286,7 +283,7 @@ fill=green!30]
 		\includegraphics[width=12cm, height=5cm]{gofae.jpeg}
 		\end{center}
 		%\movie[width=10cm,height=7cm,showcontrols=true]{\includegraphics[width=10cm, height=7cm]{pompe_thumbnail.png}}{pompe_trimmed.mp4}
-		\footnotetext[2]{\tiny\cite{lee2018harnessing}}
+		\footnotetext[2]{\tiny\cite{hosseini2023deep}}
 	\end{frame}
 
 	%%% EXPLAIN NSSE SURVEY A BIT
@@ -314,8 +311,13 @@ fill=green!30]
 
 	\begin{frame}{Preprocessing Workflow}
 		\centering
-		\includegraphics[width=6cm,height=7cm]{sex.png}
-		\footnotetext[6]{\tiny\cite{oliva2020impact}}
+		\includegraphics[width=11.5cm,height=8cm]{preprocessing_workflow.png}
+		
+	\end{frame}
+
+	\begin{frame}{Preprocessing Visualization}
+		\centering
+		\includegraphics[width=12cm,height=8cm]{preprocess_results.png}
 	\end{frame}
 
 \end{document}

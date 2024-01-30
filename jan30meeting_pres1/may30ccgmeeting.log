@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  28 JAN 2024 22:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  29 JAN 2024 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1336,56 +1336,56 @@ Package pdftex.def Info: nonb_types.png  used on input line 184.
 ] [6
 
 ]
-<Predicting_nonb_structures.png, id=128, 406.6392pt x 284.5029pt>
+<Predicting_nonb_structures.png, id=124, 406.6392pt x 284.5029pt>
 File: Predicting_nonb_structures.png Graphic file (type png)
 <use Predicting_nonb_structures.png>
-Package pdftex.def Info: Predicting_nonb_structures.png  used on input line 230
+Package pdftex.def Info: Predicting_nonb_structures.png  used on input line 229
 .
 (pdftex.def)             Requested size: 341.4381pt x 227.61998pt.
 
-Overfull \vbox (0.21753pt too high) detected at line 230
+Overfull \vbox (0.21753pt too high) detected at line 229
  []
 
 [7
 
  <./Predicting_nonb_structures.png>]
-<sequencing_evolution.png, id=138, 1284.8pt x 603.25375pt>
+<sequencing_evolution.png, id=134, 1284.8pt x 603.25375pt>
 File: sequencing_evolution.png Graphic file (type png)
 <use sequencing_evolution.png>
-Package pdftex.def Info: sequencing_evolution.png  used on input line 243.
+Package pdftex.def Info: sequencing_evolution.png  used on input line 242.
 (pdftex.def)             Requested size: 284.5193pt x 128.03093pt.
 
-Overfull \vbox (7.68953pt too high) detected at line 243
+Overfull \vbox (7.68953pt too high) detected at line 242
  []
 
 [8
 
  <./sequencing_evolution.png>]
-<ont_machine.jpg, id=147, 658.46pt x 623.32875pt>
+<ont_machine.jpg, id=143, 658.46pt x 623.32875pt>
 File: ont_machine.jpg Graphic file (type jpg)
 <use ont_machine.jpg>
-Package pdftex.def Info: ont_machine.jpg  used on input line 265.
+Package pdftex.def Info: ont_machine.jpg  used on input line 262.
 (pdftex.def)             Requested size: 99.57857pt x 170.71686pt.
  [9
 
  <./ont_machine.jpg>] [10
 
 ]
-<gofae.jpeg, id=170, 1372.37718pt x 540.51938pt>
+<gofae.jpeg, id=165, 1372.37718pt x 540.51938pt>
 File: gofae.jpeg Graphic file (type jpg)
 <use gofae.jpeg>
-Package pdftex.def Info: gofae.jpeg  used on input line 290.
+Package pdftex.def Info: gofae.jpeg  used on input line 287.
 (pdftex.def)             Requested size: 341.43913pt x 142.26372pt.
  [11
 
  <./gofae.jpeg>]
-<model_performance_gofae.png, id=180, 722.7pt x 505.89pt>
+<model_performance_gofae.png, id=175, 722.7pt x 505.89pt>
 File: model_performance_gofae.png Graphic file (type png)
 <use model_performance_gofae.png>
-Package pdftex.def Info: model_performance_gofae.png  used on input line 302.
+Package pdftex.def Info: model_performance_gofae.png  used on input line 299.
 (pdftex.def)             Requested size: 341.43344pt x 227.62523pt.
 
-Overfull \vbox (31.43106pt too high) detected at line 302
+Overfull \vbox (31.43106pt too high) detected at line 299
  []
 
 [12
@@ -1393,14 +1393,30 @@ Overfull \vbox (31.43106pt too high) detected at line 302
  <./model_performance_gofae.png>] [13
 
 ]
-<sex.png, id=199, 435.6275pt x 502.87875pt>
-File: sex.png Graphic file (type png)
-<use sex.png>
-Package pdftex.def Info: sex.png  used on input line 319.
-(pdftex.def)             Requested size: 170.71164pt x 199.16821pt.
- [14
+<preprocessing_workflow.png, id=194, 722.7pt x 505.89pt>
+File: preprocessing_workflow.png Graphic file (type png)
+<use preprocessing_workflow.png>
+Package pdftex.def Info: preprocessing_workflow.png  used on input line 316.
+(pdftex.def)             Requested size: 327.20796pt x 227.62523pt.
 
- <./sex.png>]
+Overfull \vbox (8.95462pt too high) detected at line 316
+ []
+
+[14
+
+ <./preprocessing_workflow.png>]
+<preprocess_results.png, id=203, 722.7pt x 505.89pt>
+File: preprocess_results.png Graphic file (type png)
+<use preprocess_results.png>
+Package pdftex.def Info: preprocess_results.png  used on input line 321.
+(pdftex.def)             Requested size: 341.43344pt x 227.62523pt.
+
+Overfull \vbox (8.95462pt too high) detected at line 321
+ []
+
+[15
+
+ <./preprocess_results.png>]
 \tf@nav=\write7
 \openout7 = `may30ccgmeeting.nav'.
 
@@ -1410,38 +1426,33 @@ Package pdftex.def Info: sex.png  used on input line 319.
 \tf@snm=\write9
 \openout9 = `may30ccgmeeting.snm'.
 
-
-(./may30ccgmeeting.aux)
+ (./may30ccgmeeting.aux)
 Package rerunfilecheck Info: File `may30ccgmeeting.out' has not changed.
 (rerunfilecheck)             Checksum: A0E3C9E5838BD71D1A85568D4C3724F0;274.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'may30ccgmeeting.run.xml'.
 \openout1 = `may30ccgmeeting.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36332 strings out of 478287
- 758355 string characters out of 5849290
- 1415751 words of memory out of 5000000
- 53812 multiletter control sequences out of 15000+600000
+ 36326 strings out of 478287
+ 758354 string characters out of 5849290
+ 1415634 words of memory out of 5000000
+ 53806 multiletter control sequences out of 15000+600000
  478514 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,748b,1321s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cite.0@oliva2020impact} has been referenced but d
-oes not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@cheng2021synthetic} has been referenced but 
+ 128i,15n,122p,748b,1317s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{cite.0@hosseini2023deep} has been referenced but 
 does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{cite.0@o2015targeting} has been referenced but does
- not exist, replaced by a fixed one
+pdfTeX warning (dest): name{cite.0@wang2023dynamic} has been referenced but doe
+s not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{cite.0@shen2018synthetic} has been referenced but d
-oes not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@lee2018harnessing} has been referenced but d
-oes not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@nijman2011synthetic} has been referenced but
+pdfTeX warning (dest): name{cite.0@watson1953structure} has been referenced but
  does not exist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
@@ -1451,10 +1462,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive
 -dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msam10.pfb>
-Output written on may30ccgmeeting.pdf (14 pages, 2870752 bytes).
+Output written on may30ccgmeeting.pdf (15 pages, 3524139 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 
